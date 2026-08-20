@@ -1,4 +1,4 @@
-# 注册 Windows 计划任务：每个交易日 11:00 自动执行 refresh.ps1
+﻿# 注册 Windows 计划任务：每个交易日 11:00 自动执行 refresh.ps1
 # 以当前用户身份运行（需在登录状态下），执行一次即可：
 #   powershell -ExecutionPolicy Bypass -File register-task.ps1
 # 删除任务：  Unregister-ScheduledTask -TaskName "QDII额度监控刷新" -Confirm:$false
