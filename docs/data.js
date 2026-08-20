@@ -1,5 +1,5 @@
 window.FUND_DATA = {
- "updated_at": "2026-08-19 20:40:39",
+ "updated_at": "2026-08-19 21:05:15",
  "weights": {
   "fee": 0.25,
   "tracking_error": 0.25,
@@ -1387,15 +1387,15 @@ window.FUND_DATA = {
    "scale_date": "2026-06-30",
    "nav": 1.7094,
    "nav_date": "2026-08-18",
-   "tracking_error": null,
+   "tracking_error": 1.66,
    "company": "摩根基金(中国)",
    "scores": {
     "fee": 100.0,
-    "tracking_error": null,
+    "tracking_error": 56.9,
     "scale": 95.8,
     "limit": 100.0
    },
-   "score": 98.6
+   "score": 88.2
   },
   {
    "code": "019305",
