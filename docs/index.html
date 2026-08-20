@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QDII 额度监控 · 标普500 / 纳指100</title>
+<style>
+  :root {
+    color-scheme: light;
+    --page:        #f9f9f7;
+    --surface:     #fcfcfb;
+    --ink:         #0b0b0b;
+    --ink-2:       #52514e;
+    --ink-muted:   #898781;
+    --grid:        #e1e0d9;
+    --baseline:    #c3c2b7;
+    --border:      rgba(11,11,11,0.10);
+    --seq:         #2a78d6;   /* 得分条（顺序蓝） */
+    --seq-track:   #e1e0d9;
+    --good:        #0ca30c;
+    --warning:     #fab219;
+    --serious:     #ec835a;
+    --critical:    #d03b3b;
+    --good-text:   #006300;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --page:        #0d0d0d;
+      --surface:     #1a1a19;
+      --ink:         #ffffff;
+      --ink-2:       #c3c2b7;
+      --ink-muted:   #898781;
+      --grid:        #2c2c2a;
+      --baseline:    #383835;
+      --border:      rgba(255,255,255,0.10);
+      --seq:         #3987e5;
+      --seq-track:   #2c2c2a;
+      --good-text:   #0ca30c;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --page:        #0d0d0d;
+    --surface:     #1a1a19;
+    --ink:         #ffffff;
+    --ink-2:       #c3c2b7;
+    --ink-muted:   #898781;
+    --grid:        #2c2c2a;
+    --baseline:    #383835;
+    --border:      rgba(255,255,255,0.10);
+    --seq:         #3987e5;
+    --seq-track:   #2c2c2a;
+    --good-text:   #0ca30c;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--page);
+    color: var(--ink);
+    font-family: system-ui, -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif;
+    font-size: 14px;
+    line-height: 1.55;
+  }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 24px 16px 48px; }
+
+  header h1 { font-size: 22px; margin: 0 0 4px; }
+  .updated { color: var(--ink-2); font-size: 13px; }
+  .updated .dot { color: var(--good); margin-right: 4px; }
+
+  section.index-block {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 18px 18px 8px;
+    margin-top: 20px;
+  }
+  section.index-block > h2 { margin: 0 0 12px; font-size: 18px; }
+
+  .tiles { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 14px; }
+  .tile {
+    flex: 1 1 150px; min-width: 150px;
+    border: 1px solid var(--border); border-radius: 8px;
+    padding: 10px 12px;
+  }
+  .tile .k { color: var(--ink-2); font-size: 12px; }
+  .tile .v { font-size: 20px; font-weight: 650; margin-top: 2px; }
+  .tile .s { color: var(--ink-muted); font-size: 12px; }
+
+  h3.sub { font-size: 14px; color: var(--ink-2); margin: 18px 0 8px; font-weight: 600; }
+
+  .table-wrap { overflow-x: auto; margin: 0 -18px; padding: 0 18px 14px; }
+  table { border-collapse: collapse; width: 100%; min-width: 720px; }
+  th, td { padding: 7px 10px; text-align: right; white-space: nowrap; }
+  th:nth-child(-n+3), td:nth-child(-n+3) { text-align: left; }
+  thead th {
+    color: var(--ink-muted); font-weight: 600; font-size: 12px;
+    border-bottom: 1px solid var(--baseline);
+    cursor: pointer; user-select: none; position: sticky; top: 0;
+    background: var(--surface);
+  }
+  thead th.sorted { color: var(--ink); }
+  tbody tr { border-bottom: 1px solid var(--grid); }
+  tbody tr:last-child { border-bottom: none; }
+  tbody tr.suspended { opacity: 0.62; }
+  td.num, th.num { font-variant-numeric: tabular-nums; }
+  td .code { color: var(--ink-muted); font-size: 12px; margin-left: 6px; }
+  td a { color: inherit; text-decoration: none; border-bottom: 1px dotted var(--baseline); }
+  td a:hover { border-bottom-color: var(--ink-2); }
+
+  .badge {
+    display: inline-flex; align-items: center; gap: 5px;
+    font-size: 12px; color: var(--ink-2);
+  }
+  .badge i {
+    width: 8px; height: 8px; border-radius: 50%;
+    display: inline-block; flex: none;
+  }
+  .badge.good i     { background: var(--good); }
+  .badge.warn i     { background: var(--warning); }
+  .badge.crit i     { background: var(--critical); }
+  .badge.neutral i  { background: var(--baseline); }
+
+  .limit-strong { font-weight: 650; }
+  .prem-high { color: var(--serious); font-weight: 600; }
+
+  .scorecell { display: inline-flex; align-items: center; gap: 8px; }
+  .scorebar {
+    width: 72px; height: 4px; border-radius: 2px;
+    background: var(--seq-track); overflow: hidden; flex: none;
+  }
+  .scorebar span { display: block; height: 100%; border-radius: 2px; background: var(--seq); }
+  .scoreval { font-variant-numeric: tabular-nums; min-width: 34px; text-align: right; }
+
+  footer { margin-top: 22px; color: var(--ink-muted); font-size: 12px; }
+  footer p { margin: 6px 0; }
+  #load-error { color: var(--critical); padding: 24px 0; display: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>QDII 额度监控 · 标普500 / 纳指100</h1>
+    <div class="updated" id="updated"></div>
+  </header>
+
+  <div id="load-error">数据加载失败：请确认 data.js / data.json 已生成（先运行 scraper/fetch_data.py）。</div>
+  <div id="app"></div>
+
+  <footer>
+    <p id="weights-note"></p>
+    <p>综合得分为同组（同指数、同场内外）归一化后的加权分，仅用于横向比较：年持有成本=管理费+托管费+销售服务费；限额取自基金公司公告的单日累计购买上限；ETF 的“参考溢价率”=现价相对最近一日净值，含隔夜美股涨跌影响，仅供参考。</p>
+    <p>数据来源：天天基金 / 东方财富公开页面，每日刷新一次。本页仅为信息整理，不构成投资建议。</p>
+  </footer>
+</div>
+
+<script src="data.js"></script>
+<script>
+(function () {
+  "use strict";
+  var data = window.FUND_DATA;
+  if (!data || !data.funds) {
+    document.getElementById("load-error").style.display = "block";
+    return;
+  }
+
+  document.getElementById("updated").innerHTML =
+    '<span class="dot">●</span>数据更新于 ' + esc(data.updated_at);
+
+  var w = data.weights || {};
+  document.getElementById("weights-note").textContent =
+    "得分权重：年持有成本 " + pct(w.fee) + " · 跟踪误差 " + pct(w.tracking_error) +
+    " · 基金规模 " + pct(w.scale) + " · 申购限额 " + pct(w.limit) +
+    "（场内 ETF 不计限额项）。";
+
+  var INDEX_ORDER = ["SPX", "NDX100"];
+  var app = document.getElementById("app");
+
+  INDEX_ORDER.forEach(function (idx) {
+    var funds = data.funds.filter(function (f) { return f.index === idx; });
+    if (!funds.length) return;
+    app.appendChild(buildSection(idx, data.indexes[idx] || idx, funds));
+  });
+
+  function buildSection(idx, label, funds) {
+    var otc = funds.filter(function (f) { return !f.is_etf; });
+    var etf = funds.filter(function (f) { return f.is_etf; });
+
+    var sec = document.createElement("section");
+    sec.className = "index-block";
+    sec.appendChild(el("h2", null, label === "标普500" ? "标普500（SPX）" : "纳指100（NDX100）"));
+
+    // 统计瓦片
+    var buyable = otc.filter(function (f) { return f.limit_type === "limited" || f.limit_type === "open"; });
+    var maxLimit = Math.max.apply(null, [0].concat(
+      otc.filter(function (f) { return f.limit_type === "limited"; })
+         .map(function (f) { return f.daily_limit; })));
+    var hasOpen = otc.some(function (f) { return f.limit_type === "open"; });
+    var prems = etf.map(function (f) { return f.premium; }).filter(isNum);
+    var minPrem = prems.length ? Math.min.apply(null, prems) : null;
+
+    var tiles = el("div", "tiles");
+    tiles.appendChild(tile("场外可申购", buyable.length + " / " + otc.length + " 只", "含限购额度内可买"));
+    tiles.appendChild(tile("单日限额最宽",
+      hasOpen ? "不限" : (maxLimit > 0 ? fmtMoney(maxLimit) + "/日" : "全部暂停"),
+      "场外基金中的最大值"));
+    tiles.appendChild(tile("ETF 最低参考溢价", minPrem === null ? "—" : minPrem.toFixed(2) + "%", "溢价越低越接近净值"));
+    sec.appendChild(tiles);
+
+    if (otc.length) {
+      sec.appendChild(el("h3", "sub", "场外基金（按综合得分排序，申购限额为每日上限）"));
+      sec.appendChild(buildTable(otc, false));
+    }
+    if (etf.length) {
+      sec.appendChild(el("h3", "sub", "场内 ETF（券商账户买卖，不受申购限额约束，注意溢价）"));
+      sec.appendChild(buildTable(etf, true));
+    }
+    return sec;
+  }
+
+  function buildTable(rows, isEtf) {
+    var cols = isEtf ? [
+      { key: "_rank",  label: "#",        num: true },
+      { key: "name",   label: "基金名称 / 代码" },
+      { key: "status", label: "申购状态" },
+      { key: "price",  label: "现价",     num: true, fmt: function (f) { return isNum(f.price) ? f.price.toFixed(3) : "—"; } },
+      { key: "premium",label: "参考溢价", num: true, fmt: fmtPremium },
+      { key: "annual_fee", label: "年持有成本", num: true, fmt: function (f) { return fmtPct(f.annual_fee); } },
+      { key: "tracking_error", label: "年化跟踪误差", num: true, fmt: function (f) { return fmtPct(f.tracking_error); } },
+      { key: "scale",  label: "规模",     num: true, fmt: function (f) { return fmtScale(f.scale); } },
+      { key: "score",  label: "综合得分", num: true, fmt: null }
+    ] : [
+      { key: "_rank",  label: "#",        num: true },
+      { key: "name",   label: "基金名称 / 代码" },
+      { key: "status", label: "申购状态" },
+      { key: "daily_limit", label: "每日限额", num: true, fmt: fmtLimitCell, sortVal: limitSortVal },
+      { key: "annual_fee", label: "年持有成本", num: true, fmt: function (f) { return fmtPct(f.annual_fee); } },
+      { key: "buy_fee", label: "申购费(折后)", num: true, fmt: function (f) { return fmtPct(f.buy_fee); } },
+      { key: "tracking_error", label: "年化跟踪误差", num: true, fmt: function (f) { return fmtPct(f.tracking_error); } },
+      { key: "scale",  label: "规模",     num: true, fmt: function (f) { return fmtScale(f.scale); } },
+      { key: "score",  label: "综合得分", num: true, fmt: null }
+    ];
+
+    var state = { key: "score", dir: -1 };
+    var wrapEl = el("div", "table-wrap");
+    var tbl = document.createElement("table");
+    var thead = document.createElement("thead");
+    var trh = document.createElement("tr");
+    cols.forEach(function (c) {
+      var th = el("th", c.num ? "num" : null, c.label);
+      th.title = "点击排序";
+      th.addEventListener("click", function () {
+        if (c.key === "_rank" || c.key === "name" || c.key === "status") return;
+        if (state.key === c.key) { state.dir = -state.dir; }
+        else { state.key = c.key; state.dir = -1; }
+        render();
+      });
+      trh.appendChild(th);
+    });
+    thead.appendChild(trh);
+    tbl.appendChild(thead);
+    var tbody = document.createElement("tbody");
+    tbl.appendChild(tbody);
+    wrapEl.appendChild(tbl);
+
+    function render() {
+      var col = cols.filter(function (c) { return c.key === state.key; })[0];
+      var sorted = rows.slice().sort(function (a, b) {
+        var va = col && col.sortVal ? col.sortVal(a) : a[state.key];
+        var vb = col && col.sortVal ? col.sortVal(b) : b[state.key];
+        va = isNum(va) ? va : (state.dir === -1 ? -Infinity : Infinity);
+        vb = isNum(vb) ? vb : (state.dir === -1 ? -Infinity : Infinity);
+        return state.dir === -1 ? vb - va : va - vb;
+      });
+
+      Array.prototype.forEach.call(trh.children, function (th, i) {
+        th.classList.toggle("sorted", cols[i].key === state.key);
+      });
+
+      tbody.innerHTML = "";
+      sorted.forEach(function (f, i) {
+        var tr = document.createElement("tr");
+        if (f.limit_type === "suspended") tr.className = "suspended";
+        cols.forEach(function (c) {
+          var td = el("td", c.num ? "num" : null);
+          if (c.key === "_rank") { td.textContent = i + 1; }
+          else if (c.key === "name") {
+            var a = document.createElement("a");
+            a.href = "https://fund.eastmoney.com/" + f.code + ".html";
+            a.target = "_blank"; a.rel = "noopener";
+            a.textContent = f.name;
+            td.appendChild(a);
+            td.appendChild(el("span", "code", f.code));
+          }
+          else if (c.key === "status") { td.appendChild(statusBadge(f)); }
+          else if (c.key === "score") { td.appendChild(scoreCell(f.score)); }
+          else { td.innerHTML = c.fmt(f); }
+          tr.appendChild(td);
+        });
+        tbody.appendChild(tr);
+      });
+    }
+    render();
+    return wrapEl;
+  }
+
+  // ---- 格式化 ----
+  function statusBadge(f) {
+    var map = {
+      open:      ["good",    "开放申购"],
+      limited:   ["warn",    f.status || "限大额"],
+      unknown:   ["warn",    (f.status || "限大额") + "（额度未公布）"],
+      suspended: ["crit",    "暂停申购"],
+      exchange:  ["neutral", "场内交易"]
+    };
+    var m = map[f.limit_type] || ["neutral", f.status || "—"];
+    var b = el("span", "badge " + m[0]);
+    b.appendChild(document.createElement("i"));
+    b.appendChild(document.createTextNode(m[1]));
+    if (f.status_mark) b.title = f.status_mark;
+    return b;
+  }
+  function fmtLimitCell(f) {
+    if (f.limit_type === "suspended") return '<span>0 元</span>';
+    if (f.limit_type === "open") return '<span class="limit-strong">不限</span>';
+    if (f.limit_type === "limited") return '<span class="limit-strong">' + fmtMoney(f.daily_limit) + "/日</span>";
+    return "未公布";
+  }
+  function limitSortVal(f) {
+    if (f.limit_type === "open") return 1e9;
+    if (f.limit_type === "limited") return f.daily_limit;
+    if (f.limit_type === "suspended") return 0;
+    return null;
+  }
+  function fmtPremium(f) {
+    if (!isNum(f.premium)) return "—";
+    var s = f.premium.toFixed(2) + "%";
+    if (f.premium >= 5) return '<span class="prem-high" title="现价明显高于净值，买入即承担溢价回落风险">' + s + " ▲高</span>";
+    return s;
+  }
+  function fmtMoney(v) {
+    if (!isNum(v)) return "—";
+    if (v >= 1e8) return (v / 1e8) + " 亿元";
+    if (v >= 1e4) return (v / 1e4) + " 万元";
+    return v + " 元";
+  }
+  function fmtPct(v) { return isNum(v) ? v.toFixed(2) + "%" : "—"; }
+  function fmtScale(v) { return isNum(v) ? (v / 1e8).toFixed(1) + " 亿" : "—"; }
+  function scoreCell(score) {
+    var box = el("span", "scorecell");
+    var bar = el("span", "scorebar");
+    var fill = document.createElement("span");
+    fill.style.width = (isNum(score) ? Math.max(2, Math.min(100, score)) : 0) + "%";
+    bar.appendChild(fill);
+    box.appendChild(bar);
+    box.appendChild(el("span", "scoreval", isNum(score) ? score.toFixed(1) : "—"));
+    return box;
+  }
+
+  function tile(k, v, s) {
+    var t = el("div", "tile");
+    t.appendChild(el("div", "k", k));
+    t.appendChild(el("div", "v", v));
+    if (s) t.appendChild(el("div", "s", s));
+    return t;
+  }
+  function el(tag, cls, text) {
+    var e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text != null) e.textContent = text;
+    return e;
+  }
+  function esc(s) {
+    return String(s).replace(/[&<>"]/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c];
+    });
+  }
+  function isNum(v) { return typeof v === "number" && isFinite(v); }
+  function pct(x) { return isNum(x) ? Math.round(x * 100) + "%" : "—"; }
+})();
+</script>
+</body>
+</html>
