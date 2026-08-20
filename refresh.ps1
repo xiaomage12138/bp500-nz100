@@ -9,7 +9,7 @@ if ($LASTEXITCODE -ne 0) {
     exit 1
 }
 
-git add docs/data.json docs/data.js
+git add docs/data.json docs/data.js docs/history.json
 
 # 无变化则跳过提交
 git diff --cached --quiet

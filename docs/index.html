@@ -68,6 +68,28 @@
   header h1 { font-size: 22px; margin: 0 0 4px; }
   .updated { color: var(--ink-2); font-size: 13px; }
   .updated .dot { color: var(--good); margin-right: 4px; }
+  .updated .limit-stamp { color: var(--ink); font-weight: 600; }
+
+  /* 数据质量提示条 */
+  .quality {
+    margin-top: 12px; padding: 9px 12px; border-radius: 8px;
+    border: 1px solid var(--border); background: var(--surface);
+    font-size: 12px; color: var(--ink-2);
+    display: flex; align-items: flex-start; gap: 8px;
+  }
+  .quality.ok  { border-left: 3px solid var(--good); }
+  .quality.warn { border-left: 3px solid var(--warning); }
+
+  /* 额度变动面板 */
+  .changes {
+    margin-top: 12px; padding: 12px 14px; border-radius: 8px;
+    border: 1px solid var(--border); background: var(--surface);
+  }
+  .changes h4 { margin: 0 0 8px; font-size: 13px; }
+  .changes ul { margin: 0; padding-left: 0; list-style: none; font-size: 13px; }
+  .changes li { padding: 3px 0; color: var(--ink-2); }
+  .changes li b { color: var(--ink); font-weight: 600; }
+  .changes .none { color: var(--ink-muted); font-size: 12px; }
 
   section.index-block {
     background: var(--surface);
@@ -140,6 +162,36 @@
   .limit-strong { font-weight: 650; color: var(--ink); }
   .prem-high { color: var(--serious); font-weight: 600; }
 
+  /* 额度变动 / 场内 LOF 标记 */
+  .chg {
+    display: inline-flex; align-items: center; gap: 3px;
+    margin-left: 8px; font-size: 11px; font-weight: 600;
+    padding: 1px 6px; border-radius: 10px;
+    border: 1px solid var(--border); white-space: nowrap;
+  }
+  .chg.loosened { color: var(--good-text); }
+  .chg.tightened, .chg.suspended { color: var(--critical); }
+  .chg.reopened { color: var(--good-text); }
+  .lof {
+    display: inline-flex; align-items: center; gap: 4px;
+    margin-left: 8px; font-size: 11px; font-weight: 600;
+    color: var(--good-text); padding: 1px 6px; border-radius: 10px;
+    border: 1px solid var(--good); white-space: nowrap;
+  }
+  .est {
+    margin-left: 4px; font-size: 10px; color: var(--warning);
+    font-weight: 700; cursor: help;
+  }
+
+  /* 场内 LOF 提示：这类基金场外暂停、排名靠后，但往往是当下最划算的通道 */
+  .lof-note {
+    border: 1px solid var(--border); border-left: 3px solid var(--good);
+    border-radius: 8px; padding: 9px 12px; margin-bottom: 14px;
+    font-size: 12px; color: var(--ink-2);
+  }
+  .lof-note b { color: var(--ink); }
+  .lof-note div + div { margin-top: 4px; }
+
   .scorecell { display: inline-flex; align-items: center; gap: 8px; }
   .scorebar {
     width: 60px; height: 4px; border-radius: 2px;
@@ -197,12 +249,16 @@
   </header>
 
   <div id="load-error">数据加载失败：请确认 data.js / data.json 已生成（先运行 scraper/fetch_data.py）。</div>
+  <div id="quality"></div>
+  <div id="changes"></div>
   <div id="app"></div>
 
   <footer>
     <p id="weights-note"></p>
-    <p>基金名称已省略板块标题中重复的指数名与 QDII 字样，鼠标悬停可看完整全称。综合得分为同组（同指数、同场内外）归一化后的加权分，仅用于横向比较：年持有成本=管理费+托管费+销售服务费；限额取自基金公司公告的单日累计购买上限；ETF 的"参考溢价率"=现价相对最近一日净值，含隔夜美股涨跌影响，仅供参考。</p>
-    <p>数据来源：天天基金 / 东方财富公开页面，每日刷新一次。本页仅为信息整理，不构成投资建议。</p>
+    <p>基金名称已省略板块标题中重复的指数名与 QDII 字样，鼠标悬停可看完整全称。综合得分为同组（同指数、同场内外）归一化后的加权分，仅用于横向比较：年持有成本=管理费+托管费+销售服务费；限额取自基金公司公告的单日累计购买上限；某项指标缺失时按同组中位数补位并标注「估」，不会因缺数据而虚高。</p>
+    <p>「场内可买」指该基金虽然场外申购受限，但其场内份额（LOF）仍可通过券商账户买卖，标注的百分比是现价相对最近一日净值的溢价。ETF 与 LOF 的溢价均含隔夜美股涨跌影响，仅供参考——溢价越高，买入后回落的风险越大。</p>
+    <p>监控范围为人民币份额。美元/现汇份额需外汇账户，不在本表内。规模为季报数据，会滞后一个季度；申购额度与净值为每次采集时的最新值，采集时间见页首。</p>
+    <p>数据来源：天天基金 / 东方财富公开接口（申购状态另由交易端接口交叉验证）。本页仅为信息整理，不构成投资建议。</p>
   </footer>
 </div>
 
@@ -219,7 +275,12 @@
   var COLLAPSE_N = 12;   // 长表默认只显示前 N 只
 
   document.getElementById("updated").innerHTML =
-    '<span class="dot">●</span>数据更新于 ' + esc(data.updated_at);
+    '<span class="dot">●</span>数据更新于 ' + esc(data.updated_at) +
+    '　·　申购额度采集于 <span class="limit-stamp">' +
+    esc(data.limit_captured_at || data.updated_at) + "</span>";
+
+  renderQuality();
+  renderChanges();
 
   var w = data.weights || {};
   document.getElementById("weights-note").textContent =
@@ -229,6 +290,82 @@
 
   var INDEX_ORDER = ["SPX", "NDX100"];
   var app = document.getElementById("app");
+
+  /** 数据质量提示：额度是核心数据，有任何不确定都要说清楚 */
+  function renderQuality() {
+    var q = data.quality || {};
+    var issues = [];
+    if ((q.limit_unresolved || []).length) {
+      issues.push("有 " + q.limit_unresolved.length +
+        " 只基金官方只标『限大额』但未公布具体额度（页面显示为额度未公布）");
+    }
+    if ((q.limit_crosscheck_conflicts || []).length) {
+      issues.push("有 " + q.limit_crosscheck_conflicts.length +
+        " 只基金两个数据源的申购状态不一致，已在表中标注，请以基金公司公告为准");
+    }
+    if ((q.tracking_error_failed || []).length) {
+      issues.push("有 " + q.tracking_error_failed.length + " 只基金的跟踪误差本次抓取失败");
+    }
+    if (q.score_estimated_count) {
+      issues.push("有 " + q.score_estimated_count +
+        " 只基金因个别指标缺失、该项按同组中位数补位计分（得分旁标『估』）");
+    }
+
+    var box = el("div", "quality " + (issues.length ? "warn" : "ok"));
+    var body = el("div");
+    if (issues.length) {
+      body.appendChild(el("div", null, "数据完整性提示：" + issues.join("；") + "。"));
+    } else {
+      body.appendChild(el("div", null,
+        "本次采集完整：" + q.fund_count + " 只基金全部取得申购额度与费率，" +
+        "其中 " + (q.limit_crosscheck_confirmed || 0) + " 只的申购状态已由第二个独立数据源交叉验证一致。"));
+    }
+    box.appendChild(body);
+    document.getElementById("quality").appendChild(box);
+  }
+
+  /** 额度变动：监控额度的核心价值就是看见变化 */
+  function renderChanges() {
+    var changes = data.changes || [];
+    var hist = data.history || [];
+    var box = el("div", "changes");
+    box.appendChild(el("h4", null, "申购额度变动"));
+
+    if (changes.length) {
+      var ul = document.createElement("ul");
+      changes.forEach(function (c) {
+        var li = document.createElement("li");
+        li.appendChild(chgBadge(c.direction));
+        li.appendChild(el("b", null, " " + shortName(c.name)));
+        li.appendChild(el("span", "code", c.code));
+        li.appendChild(document.createTextNode("　" + c.from + " → " + c.to));
+        ul.appendChild(li);
+      });
+      box.appendChild(ul);
+    } else {
+      box.appendChild(el("div", "none", "本次采集较上一次无额度变动。"));
+    }
+
+    if (hist.length) {
+      var recent = hist.slice(0, 5).map(function (h) {
+        return h.at.slice(5, 16) + " " + shortName(h.name) + " " + h.from + "→" + h.to;
+      });
+      box.appendChild(el("div", "none", "近期记录：" + recent.join("；")));
+    }
+    document.getElementById("changes").appendChild(box);
+  }
+
+  function chgBadge(dir) {
+    var map = {
+      loosened:  ["loosened",  "↑ 额度放宽"],
+      tightened: ["tightened", "↓ 额度收紧"],
+      suspended: ["suspended", "● 转为暂停"],
+      reopened:  ["reopened",  "● 恢复申购"],
+      changed:   ["changed",   "· 额度变更"]
+    };
+    var m = map[dir] || map.changed;
+    return el("span", "chg " + m[0], m[1]);
+  }
 
   INDEX_ORDER.forEach(function (idx) {
     var funds = data.funds.filter(function (f) { return f.index === idx; });
@@ -252,13 +389,35 @@
     var prems = etf.map(function (f) { return f.premium; }).filter(isNum);
     var minPrem = prems.length ? Math.min.apply(null, prems) : null;
 
+    var nLof = otc.filter(function (f) { return isNum(f.lof_premium); }).length;
     var tiles = el("div", "tiles");
-    tiles.appendChild(tile("场外可申购", buyable.length + " / " + otc.length + " 只", "含限购额度内可买"));
+    tiles.appendChild(tile("场外现在能买", buyable.length + " / " + otc.length + " 只",
+      nLof ? "含 " + nLof + " 只场外暂停但场内 LOF 可买" : "含限购额度内可买"));
     tiles.appendChild(tile("单日限额最宽",
       hasOpen ? "不限" : (maxLimit > 0 ? fmtMoney(maxLimit) + "/日" : "全部暂停"),
       "场外基金中的最大值"));
     tiles.appendChild(tile("ETF 最低参考溢价", minPrem === null ? "—" : minPrem.toFixed(2) + "%", "溢价越低越接近净值"));
     sec.appendChild(tiles);
+
+    // 场外暂停但场内 LOF 可买的基金，因额度得分为 0 会排在后面，单独提示以免被漏看
+    var lofs = otc.filter(function (f) { return isNum(f.lof_premium); });
+    if (lofs.length) {
+      var note = el("div", "lof-note");
+      lofs.forEach(function (f) {
+        var line = el("div");
+        line.innerHTML = "场外" +
+          (f.limit_type === "suspended" ? "已暂停申购" : "申购受限") +
+          "，但 <b>" + esc(shortName(f.name)) + "（" + f.code +
+          "）</b>的场内份额 <b>" + esc(f.lof_name) + "</b> 仍可用券商账户买卖，" +
+          "溢价 <b>" + (f.lof_premium >= 0 ? "+" : "") + f.lof_premium.toFixed(2) + "%</b>" +
+          (prems.length
+            ? "，低于同指数 ETF 的 " + minPrem.toFixed(2) + "%~" +
+              Math.max.apply(null, prems).toFixed(2) + "%。"
+            : "。");
+        note.appendChild(line);
+      });
+      sec.appendChild(note);
+    }
 
     if (otc.length) {
       sec.appendChild(el("h3", "sub", "场外基金（按综合得分排序，额度为每日申购上限）"));
@@ -394,7 +553,7 @@
 
           if (c.key === "_rank") { td.textContent = i + 1; }
           else if (c.key === "_name") { fillNameCell(td, f, i + 1); }
-          else if (c.key === "score") { td.appendChild(scoreCell(f.score)); }
+          else if (c.key === "score") { td.appendChild(scoreCell(f)); }
           else { td.innerHTML = c.fmt(f); }
           tr.appendChild(td);
         });
@@ -449,7 +608,24 @@
     };
     var m = map[f.limit_type] || ["neutral", f.status || "—"];
     var t = f.status_mark ? ' title="' + esc(f.status_mark) + '"' : "";
-    return '<span class="badge ' + m[0] + '"' + t + "><i></i>" + m[1] + "</span>";
+    var html = '<span class="badge ' + m[0] + '"' + t + "><i></i>" + m[1] + "</span>";
+
+    // 场外申购受限，但场内 LOF 仍可买卖——这往往是当下最划算的通道
+    if (isNum(f.lof_premium)) {
+      html += '<span class="lof" title="' + esc(f.lof_name || "场内份额") +
+        " 现价 " + f.lof_price + "，相对最近一日净值溢价 " + f.lof_premium.toFixed(2) +
+        '%（券商账户可直接买卖，不受场外申购额度限制）">场内可买 ' +
+        (f.lof_premium >= 0 ? "+" : "") + f.lof_premium.toFixed(2) + "%</span>";
+    }
+    // 相对上次采集的额度变动
+    if (f.limit_change) {
+      var d = f.limit_change;
+      var lbl = { loosened: "↑ 放宽", tightened: "↓ 收紧",
+                  suspended: "● 转暂停", reopened: "● 恢复", changed: "· 变更" };
+      html += '<span class="chg ' + d.direction + '" title="上次采集：' +
+        esc(d.prev_label) + '">' + (lbl[d.direction] || lbl.changed) + "</span>";
+    }
+    return html;
   }
   function limitSortVal(f) {
     if (f.limit_type === "open") return 1e9;
@@ -457,8 +633,10 @@
     if (f.limit_type === "suspended") return 0;
     return null;
   }
+  /** 能买到就算可申购：场外额度内可买，或场外暂停但场内 LOF 仍可买卖 */
   function isBuyable(f) {
-    return f.limit_type === "limited" || f.limit_type === "open";
+    return f.limit_type === "limited" || f.limit_type === "open" ||
+           f.limit_type === "unknown" || isNum(f.lof_premium);
   }
   function fmtPremium(f) {
     if (!isNum(f.premium)) return "—";
@@ -476,7 +654,8 @@
   }
   function fmtPct(v) { return isNum(v) ? v.toFixed(2) + "%" : "—"; }
   function fmtScale(v) { return isNum(v) ? (v / 1e8).toFixed(1) + " 亿" : "—"; }
-  function scoreCell(score) {
+  function scoreCell(f) {
+    var score = f.score;
     var box = el("span", "scorecell");
     var bar = el("span", "scorebar");
     var fill = document.createElement("span");
@@ -484,6 +663,14 @@
     bar.appendChild(fill);
     box.appendChild(bar);
     box.appendChild(el("span", "scoreval", isNum(score) ? score.toFixed(1) : "—"));
+    var est = f.score_estimated || [];
+    if (est.length) {
+      var names = { fee: "年持有成本", tracking_error: "跟踪误差", scale: "规模", limit: "申购额度" };
+      var mark = el("span", "est", "估");
+      mark.title = est.map(function (k) { return names[k] || k; }).join("、") +
+        "缺失，该项已按同组中位数补位计分（不会因缺数据而虚高）";
+      box.appendChild(mark);
+    }
     return box;
   }
 
