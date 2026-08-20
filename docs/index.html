@@ -63,7 +63,7 @@
     font-size: 14px;
     line-height: 1.55;
   }
-  .wrap { max-width: 1080px; margin: 0 auto; padding: 24px 16px 48px; }
+  .wrap { max-width: 1140px; margin: 0 auto; padding: 24px 16px 48px; }
 
   header h1 { font-size: 22px; margin: 0 0 4px; }
   .updated { color: var(--ink-2); font-size: 13px; }
@@ -73,7 +73,7 @@
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: 10px;
-    padding: 18px 18px 8px;
+    padding: 18px 18px 10px;
     margin-top: 20px;
   }
   section.index-block > h2 { margin: 0 0 12px; font-size: 18px; }
@@ -88,18 +88,30 @@
   .tile .v { font-size: 20px; font-weight: 650; margin-top: 2px; }
   .tile .s { color: var(--ink-muted); font-size: 12px; }
 
-  h3.sub { font-size: 14px; color: var(--ink-2); margin: 18px 0 8px; font-weight: 600; }
+  h3.sub { font-size: 14px; color: var(--ink-2); margin: 18px 0 6px; font-weight: 600; }
+
+  .controls {
+    display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+    font-size: 12px; color: var(--ink-2); margin-bottom: 6px;
+  }
+  .controls label { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; }
+  .controls input { accent-color: var(--seq); margin: 0; }
+  .linkbtn {
+    background: none; border: none; padding: 0; font: inherit;
+    color: var(--seq); cursor: pointer; text-decoration: underline;
+  }
 
   .table-wrap { overflow-x: auto; margin: 0 -18px; padding: 0 18px 14px; }
-  table { border-collapse: collapse; width: 100%; min-width: 720px; }
+  table { border-collapse: collapse; width: 100%; }
   th, td { padding: 7px 10px; text-align: right; white-space: nowrap; }
-  th:nth-child(-n+3), td:nth-child(-n+3) { text-align: left; }
+  th:nth-child(-n+2), td:nth-child(-n+2) { text-align: left; }
   thead th {
     color: var(--ink-muted); font-weight: 600; font-size: 12px;
     border-bottom: 1px solid var(--baseline);
-    cursor: pointer; user-select: none; position: sticky; top: 0;
+    user-select: none; position: sticky; top: 0;
     background: var(--surface);
   }
+  thead th.sortable { cursor: pointer; }
   thead th.sorted { color: var(--ink); }
   tbody tr { border-bottom: 1px solid var(--grid); }
   tbody tr:last-child { border-bottom: none; }
@@ -108,10 +120,12 @@
   td .code { color: var(--ink-muted); font-size: 12px; margin-left: 6px; }
   td a { color: inherit; text-decoration: none; border-bottom: 1px dotted var(--baseline); }
   td a:hover { border-bottom-color: var(--ink-2); }
+  td.card-name .rank-inline { display: none; }
+  .empty { color: var(--ink-muted); padding: 14px 0; }
 
   .badge {
     display: inline-flex; align-items: center; gap: 5px;
-    font-size: 12px; color: var(--ink-2);
+    font-size: 12px; color: var(--ink-2); white-space: nowrap;
   }
   .badge i {
     width: 8px; height: 8px; border-radius: 50%;
@@ -121,13 +135,14 @@
   .badge.warn i     { background: var(--warning); }
   .badge.crit i     { background: var(--critical); }
   .badge.neutral i  { background: var(--baseline); }
+  .badge-mini { margin-left: 8px; }
 
-  .limit-strong { font-weight: 650; }
+  .limit-strong { font-weight: 650; color: var(--ink); }
   .prem-high { color: var(--serious); font-weight: 600; }
 
   .scorecell { display: inline-flex; align-items: center; gap: 8px; }
   .scorebar {
-    width: 72px; height: 4px; border-radius: 2px;
+    width: 60px; height: 4px; border-radius: 2px;
     background: var(--seq-track); overflow: hidden; flex: none;
   }
   .scorebar span { display: block; height: 100%; border-radius: 2px; background: var(--seq); }
@@ -136,6 +151,42 @@
   footer { margin-top: 22px; color: var(--ink-muted); font-size: 12px; }
   footer p { margin: 6px 0; }
   #load-error { color: var(--critical); padding: 24px 0; display: none; }
+
+  /* 窄屏：表格转为卡片，彻底避免横向滚动 */
+  @media (max-width: 760px) {
+    .wrap { padding: 18px 12px 40px; }
+    section.index-block { padding: 14px 12px 8px; }
+    .table-wrap { overflow-x: visible; margin: 0; padding: 0 0 8px; }
+    table, tbody { display: block; }
+    thead { display: none; }
+    tbody tr {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 1px 12px;
+      border: 1px solid var(--border); border-radius: 8px;
+      padding: 10px 12px; margin-bottom: 8px;
+    }
+    tbody td {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 2px 0; text-align: right;
+    }
+    tbody td::before {
+      content: attr(data-label);
+      color: var(--ink-muted); font-size: 12px; margin-right: 10px;
+    }
+    td.card-rank { display: none; }
+    td.card-name, td.card-full, td.card-score { grid-column: 1 / -1; }
+    td.card-name {
+      justify-content: flex-start; text-align: left;
+      font-weight: 600; padding-bottom: 6px; white-space: normal;
+    }
+    td.card-name::before { content: none; }
+    td.card-name .rank-inline {
+      display: inline-block; color: var(--ink-muted);
+      font-weight: 600; margin-right: 8px;
+    }
+    td.card-score { border-top: 1px solid var(--grid); margin-top: 4px; padding-top: 6px; }
+    td.card-score .scorecell { flex: 1; margin-left: 12px; }
+    td.card-score .scorebar { flex: 1; width: auto; }
+  }
 </style>
 </head>
 <body>
@@ -150,7 +201,7 @@
 
   <footer>
     <p id="weights-note"></p>
-    <p>综合得分为同组（同指数、同场内外）归一化后的加权分，仅用于横向比较：年持有成本=管理费+托管费+销售服务费；限额取自基金公司公告的单日累计购买上限；ETF 的“参考溢价率”=现价相对最近一日净值，含隔夜美股涨跌影响，仅供参考。</p>
+    <p>基金名称已省略板块标题中重复的指数名与 QDII 字样，鼠标悬停可看完整全称。综合得分为同组（同指数、同场内外）归一化后的加权分，仅用于横向比较：年持有成本=管理费+托管费+销售服务费；限额取自基金公司公告的单日累计购买上限；ETF 的"参考溢价率"=现价相对最近一日净值，含隔夜美股涨跌影响，仅供参考。</p>
     <p>数据来源：天天基金 / 东方财富公开页面，每日刷新一次。本页仅为信息整理，不构成投资建议。</p>
   </footer>
 </div>
@@ -164,6 +215,8 @@
     document.getElementById("load-error").style.display = "block";
     return;
   }
+
+  var COLLAPSE_N = 12;   // 长表默认只显示前 N 只
 
   document.getElementById("updated").innerHTML =
     '<span class="dot">●</span>数据更新于 ' + esc(data.updated_at);
@@ -191,8 +244,7 @@
     sec.className = "index-block";
     sec.appendChild(el("h2", null, label === "标普500" ? "标普500（SPX）" : "纳指100（NDX100）"));
 
-    // 统计瓦片
-    var buyable = otc.filter(function (f) { return f.limit_type === "limited" || f.limit_type === "open"; });
+    var buyable = otc.filter(isBuyable);
     var maxLimit = Math.max.apply(null, [0].concat(
       otc.filter(function (f) { return f.limit_type === "limited"; })
          .map(function (f) { return f.daily_limit; })));
@@ -209,7 +261,7 @@
     sec.appendChild(tiles);
 
     if (otc.length) {
-      sec.appendChild(el("h3", "sub", "场外基金（按综合得分排序，申购限额为每日上限）"));
+      sec.appendChild(el("h3", "sub", "场外基金（按综合得分排序，额度为每日申购上限）"));
       sec.appendChild(buildTable(otc, false));
     }
     if (etf.length) {
@@ -221,41 +273,71 @@
 
   function buildTable(rows, isEtf) {
     var cols = isEtf ? [
-      { key: "_rank",  label: "#",        num: true },
-      { key: "name",   label: "基金名称 / 代码" },
-      { key: "status", label: "申购状态" },
-      { key: "price",  label: "现价",     num: true, fmt: function (f) { return isNum(f.price) ? f.price.toFixed(3) : "—"; } },
-      { key: "premium",label: "参考溢价", num: true, fmt: fmtPremium },
+      { key: "_rank",  label: "#" },
+      { key: "_name",  label: "基金名称 / 代码" },
+      { key: "score",  label: "综合得分" },
+      { key: "premium", label: "参考溢价", num: true, full: true, fmt: fmtPremium },
+      { key: "price",  label: "现价", num: true,
+        fmt: function (f) { return isNum(f.price) ? f.price.toFixed(3) : "—"; } },
       { key: "annual_fee", label: "年持有成本", num: true, fmt: function (f) { return fmtPct(f.annual_fee); } },
-      { key: "tracking_error", label: "年化跟踪误差", num: true, fmt: function (f) { return fmtPct(f.tracking_error); } },
-      { key: "scale",  label: "规模",     num: true, fmt: function (f) { return fmtScale(f.scale); } },
-      { key: "score",  label: "综合得分", num: true, fmt: null }
+      { key: "tracking_error", label: "跟踪误差", num: true, fmt: function (f) { return fmtPct(f.tracking_error); } },
+      { key: "scale",  label: "规模", num: true, fmt: function (f) { return fmtScale(f.scale); } }
     ] : [
-      { key: "_rank",  label: "#",        num: true },
-      { key: "name",   label: "基金名称 / 代码" },
-      { key: "status", label: "申购状态" },
-      { key: "daily_limit", label: "每日限额", num: true, fmt: fmtLimitCell, sortVal: limitSortVal },
+      { key: "_rank",  label: "#" },
+      { key: "_name",  label: "基金名称 / 代码" },
+      { key: "score",  label: "综合得分" },
+      { key: "daily_limit", label: "申购额度", full: true, fmt: fmtLimitCell, sortVal: limitSortVal },
       { key: "annual_fee", label: "年持有成本", num: true, fmt: function (f) { return fmtPct(f.annual_fee); } },
-      { key: "buy_fee", label: "申购费(折后)", num: true, fmt: function (f) { return fmtPct(f.buy_fee); } },
-      { key: "tracking_error", label: "年化跟踪误差", num: true, fmt: function (f) { return fmtPct(f.tracking_error); } },
-      { key: "scale",  label: "规模",     num: true, fmt: function (f) { return fmtScale(f.scale); } },
-      { key: "score",  label: "综合得分", num: true, fmt: null }
+      { key: "tracking_error", label: "跟踪误差", num: true, fmt: function (f) { return fmtPct(f.tracking_error); } },
+      { key: "scale",  label: "规模", num: true, fmt: function (f) { return fmtScale(f.scale); } },
+      { key: "buy_fee", label: "申购费", num: true, fmt: function (f) { return fmtPct(f.buy_fee); } }
     ];
 
-    var state = { key: "score", dir: -1 };
+    var state = { key: "score", dir: -1, onlyBuyable: false, expanded: false };
+    var block = el("div", "table-block");
+
+    // ---- 控制行：筛选 / 展开 ----
+    var controls = el("div", "controls");
+    var countText = el("span");
+    var toggleBtn = el("button", "linkbtn");
+    toggleBtn.type = "button";
+    toggleBtn.addEventListener("click", function () {
+      state.expanded = !state.expanded;
+      render();
+    });
+    if (!isEtf) {
+      var lab = el("label");
+      var cb = document.createElement("input");
+      cb.type = "checkbox";
+      cb.addEventListener("change", function () {
+        state.onlyBuyable = cb.checked;
+        state.expanded = false;
+        render();
+      });
+      lab.appendChild(cb);
+      lab.appendChild(el("span", null, "只看可申购"));
+      controls.appendChild(lab);
+    }
+    controls.appendChild(countText);
+    controls.appendChild(toggleBtn);
+    block.appendChild(controls);
+
+    // ---- 表格 ----
     var wrapEl = el("div", "table-wrap");
     var tbl = document.createElement("table");
     var thead = document.createElement("thead");
     var trh = document.createElement("tr");
     cols.forEach(function (c) {
       var th = el("th", c.num ? "num" : null, c.label);
-      th.title = "点击排序";
-      th.addEventListener("click", function () {
-        if (c.key === "_rank" || c.key === "name" || c.key === "status") return;
-        if (state.key === c.key) { state.dir = -state.dir; }
-        else { state.key = c.key; state.dir = -1; }
-        render();
-      });
+      if (c.key !== "_rank" && c.key !== "_name") {
+        th.classList.add("sortable");
+        th.title = "点击排序";
+        th.addEventListener("click", function () {
+          if (state.key === c.key) { state.dir = -state.dir; }
+          else { state.key = c.key; state.dir = -1; }
+          render();
+        });
+      }
       trh.appendChild(th);
     });
     thead.appendChild(trh);
@@ -263,10 +345,17 @@
     var tbody = document.createElement("tbody");
     tbl.appendChild(tbody);
     wrapEl.appendChild(tbl);
+    block.appendChild(wrapEl);
+
+    var emptyMsg = el("div", "empty", "当前没有可申购的基金。");
+    emptyMsg.style.display = "none";
+    block.appendChild(emptyMsg);
 
     function render() {
       var col = cols.filter(function (c) { return c.key === state.key; })[0];
-      var sorted = rows.slice().sort(function (a, b) {
+      var list = rows.slice();
+      if (state.onlyBuyable) list = list.filter(isBuyable);
+      list.sort(function (a, b) {
         var va = col && col.sortVal ? col.sortVal(a) : a[state.key];
         var vb = col && col.sortVal ? col.sortVal(b) : b[state.key];
         va = isNum(va) ? va : (state.dir === -1 ? -Infinity : Infinity);
@@ -274,26 +363,37 @@
         return state.dir === -1 ? vb - va : va - vb;
       });
 
+      var total = list.length;
+      var collapsed = !state.expanded && total > COLLAPSE_N;
+      var shown = collapsed ? list.slice(0, COLLAPSE_N) : list;
+
       Array.prototype.forEach.call(trh.children, function (th, i) {
         th.classList.toggle("sorted", cols[i].key === state.key);
       });
 
+      countText.textContent = collapsed
+        ? "共 " + total + " 只，显示得分最高的 " + shown.length + " 只"
+        : "共 " + total + " 只，已全部显示";
+      toggleBtn.textContent = collapsed ? "展开全部" : (total > COLLAPSE_N ? "收起" : "");
+      toggleBtn.style.display = total > COLLAPSE_N ? "" : "none";
+      emptyMsg.style.display = total ? "none" : "";
+      wrapEl.style.display = total ? "" : "none";
+
       tbody.innerHTML = "";
-      sorted.forEach(function (f, i) {
+      shown.forEach(function (f, i) {
         var tr = document.createElement("tr");
         if (f.limit_type === "suspended") tr.className = "suspended";
         cols.forEach(function (c) {
-          var td = el("td", c.num ? "num" : null);
+          var cls = c.num ? "num" : null;
+          if (c.key === "_rank") cls = "num card-rank";
+          else if (c.key === "_name") cls = "card-name";
+          else if (c.key === "score") cls = "num card-score";
+          else if (c.full) cls = (cls ? cls + " " : "") + "card-full";
+          var td = el("td", cls);
+          if (c.key !== "_rank" && c.key !== "_name") td.setAttribute("data-label", c.label);
+
           if (c.key === "_rank") { td.textContent = i + 1; }
-          else if (c.key === "name") {
-            var a = document.createElement("a");
-            a.href = "https://fund.eastmoney.com/" + f.code + ".html";
-            a.target = "_blank"; a.rel = "noopener";
-            a.textContent = f.name;
-            td.appendChild(a);
-            td.appendChild(el("span", "code", f.code));
-          }
-          else if (c.key === "status") { td.appendChild(statusBadge(f)); }
+          else if (c.key === "_name") { fillNameCell(td, f, i + 1); }
           else if (c.key === "score") { td.appendChild(scoreCell(f.score)); }
           else { td.innerHTML = c.fmt(f); }
           tr.appendChild(td);
@@ -302,30 +402,54 @@
       });
     }
     render();
-    return wrapEl;
+    return block;
   }
 
-  // ---- 格式化 ----
-  function statusBadge(f) {
+  // ---- 单元格 ----
+  function fillNameCell(td, f, rank) {
+    td.appendChild(el("span", "rank-inline", "#" + rank));
+    var a = document.createElement("a");
+    a.href = "https://fund.eastmoney.com/" + f.code + ".html";
+    a.target = "_blank"; a.rel = "noopener";
+    a.textContent = shortName(f.name);
+    a.title = f.name;
+    td.appendChild(a);
+    td.appendChild(el("span", "code", f.code));
+    // 场内 ETF 申赎暂停会放大溢价，单独标出
+    if (f.is_etf && f.limit_type === "suspended") {
+      var b = el("span", "badge crit badge-mini");
+      b.appendChild(document.createElement("i"));
+      b.appendChild(document.createTextNode("申赎暂停"));
+      b.title = f.status_mark || "一级市场申赎暂停，溢价可能偏高";
+      td.appendChild(b);
+    }
+  }
+
+  /** 板块标题已注明指数，名称里省去重复的指数名与 QDII 字样 */
+  function shortName(full) {
+    var s = String(full)
+      .replace(/QDII-LOF/g, "LOF")
+      .replace(/[（(]\s*QDII\s*[）)]/g, "")
+      .replace(/QDII/g, "")
+      .replace(/标准普尔500|标普500|纳斯达克100|纳斯达克|纳指100|纳指/g, "")
+      .replace(/[（(]\s*[）)]/g, "")
+      .replace(/^[·\-\s]+|[·\-\s]+$/g, "")
+      .trim();
+    if (/^ETF/.test(s)) s = s.replace(/^ETF/, "") + "ETF";  // "ETF嘉实" → "嘉实ETF"
+    return s.length >= 2 ? s : String(full);
+  }
+
+  function fmtLimitCell(f) {
     var map = {
-      open:      ["good",    "开放申购"],
-      limited:   ["warn",    f.status || "限大额"],
-      unknown:   ["warn",    (f.status || "限大额") + "（额度未公布）"],
-      suspended: ["crit",    "暂停申购"],
+      open:      ["good", '<span class="limit-strong">不限</span>'],
+      limited:   ["warn", '<span class="limit-strong">' + fmtMoney(f.daily_limit) + "/日</span>"],
+      unknown:   ["warn", (f.status || "限大额") + "（额度未公布）"],
+      suspended: ["crit", "暂停申购"],
       exchange:  ["neutral", "场内交易"]
     };
     var m = map[f.limit_type] || ["neutral", f.status || "—"];
-    var b = el("span", "badge " + m[0]);
-    b.appendChild(document.createElement("i"));
-    b.appendChild(document.createTextNode(m[1]));
-    if (f.status_mark) b.title = f.status_mark;
-    return b;
-  }
-  function fmtLimitCell(f) {
-    if (f.limit_type === "suspended") return '<span>0 元</span>';
-    if (f.limit_type === "open") return '<span class="limit-strong">不限</span>';
-    if (f.limit_type === "limited") return '<span class="limit-strong">' + fmtMoney(f.daily_limit) + "/日</span>";
-    return "未公布";
+    var t = f.status_mark ? ' title="' + esc(f.status_mark) + '"' : "";
+    return '<span class="badge ' + m[0] + '"' + t + "><i></i>" + m[1] + "</span>";
   }
   function limitSortVal(f) {
     if (f.limit_type === "open") return 1e9;
@@ -333,10 +457,15 @@
     if (f.limit_type === "suspended") return 0;
     return null;
   }
+  function isBuyable(f) {
+    return f.limit_type === "limited" || f.limit_type === "open";
+  }
   function fmtPremium(f) {
     if (!isNum(f.premium)) return "—";
     var s = f.premium.toFixed(2) + "%";
-    if (f.premium >= 5) return '<span class="prem-high" title="现价明显高于净值，买入即承担溢价回落风险">' + s + " ▲高</span>";
+    if (f.premium >= 5) {
+      return '<span class="prem-high" title="现价明显高于净值，买入即承担溢价回落风险">' + s + " ▲高</span>";
+    }
     return s;
   }
   function fmtMoney(v) {
