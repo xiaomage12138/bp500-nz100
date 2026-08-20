@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-08-19 21:05:15",
+ "updated_at": "2026-08-19 21:06:15",
  "weights": {
   "fee": 0.25,
   "tracking_error": 0.25,
@@ -60,6 +60,31 @@
     "limit": null
    },
    "score": 79.9
+  },
+  {
+   "code": "019172",
+   "name": "摩根纳斯达克100指数(QDII)人民币A",
+   "index": "NDX100",
+   "is_etf": false,
+   "status": "限大额",
+   "status_mark": "限大额(单日累计购买上限10元。)",
+   "daily_limit": 10.0,
+   "limit_type": "limited",
+   "annual_fee": 0.6,
+   "buy_fee": 0.12,
+   "scale": 2968994604.47,
+   "scale_date": "2026-06-30",
+   "nav": 1.7545,
+   "nav_date": "2026-08-18",
+   "tracking_error": null,
+   "company": "摩根基金(中国)",
+   "scores": {
+    "fee": 100.0,
+    "tracking_error": null,
+    "scale": 77.3,
+    "limit": 61.0
+   },
+   "score": 79.4
   },
   {
    "code": "016452",
@@ -137,6 +162,31 @@
    "score": 73.9
   },
   {
+   "code": "018966",
+   "name": "汇添富纳斯达克100ETF发起式联接(QDII)人民币A",
+   "index": "NDX100",
+   "is_etf": false,
+   "status": "限大额",
+   "status_mark": "限大额(单日累计购买上限10元。)",
+   "daily_limit": 10.0,
+   "limit_type": "limited",
+   "annual_fee": 0.65,
+   "buy_fee": 0.12,
+   "scale": 1633433512.76,
+   "scale_date": "2026-06-30",
+   "nav": 1.647,
+   "nav_date": "2026-08-18",
+   "tracking_error": null,
+   "company": "汇添富基金",
+   "scores": {
+    "fee": 92.9,
+    "tracking_error": null,
+    "scale": 67.6,
+    "limit": 61.0
+   },
+   "score": 73.8
+  },
+  {
    "code": "000834",
    "name": "大成纳斯达克100ETF联接(QDII)A",
    "index": "NDX100",
@@ -210,31 +260,6 @@
     "limit": 61.0
    },
    "score": 69.1
-  },
-  {
-   "code": "018966",
-   "name": "汇添富纳斯达克100ETF发起式联接(QDII)人民币A",
-   "index": "NDX100",
-   "is_etf": false,
-   "status": "限大额",
-   "status_mark": "限大额(单日累计购买上限10元。)",
-   "daily_limit": 10.0,
-   "limit_type": "limited",
-   "annual_fee": 0.65,
-   "buy_fee": 0.12,
-   "scale": 1633433512.76,
-   "scale_date": "2026-06-30",
-   "nav": 1.647,
-   "nav_date": "2026-08-18",
-   "tracking_error": 1.73,
-   "company": "汇添富基金",
-   "scores": {
-    "fee": 92.9,
-    "tracking_error": 51.7,
-    "scale": 67.6,
-    "limit": 61.0
-   },
-   "score": 68.3
   },
   {
    "code": "019524",
@@ -362,31 +387,6 @@
    "score": 61.9
   },
   {
-   "code": "019172",
-   "name": "摩根纳斯达克100指数(QDII)人民币A",
-   "index": "NDX100",
-   "is_etf": false,
-   "status": "限大额",
-   "status_mark": "限大额(单日累计购买上限10元。)",
-   "daily_limit": 10.0,
-   "limit_type": "limited",
-   "annual_fee": 0.6,
-   "buy_fee": 0.12,
-   "scale": 2968994604.47,
-   "scale_date": "2026-06-30",
-   "nav": 1.7545,
-   "nav_date": "2026-08-18",
-   "tracking_error": 2.35,
-   "company": "摩根基金(中国)",
-   "scores": {
-    "fee": 100.0,
-    "tracking_error": 9.0,
-    "scale": 77.3,
-    "limit": 61.0
-   },
-   "score": 61.8
-  },
-  {
    "code": "018043",
    "name": "天弘纳斯达克100指数发起(QDII)A",
    "index": "NDX100",
@@ -460,6 +460,31 @@
     "limit": 61.0
    },
    "score": 59.8
+  },
+  {
+   "code": "019173",
+   "name": "摩根纳斯达克100指数(QDII)人民币C",
+   "index": "NDX100",
+   "is_etf": false,
+   "status": "限大额",
+   "status_mark": "限大额(单日累计购买上限10元。)",
+   "daily_limit": 10.0,
+   "limit_type": "limited",
+   "annual_fee": 0.9,
+   "buy_fee": 0.0,
+   "scale": 1080342036.99,
+   "scale_date": "2026-06-30",
+   "nav": 1.7386,
+   "nav_date": "2026-08-18",
+   "tracking_error": null,
+   "company": "摩根基金(中国)",
+   "scores": {
+    "fee": 57.1,
+    "tracking_error": null,
+    "scale": 61.0,
+    "limit": 61.0
+   },
+   "score": 59.7
   },
   {
    "code": "016532",
@@ -785,31 +810,6 @@
     "limit": 61.0
    },
    "score": 47.8
-  },
-  {
-   "code": "019173",
-   "name": "摩根纳斯达克100指数(QDII)人民币C",
-   "index": "NDX100",
-   "is_etf": false,
-   "status": "限大额",
-   "status_mark": "限大额(单日累计购买上限10元。)",
-   "daily_limit": 10.0,
-   "limit_type": "limited",
-   "annual_fee": 0.9,
-   "buy_fee": 0.0,
-   "scale": 1080342036.99,
-   "scale_date": "2026-06-30",
-   "nav": 1.7386,
-   "nav_date": "2026-08-18",
-   "tracking_error": 2.34,
-   "company": "摩根基金(中国)",
-   "scores": {
-    "fee": 57.1,
-    "tracking_error": 9.7,
-    "scale": 61.0,
-    "limit": 61.0
-   },
-   "score": 47.2
   },
   {
    "code": "016057",
