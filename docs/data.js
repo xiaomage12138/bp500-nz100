@@ -1,5 +1,6 @@
 window.FUND_DATA = {
- "updated_at": "2026-08-19 21:06:15",
+ "updated_at": "2026-08-19 23:28:22",
+ "limit_captured_at": "2026-08-19 23:28:22",
  "weights": {
   "fee": 0.25,
   "tracking_error": 0.25,
@@ -20,6 +21,7 @@ window.FUND_DATA = {
    "status_mark": "限大额(单日累计购买上限10元。)",
    "daily_limit": 10.0,
    "limit_type": "limited",
+   "limit_crosscheck": "confirmed",
    "annual_fee": 0.8,
    "buy_fee": 0.12,
    "scale": 5810040276.47,
@@ -34,57 +36,8 @@ window.FUND_DATA = {
     "scale": 88.0,
     "limit": 61.0
    },
+   "score_estimated": [],
    "score": 80.1
-  },
-  {
-   "code": "021000",
-   "name": "南方纳斯达克100指数发起(QDII)I",
-   "index": "NDX100",
-   "is_etf": false,
-   "status": "限大额",
-   "status_mark": "",
-   "daily_limit": null,
-   "limit_type": "unknown",
-   "annual_fee": 0.66,
-   "buy_fee": null,
-   "scale": 3136027483.82,
-   "scale_date": "2026-06-30",
-   "nav": 2.2928,
-   "nav_date": "2026-08-18",
-   "tracking_error": 1.46,
-   "company": "南方基金",
-   "scores": {
-    "fee": 91.4,
-    "tracking_error": 70.3,
-    "scale": 78.1,
-    "limit": null
-   },
-   "score": 79.9
-  },
-  {
-   "code": "019172",
-   "name": "摩根纳斯达克100指数(QDII)人民币A",
-   "index": "NDX100",
-   "is_etf": false,
-   "status": "限大额",
-   "status_mark": "限大额(单日累计购买上限10元。)",
-   "daily_limit": 10.0,
-   "limit_type": "limited",
-   "annual_fee": 0.6,
-   "buy_fee": 0.12,
-   "scale": 2968994604.47,
-   "scale_date": "2026-06-30",
-   "nav": 1.7545,
-   "nav_date": "2026-08-18",
-   "tracking_error": null,
-   "company": "摩根基金(中国)",
-   "scores": {
-    "fee": 100.0,
-    "tracking_error": null,
-    "scale": 77.3,
-    "limit": 61.0
-   },
-   "score": 79.4
   },
   {
    "code": "016452",
@@ -95,6 +48,7 @@ window.FUND_DATA = {
    "status_mark": "限大额(单日累计购买上限10元。)",
    "daily_limit": 10.0,
    "limit_type": "limited",
+   "limit_crosscheck": "confirmed",
    "annual_fee": 0.65,
    "buy_fee": 0.12,
    "scale": 6210457713.69,
@@ -109,6 +63,7 @@ window.FUND_DATA = {
     "scale": 89.1,
     "limit": 61.0
    },
+   "score_estimated": [],
    "score": 78.5
   },
   {
@@ -120,6 +75,7 @@ window.FUND_DATA = {
    "status_mark": "限大额(单日累计购买上限50元。)",
    "daily_limit": 50.0,
    "limit_type": "limited",
+   "limit_crosscheck": "confirmed",
    "annual_fee": 1.0,
    "buy_fee": 0.15,
    "scale": 2177013836.58,
@@ -134,7 +90,37 @@ window.FUND_DATA = {
     "scale": 72.3,
     "limit": 100.0
    },
+   "score_estimated": [],
    "score": 76.4
+  },
+  {
+   "code": "021000",
+   "name": "南方纳斯达克100指数发起(QDII)I",
+   "index": "NDX100",
+   "is_etf": false,
+   "status": "限大额",
+   "status_mark": "",
+   "daily_limit": null,
+   "limit_type": "unknown",
+   "limit_crosscheck": "unavailable",
+   "annual_fee": 0.66,
+   "buy_fee": null,
+   "scale": 3136027483.82,
+   "scale_date": "2026-06-30",
+   "nav": 2.2928,
+   "nav_date": "2026-08-18",
+   "tracking_error": 1.46,
+   "company": "南方基金",
+   "scores": {
+    "fee": 91.4,
+    "tracking_error": 70.3,
+    "scale": 78.1,
+    "limit": null
+   },
+   "score_estimated": [
+    "limit"
+   ],
+   "score": 75.2
   },
   {
    "code": "016453",
@@ -145,6 +131,7 @@ window.FUND_DATA = {
    "status_mark": "限大额(单日累计购买上限10元。)",
    "daily_limit": 10.0,
    "limit_type": "limited",
+   "limit_crosscheck": "confirmed",
    "annual_fee": 0.75,
    "buy_fee": 0.0,
    "scale": 4832996804.46,
@@ -159,32 +146,8 @@ window.FUND_DATA = {
     "scale": 85.1,
     "limit": 61.0
    },
+   "score_estimated": [],
    "score": 73.9
-  },
-  {
-   "code": "018966",
-   "name": "汇添富纳斯达克100ETF发起式联接(QDII)人民币A",
-   "index": "NDX100",
-   "is_etf": false,
-   "status": "限大额",
-   "status_mark": "限大额(单日累计购买上限10元。)",
-   "daily_limit": 10.0,
-   "limit_type": "limited",
-   "annual_fee": 0.65,
-   "buy_fee": 0.12,
-   "scale": 1633433512.76,
-   "scale_date": "2026-06-30",
-   "nav": 1.647,
-   "nav_date": "2026-08-18",
-   "tracking_error": null,
-   "company": "汇添富基金",
-   "scores": {
-    "fee": 92.9,
-    "tracking_error": null,
-    "scale": 67.6,
-    "limit": 61.0
-   },
-   "score": 73.8
   },
   {
    "code": "000834",
@@ -195,6 +158,7 @@ window.FUND_DATA = {
    "status_mark": "限大额(单日累计购买上限10元。)",
    "daily_limit": 10.0,
    "limit_type": "limited",
+   "limit_crosscheck": "confirmed",
    "annual_fee": 1.0,
    "buy_fee": 0.12,
    "scale": 4886894194.73,
@@ -209,6 +173,7 @@ window.FUND_DATA = {
     "scale": 85.3,
     "limit": 61.0
    },
+   "score_estimated": [],
    "score": 72.3
   },
   {
@@ -220,6 +185,7 @@ window.FUND_DATA = {
    "status_mark": "限大额(单日累计购买上限5元。)",
    "daily_limit": 5.0,
    "limit_type": "limited",
+   "limit_crosscheck": "confirmed",
    "annual_fee": 1.0,
    "buy_fee": 0.13,
    "scale": 12223128151.65,
@@ -234,6 +200,7 @@ window.FUND_DATA = {
     "scale": 100.0,
     "limit": 45.6
    },
+   "score_estimated": [],
    "score": 71.6
   },
   {
@@ -245,6 +212,7 @@ window.FUND_DATA = {
    "status_mark": "限大额(单日累计购买上限10元。)",
    "daily_limit": 10.0,
    "limit_type": "limited",
+   "limit_crosscheck": "confirmed",
    "annual_fee": 0.65,
    "buy_fee": 0.12,
    "scale": 2178357942.75,
@@ -259,7 +227,35 @@ window.FUND_DATA = {
     "scale": 72.3,
     "limit": 61.0
    },
+   "score_estimated": [],
    "score": 69.1
+  },
+  {
+   "code": "018966",
+   "name": "汇添富纳斯达克100ETF发起式联接(QDII)人民币A",
+   "index": "NDX100",
+   "is_etf": false,
+   "status": "限大额",
+   "status_mark": "限大额(单日累计购买上限10元。)",
+   "daily_limit": 10.0,
+   "limit_type": "limited",
+   "limit_crosscheck": "confirmed",
+   "annual_fee": 0.65,
+   "buy_fee": 0.12,
+   "scale": 1633433512.76,
+   "scale_date": "2026-06-30",
+   "nav": 1.647,
+   "nav_date": "2026-08-18",
+   "tracking_error": 1.73,
+   "company": "汇添富基金",
+   "scores": {
+    "fee": 92.9,
+    "tracking_error": 51.7,
+    "scale": 67.6,
+    "limit": 61.0
+   },
+   "score_estimated": [],
+   "score": 68.3
   },
   {
    "code": "019524",
@@ -270,6 +266,7 @@ window.FUND_DATA = {
    "status_mark": "限大额(单日累计购买上限10元。)",
    "daily_limit": 10.0,
    "limit_type": "limited",
+   "limit_crosscheck": "confirmed",
    "annual_fee": 0.65,
    "buy_fee": 0.12,
    "scale": 816089711.13,
@@ -284,6 +281,7 @@ window.FUND_DATA = {
     "scale": 56.5,
     "limit": 61.0
    },
+   "score_estimated": [],
    "score": 68.0
   },
   {
@@ -295,6 +293,7 @@ window.FUND_DATA = {
    "status_mark": "限大额(单日累计购买上限10元。)",
    "daily_limit": 10.0,
    "limit_type": "limited",
+   "limit_crosscheck": "confirmed",
    "annual_fee": 0.65,
    "buy_fee": 0.12,
    "scale": 1062873419.57,
@@ -309,6 +308,7 @@ window.FUND_DATA = {
     "scale": 60.7,
     "limit": 61.0
    },
+   "score_estimated": [],
    "score": 67.8
   },
   {
@@ -320,6 +320,7 @@ window.FUND_DATA = {
    "status_mark": "限大额(单日累计购买上限10元。)",
    "daily_limit": 10.0,
    "limit_type": "limited",
+   "limit_crosscheck": "confirmed",
    "annual_fee": 1.0,
    "buy_fee": 0.0,
    "scale": 1347831808.72,
@@ -334,6 +335,7 @@ window.FUND_DATA = {
     "scale": 64.6,
     "limit": 61.0
    },
+   "score_estimated": [],
    "score": 67.1
   },
   {
@@ -345,6 +347,7 @@ window.FUND_DATA = {
    "status_mark": "",
    "daily_limit": null,
    "limit_type": "unknown",
+   "limit_crosscheck": "unavailable",
    "annual_fee": 1.18,
    "buy_fee": null,
    "scale": 2147321530.93,
@@ -359,7 +362,10 @@ window.FUND_DATA = {
     "scale": 72.0,
     "limit": null
    },
-   "score": 62.3
+   "score_estimated": [
+    "limit"
+   ],
+   "score": 62.0
   },
   {
    "code": "006479",
@@ -370,6 +376,7 @@ window.FUND_DATA = {
    "status_mark": "限大额(单日累计购买上限5元。)",
    "daily_limit": 5.0,
    "limit_type": "limited",
+   "limit_crosscheck": "confirmed",
    "annual_fee": 1.2,
    "buy_fee": 0.0,
    "scale": 6492998549.28,
@@ -384,7 +391,35 @@ window.FUND_DATA = {
     "scale": 89.8,
     "limit": 45.6
    },
+   "score_estimated": [],
    "score": 61.9
+  },
+  {
+   "code": "019172",
+   "name": "摩根纳斯达克100指数(QDII)人民币A",
+   "index": "NDX100",
+   "is_etf": false,
+   "status": "限大额",
+   "status_mark": "限大额(单日累计购买上限10元。)",
+   "daily_limit": 10.0,
+   "limit_type": "limited",
+   "limit_crosscheck": "confirmed",
+   "annual_fee": 0.6,
+   "buy_fee": 0.12,
+   "scale": 2968994604.47,
+   "scale_date": "2026-06-30",
+   "nav": 1.7545,
+   "nav_date": "2026-08-18",
+   "tracking_error": 2.35,
+   "company": "摩根基金(中国)",
+   "scores": {
+    "fee": 100.0,
+    "tracking_error": 9.0,
+    "scale": 77.3,
+    "limit": 61.0
+   },
+   "score_estimated": [],
+   "score": 61.8
   },
   {
    "code": "018043",
@@ -395,6 +430,7 @@ window.FUND_DATA = {
    "status_mark": "",
    "daily_limit": 0,
    "limit_type": "suspended",
+   "limit_crosscheck": "confirmed",
    "annual_fee": 0.6,
    "buy_fee": 0.1,
    "scale": 3075464626.64,
@@ -409,6 +445,7 @@ window.FUND_DATA = {
     "scale": 77.8,
     "limit": 0.0
    },
+   "score_estimated": [],
    "score": 61.7
   },
   {
@@ -420,6 +457,7 @@ window.FUND_DATA = {
    "status_mark": "",
    "daily_limit": 0,
    "limit_type": "suspended",
+   "limit_crosscheck": "confirmed",
    "annual_fee": 0.6,
    "buy_fee": 0.12,
    "scale": 1782646168.38,
@@ -428,12 +466,17 @@ window.FUND_DATA = {
    "nav_date": "2026-08-18",
    "tracking_error": 1.46,
    "company": "易方达基金",
+   "lof_name": "纳斯达克100LOF",
+   "lof_price": 4.657,
+   "lof_chg": 1.15,
+   "lof_premium": 4.64,
    "scores": {
     "fee": 100.0,
     "tracking_error": 70.3,
     "scale": 69.1,
     "limit": 0.0
    },
+   "score_estimated": [],
    "score": 59.9
   },
   {
@@ -445,6 +488,7 @@ window.FUND_DATA = {
    "status_mark": "限大额(单日累计购买上限10元。)",
    "daily_limit": 10.0,
    "limit_type": "limited",
+   "limit_crosscheck": "confirmed",
    "annual_fee": 0.65,
    "buy_fee": 0.1,
    "scale": 967918008.71,
@@ -459,32 +503,8 @@ window.FUND_DATA = {
     "scale": 59.2,
     "limit": 61.0
    },
+   "score_estimated": [],
    "score": 59.8
-  },
-  {
-   "code": "019173",
-   "name": "摩根纳斯达克100指数(QDII)人民币C",
-   "index": "NDX100",
-   "is_etf": false,
-   "status": "限大额",
-   "status_mark": "限大额(单日累计购买上限10元。)",
-   "daily_limit": 10.0,
-   "limit_type": "limited",
-   "annual_fee": 0.9,
-   "buy_fee": 0.0,
-   "scale": 1080342036.99,
-   "scale_date": "2026-06-30",
-   "nav": 1.7386,
-   "nav_date": "2026-08-18",
-   "tracking_error": null,
-   "company": "摩根基金(中国)",
-   "scores": {
-    "fee": 57.1,
-    "tracking_error": null,
-    "scale": 61.0,
-    "limit": 61.0
-   },
-   "score": 59.7
   },
   {
    "code": "016532",
@@ -495,6 +515,7 @@ window.FUND_DATA = {
    "status_mark": "",
    "daily_limit": 0,
    "limit_type": "suspended",
+   "limit_crosscheck": "confirmed",
    "annual_fee": 0.6,
    "buy_fee": 0.1,
    "scale": 2076998722.98,
@@ -509,6 +530,7 @@ window.FUND_DATA = {
     "scale": 71.5,
     "limit": 0.0
    },
+   "score_estimated": [],
    "score": 59.4
   },
   {
@@ -520,6 +542,7 @@ window.FUND_DATA = {
    "status_mark": "限大额(单日累计购买上限10元。)",
    "daily_limit": 10.0,
    "limit_type": "limited",
+   "limit_crosscheck": "confirmed",
    "annual_fee": 0.75,
    "buy_fee": 0.0,
    "scale": 364028399.96,
@@ -534,6 +557,7 @@ window.FUND_DATA = {
     "scale": 43.5,
     "limit": 61.0
    },
+   "score_estimated": [],
    "score": 58.5
   },
   {
@@ -545,6 +569,7 @@ window.FUND_DATA = {
    "status_mark": "限大额(单日累计购买上限10元。)",
    "daily_limit": 10.0,
    "limit_type": "limited",
+   "limit_crosscheck": "confirmed",
    "annual_fee": 0.9,
    "buy_fee": 0.0,
    "scale": 638954440.78,
@@ -559,6 +584,7 @@ window.FUND_DATA = {
     "scale": 52.6,
     "limit": 61.0
    },
+   "score_estimated": [],
    "score": 58.2
   },
   {
@@ -570,6 +596,7 @@ window.FUND_DATA = {
    "status_mark": "",
    "daily_limit": 0,
    "limit_type": "suspended",
+   "limit_crosscheck": "confirmed",
    "annual_fee": 0.65,
    "buy_fee": 0.1,
    "scale": 1504092578.8,
@@ -584,6 +611,7 @@ window.FUND_DATA = {
     "scale": 66.3,
     "limit": 0.0
    },
+   "score_estimated": [],
    "score": 57.2
   },
   {
@@ -595,6 +623,7 @@ window.FUND_DATA = {
    "status_mark": "限大额(单日累计购买上限10元。)",
    "daily_limit": 10.0,
    "limit_type": "limited",
+   "limit_crosscheck": "confirmed",
    "annual_fee": 1.3,
    "buy_fee": 0.0,
    "scale": 1110149170.7,
@@ -609,6 +638,7 @@ window.FUND_DATA = {
     "scale": 61.4,
     "limit": 61.0
    },
+   "score_estimated": [],
    "score": 55.6
   },
   {
@@ -620,6 +650,7 @@ window.FUND_DATA = {
    "status_mark": "限大额(单日累计购买上限10元。)",
    "daily_limit": 10.0,
    "limit_type": "limited",
+   "limit_crosscheck": "confirmed",
    "annual_fee": 0.9,
    "buy_fee": 0.0,
    "scale": 405558326.85,
@@ -634,6 +665,7 @@ window.FUND_DATA = {
     "scale": 45.2,
     "limit": 61.0
    },
+   "score_estimated": [],
    "score": 54.8
   },
   {
@@ -645,6 +677,7 @@ window.FUND_DATA = {
    "status_mark": "",
    "daily_limit": 0,
    "limit_type": "suspended",
+   "limit_crosscheck": "confirmed",
    "annual_fee": 0.8,
    "buy_fee": 0.0,
    "scale": 2933548906.84,
@@ -659,6 +692,7 @@ window.FUND_DATA = {
     "scale": 77.1,
     "limit": 0.0
    },
+   "score_estimated": [],
    "score": 54.2
   },
   {
@@ -670,6 +704,7 @@ window.FUND_DATA = {
    "status_mark": "限大额(单日累计购买上限10元。)",
    "daily_limit": 10.0,
    "limit_type": "limited",
+   "limit_crosscheck": "confirmed",
    "annual_fee": 0.75,
    "buy_fee": 0.0,
    "scale": 59782000.32,
@@ -684,6 +719,7 @@ window.FUND_DATA = {
     "scale": 14.5,
     "limit": 61.0
    },
+   "score_estimated": [],
    "score": 54.0
   },
   {
@@ -695,6 +731,7 @@ window.FUND_DATA = {
    "status_mark": "限大额(单日累计购买上限10元。)",
    "daily_limit": 10.0,
    "limit_type": "limited",
+   "limit_crosscheck": "confirmed",
    "annual_fee": 1.05,
    "buy_fee": 0.0,
    "scale": 1517237630.03,
@@ -709,6 +746,7 @@ window.FUND_DATA = {
     "scale": 66.5,
     "limit": 61.0
    },
+   "score_estimated": [],
    "score": 53.2
   },
   {
@@ -720,6 +758,7 @@ window.FUND_DATA = {
    "status_mark": "限大额(单日累计购买上限10元。)",
    "daily_limit": 10.0,
    "limit_type": "limited",
+   "limit_crosscheck": "confirmed",
    "annual_fee": 1.05,
    "buy_fee": 0.0,
    "scale": 1108805510.1,
@@ -734,6 +773,7 @@ window.FUND_DATA = {
     "scale": 61.4,
     "limit": 61.0
    },
+   "score_estimated": [],
    "score": 52.3
   },
   {
@@ -745,6 +785,7 @@ window.FUND_DATA = {
    "status_mark": "限大额(单日累计购买上限10元。)",
    "daily_limit": 10.0,
    "limit_type": "limited",
+   "limit_crosscheck": "confirmed",
    "annual_fee": 0.85,
    "buy_fee": 0.0,
    "scale": 428848157.56,
@@ -759,6 +800,7 @@ window.FUND_DATA = {
     "scale": 46.1,
     "limit": 61.0
    },
+   "score_estimated": [],
    "score": 49.6
   },
   {
@@ -770,6 +812,7 @@ window.FUND_DATA = {
    "status_mark": "",
    "daily_limit": 0,
    "limit_type": "suspended",
+   "limit_crosscheck": "confirmed",
    "annual_fee": 0.85,
    "buy_fee": 0.0,
    "scale": 1640123827.78,
@@ -784,6 +827,7 @@ window.FUND_DATA = {
     "scale": 67.7,
     "limit": 0.0
    },
+   "score_estimated": [],
    "score": 49.5
   },
   {
@@ -795,6 +839,7 @@ window.FUND_DATA = {
    "status_mark": "限大额(单日累计购买上限10元。)",
    "daily_limit": 10.0,
    "limit_type": "limited",
+   "limit_crosscheck": "confirmed",
    "annual_fee": 1.0,
    "buy_fee": 0.12,
    "scale": 2176385223.52,
@@ -809,7 +854,35 @@ window.FUND_DATA = {
     "scale": 72.3,
     "limit": 61.0
    },
+   "score_estimated": [],
    "score": 47.8
+  },
+  {
+   "code": "019173",
+   "name": "摩根纳斯达克100指数(QDII)人民币C",
+   "index": "NDX100",
+   "is_etf": false,
+   "status": "限大额",
+   "status_mark": "限大额(单日累计购买上限10元。)",
+   "daily_limit": 10.0,
+   "limit_type": "limited",
+   "limit_crosscheck": "confirmed",
+   "annual_fee": 0.9,
+   "buy_fee": 0.0,
+   "scale": 1080342036.99,
+   "scale_date": "2026-06-30",
+   "nav": 1.7386,
+   "nav_date": "2026-08-18",
+   "tracking_error": 2.34,
+   "company": "摩根基金(中国)",
+   "scores": {
+    "fee": 57.1,
+    "tracking_error": 9.7,
+    "scale": 61.0,
+    "limit": 61.0
+   },
+   "score_estimated": [],
+   "score": 47.2
   },
   {
    "code": "016057",
@@ -820,6 +893,7 @@ window.FUND_DATA = {
    "status_mark": "",
    "daily_limit": 0,
    "limit_type": "suspended",
+   "limit_crosscheck": "confirmed",
    "annual_fee": 0.95,
    "buy_fee": 0.0,
    "scale": 707176698.32,
@@ -834,6 +908,7 @@ window.FUND_DATA = {
     "scale": 54.2,
     "limit": 0.0
    },
+   "score_estimated": [],
    "score": 43.5
   },
   {
@@ -845,6 +920,7 @@ window.FUND_DATA = {
    "status_mark": "",
    "daily_limit": 0,
    "limit_type": "suspended",
+   "limit_crosscheck": "unavailable",
    "annual_fee": 0.8,
    "buy_fee": null,
    "scale": 170421847.75,
@@ -859,6 +935,7 @@ window.FUND_DATA = {
     "scale": 31.3,
     "limit": 0.0
    },
+   "score_estimated": [],
    "score": 42.9
   },
   {
@@ -870,6 +947,7 @@ window.FUND_DATA = {
    "status_mark": "",
    "daily_limit": 0,
    "limit_type": "suspended",
+   "limit_crosscheck": "unavailable",
    "annual_fee": 0.8,
    "buy_fee": null,
    "scale": 170782223.49,
@@ -884,6 +962,7 @@ window.FUND_DATA = {
     "scale": 31.3,
     "limit": 0.0
    },
+   "score_estimated": [],
    "score": 42.8
   },
   {
@@ -895,6 +974,7 @@ window.FUND_DATA = {
    "status_mark": "",
    "daily_limit": 0,
    "limit_type": "suspended",
+   "limit_crosscheck": "confirmed",
    "annual_fee": 0.9,
    "buy_fee": 0.0,
    "scale": 180352559.5,
@@ -909,6 +989,7 @@ window.FUND_DATA = {
     "scale": 32.2,
     "limit": 0.0
    },
+   "score_estimated": [],
    "score": 39.8
   },
   {
@@ -920,6 +1001,7 @@ window.FUND_DATA = {
    "status_mark": "",
    "daily_limit": 0,
    "limit_type": "suspended",
+   "limit_crosscheck": "unavailable",
    "annual_fee": 0.7,
    "buy_fee": null,
    "scale": 24300350.52,
@@ -934,6 +1016,7 @@ window.FUND_DATA = {
     "scale": 0.0,
     "limit": 0.0
    },
+   "score_estimated": [],
    "score": 37.8
   },
   {
@@ -945,6 +1028,7 @@ window.FUND_DATA = {
    "status_mark": "限大额(单日累计购买上限10元。)",
    "daily_limit": 10.0,
    "limit_type": "limited",
+   "limit_crosscheck": "confirmed",
    "annual_fee": 1.3,
    "buy_fee": 0.0,
    "scale": 1288271997.75,
@@ -959,6 +1043,7 @@ window.FUND_DATA = {
     "scale": 63.8,
     "limit": 61.0
    },
+   "score_estimated": [],
    "score": 35.0
   },
   {
@@ -970,6 +1055,7 @@ window.FUND_DATA = {
    "status_mark": "",
    "daily_limit": 0,
    "limit_type": "suspended",
+   "limit_crosscheck": "confirmed",
    "annual_fee": 0.8,
    "buy_fee": 0.12,
    "scale": 322719698.67,
@@ -984,6 +1070,7 @@ window.FUND_DATA = {
     "scale": 41.6,
     "limit": 0.0
    },
+   "score_estimated": [],
    "score": 28.2
   },
   {
@@ -995,6 +1082,7 @@ window.FUND_DATA = {
    "status_mark": "限大额(单日累计购买上限10元。)",
    "daily_limit": 10.0,
    "limit_type": "limited",
+   "limit_crosscheck": "confirmed",
    "annual_fee": 1.3,
    "buy_fee": 0.0,
    "scale": 51581579.51,
@@ -1009,6 +1097,7 @@ window.FUND_DATA = {
     "scale": 12.1,
     "limit": 61.0
    },
+   "score_estimated": [],
    "score": 22.1
   },
   {
@@ -1020,6 +1109,7 @@ window.FUND_DATA = {
    "status_mark": "",
    "daily_limit": 0,
    "limit_type": "suspended",
+   "limit_crosscheck": "confirmed",
    "annual_fee": 1.1,
    "buy_fee": 0.0,
    "scale": 168065142.82,
@@ -1034,6 +1124,7 @@ window.FUND_DATA = {
     "scale": 31.1,
     "limit": 0.0
    },
+   "score_estimated": [],
    "score": 14.9
   },
   {
@@ -1045,6 +1136,7 @@ window.FUND_DATA = {
    "status_mark": "",
    "daily_limit": null,
    "limit_type": "exchange",
+   "limit_crosscheck": "n/a",
    "annual_fee": 0.6,
    "buy_fee": null,
    "scale": 12411184569.95,
@@ -1062,6 +1154,7 @@ window.FUND_DATA = {
     "scale": 61.1,
     "limit": null
    },
+   "score_estimated": [],
    "score": 86.2
   },
   {
@@ -1073,6 +1166,7 @@ window.FUND_DATA = {
    "status_mark": "",
    "daily_limit": null,
    "limit_type": "exchange",
+   "limit_crosscheck": "n/a",
    "annual_fee": 0.65,
    "buy_fee": null,
    "scale": 9935783271.4,
@@ -1081,15 +1175,16 @@ window.FUND_DATA = {
    "nav_date": "2026-08-18",
    "tracking_error": 1.13,
    "company": "招商基金",
-   "price": 2.346,
-   "price_chg": 0.77,
-   "premium": 8.82,
+   "price": 2.342,
+   "price_chg": 0.6,
+   "premium": 8.64,
    "scores": {
     "fee": 87.5,
     "tracking_error": 92.6,
     "scale": 52.7,
     "limit": null
    },
+   "score_estimated": [],
    "score": 77.6
   },
   {
@@ -1101,6 +1196,7 @@ window.FUND_DATA = {
    "status_mark": "",
    "daily_limit": null,
    "limit_type": "exchange",
+   "limit_crosscheck": "n/a",
    "annual_fee": 0.6,
    "buy_fee": null,
    "scale": 5010787667.86,
@@ -1109,15 +1205,16 @@ window.FUND_DATA = {
    "nav_date": "2026-08-18",
    "tracking_error": 1.05,
    "company": "易方达基金",
-   "price": 2.032,
-   "price_chg": 0.59,
-   "premium": 9.37,
+   "price": 2.029,
+   "price_chg": 0.45,
+   "premium": 9.21,
    "scores": {
     "fee": 100.0,
     "tracking_error": 99.2,
     "scale": 26.8,
     "limit": null
    },
+   "score_estimated": [],
    "score": 75.3
   },
   {
@@ -1129,6 +1226,7 @@ window.FUND_DATA = {
    "status_mark": "",
    "daily_limit": 0,
    "limit_type": "suspended",
+   "limit_crosscheck": "n/a",
    "annual_fee": 0.8,
    "buy_fee": null,
    "scale": 19468268721.53,
@@ -1137,15 +1235,16 @@ window.FUND_DATA = {
    "nav_date": "2026-08-18",
    "tracking_error": 1.07,
    "company": "国泰基金",
-   "price": 2.217,
-   "price_chg": 0.77,
-   "premium": 11.07,
+   "price": 2.214,
+   "price_chg": 0.64,
+   "premium": 10.92,
    "scores": {
     "fee": 50.0,
     "tracking_error": 97.5,
     "scale": 78.1,
     "limit": null
    },
+   "score_estimated": [],
    "score": 75.2
   },
   {
@@ -1157,6 +1256,7 @@ window.FUND_DATA = {
    "status_mark": "",
    "daily_limit": null,
    "limit_type": "exchange",
+   "limit_crosscheck": "n/a",
    "annual_fee": 0.65,
    "buy_fee": null,
    "scale": 4910450710.08,
@@ -1165,15 +1265,16 @@ window.FUND_DATA = {
    "nav_date": "2026-08-18",
    "tracking_error": 1.09,
    "company": "汇添富基金",
-   "price": 2.367,
-   "price_chg": 0.85,
-   "premium": 8.52,
+   "price": 2.365,
+   "price_chg": 0.77,
+   "premium": 8.43,
    "scores": {
     "fee": 87.5,
     "tracking_error": 95.9,
     "scale": 26.0,
     "limit": null
    },
+   "score_estimated": [],
    "score": 69.8
   },
   {
@@ -1185,6 +1286,7 @@ window.FUND_DATA = {
    "status_mark": "",
    "daily_limit": null,
    "limit_type": "exchange",
+   "limit_crosscheck": "n/a",
    "annual_fee": 0.8,
    "buy_fee": null,
    "scale": 11300321355.22,
@@ -1193,15 +1295,16 @@ window.FUND_DATA = {
    "nav_date": "2026-08-18",
    "tracking_error": 1.09,
    "company": "华安基金",
-   "price": 2.454,
-   "price_chg": 0.74,
-   "premium": 8.25,
+   "price": 2.45,
+   "price_chg": 0.57,
+   "premium": 8.07,
    "scores": {
     "fee": 50.0,
     "tracking_error": 95.9,
     "scale": 57.5,
     "limit": null
    },
+   "score_estimated": [],
    "score": 67.8
   },
   {
@@ -1213,6 +1316,7 @@ window.FUND_DATA = {
    "status_mark": "",
    "daily_limit": null,
    "limit_type": "exchange",
+   "limit_crosscheck": "n/a",
    "annual_fee": 0.65,
    "buy_fee": null,
    "scale": 4250258639.48,
@@ -1221,15 +1325,16 @@ window.FUND_DATA = {
    "nav_date": "2026-08-18",
    "tracking_error": 1.1,
    "company": "博时基金",
-   "price": 2.43,
-   "price_chg": 1.0,
-   "premium": 8.46,
+   "price": 2.426,
+   "price_chg": 0.83,
+   "premium": 8.28,
    "scores": {
     "fee": 87.5,
     "tracking_error": 95.1,
     "scale": 20.5,
     "limit": null
    },
+   "score_estimated": [],
    "score": 67.7
   },
   {
@@ -1241,6 +1346,7 @@ window.FUND_DATA = {
    "status_mark": "",
    "daily_limit": null,
    "limit_type": "exchange",
+   "limit_crosscheck": "n/a",
    "annual_fee": 0.6,
    "buy_fee": null,
    "scale": 2471169173.29,
@@ -1249,15 +1355,16 @@ window.FUND_DATA = {
    "nav_date": "2026-08-18",
    "tracking_error": 1.05,
    "company": "富国基金",
-   "price": 2.066,
-   "price_chg": 0.93,
-   "premium": 8.7,
+   "price": 2.063,
+   "price_chg": 0.78,
+   "premium": 8.54,
    "scores": {
     "fee": 100.0,
     "tracking_error": 99.2,
     "scale": 0.0,
     "limit": null
    },
+   "score_estimated": [],
    "score": 66.4
   },
   {
@@ -1269,6 +1376,7 @@ window.FUND_DATA = {
    "status_mark": "",
    "daily_limit": null,
    "limit_type": "exchange",
+   "limit_crosscheck": "n/a",
    "annual_fee": 1.0,
    "buy_fee": null,
    "scale": 34681659300.33,
@@ -1277,15 +1385,16 @@ window.FUND_DATA = {
    "nav_date": "2026-08-18",
    "tracking_error": 1.06,
    "company": "广发基金",
-   "price": 1.651,
-   "price_chg": 0.73,
-   "premium": 10.44,
+   "price": 1.648,
+   "price_chg": 0.55,
+   "premium": 10.24,
    "scores": {
     "fee": 0.0,
     "tracking_error": 98.4,
     "scale": 100.0,
     "limit": null
    },
+   "score_estimated": [],
    "score": 66.1
   },
   {
@@ -1297,6 +1406,7 @@ window.FUND_DATA = {
    "status_mark": "",
    "daily_limit": null,
    "limit_type": "exchange",
+   "limit_crosscheck": "n/a",
    "annual_fee": 1.0,
    "buy_fee": null,
    "scale": 7384022870.4,
@@ -1305,15 +1415,16 @@ window.FUND_DATA = {
    "nav_date": "2026-08-18",
    "tracking_error": 1.04,
    "company": "大成基金",
-   "price": 1.804,
-   "price_chg": 0.84,
-   "premium": 8.2,
+   "price": 1.802,
+   "price_chg": 0.73,
+   "premium": 8.08,
    "scores": {
     "fee": 0.0,
     "tracking_error": 100.0,
     "scale": 41.4,
     "limit": null
    },
+   "score_estimated": [],
    "score": 47.1
   },
   {
@@ -1325,6 +1436,7 @@ window.FUND_DATA = {
    "status_mark": "",
    "daily_limit": null,
    "limit_type": "exchange",
+   "limit_crosscheck": "n/a",
    "annual_fee": 1.0,
    "buy_fee": null,
    "scale": 5097922794.02,
@@ -1333,15 +1445,16 @@ window.FUND_DATA = {
    "nav_date": "2026-08-18",
    "tracking_error": 1.07,
    "company": "华泰柏瑞基金",
-   "price": 2.48,
-   "price_chg": 0.85,
-   "premium": 8.2,
+   "price": 2.477,
+   "price_chg": 0.73,
+   "premium": 8.07,
    "scores": {
     "fee": 0.0,
     "tracking_error": 97.5,
     "scale": 27.4,
     "limit": null
    },
+   "score_estimated": [],
    "score": 41.6
   },
   {
@@ -1353,6 +1466,7 @@ window.FUND_DATA = {
    "status_mark": "",
    "daily_limit": null,
    "limit_type": "exchange",
+   "limit_crosscheck": "n/a",
    "annual_fee": 0.8,
    "buy_fee": null,
    "scale": 13287683850.24,
@@ -1361,15 +1475,16 @@ window.FUND_DATA = {
    "nav_date": "2026-08-18",
    "tracking_error": 2.26,
    "company": "华夏基金",
-   "price": 2.692,
-   "price_chg": 0.86,
-   "premium": 8.75,
+   "price": 2.684,
+   "price_chg": 0.56,
+   "premium": 8.43,
    "scores": {
     "fee": 50.0,
     "tracking_error": 0.0,
     "scale": 63.7,
     "limit": null
    },
+   "score_estimated": [],
    "score": 37.9
   },
   {
@@ -1381,6 +1496,7 @@ window.FUND_DATA = {
    "status_mark": "限大额(单日累计购买上限10元。)",
    "daily_limit": 10.0,
    "limit_type": "limited",
+   "limit_crosscheck": "confirmed",
    "annual_fee": 0.65,
    "buy_fee": 0.12,
    "scale": 5303168704.85,
@@ -1395,6 +1511,7 @@ window.FUND_DATA = {
     "scale": 95.8,
     "limit": 100.0
    },
+   "score_estimated": [],
    "score": 88.2
   },
   {
@@ -1406,6 +1523,7 @@ window.FUND_DATA = {
    "status_mark": "限大额(单日累计购买上限10元。)",
    "daily_limit": 10.0,
    "limit_type": "limited",
+   "limit_crosscheck": "confirmed",
    "annual_fee": 0.95,
    "buy_fee": 0.0,
    "scale": 1851640897.65,
@@ -1420,6 +1538,7 @@ window.FUND_DATA = {
     "scale": 73.3,
     "limit": 100.0
    },
+   "score_estimated": [],
    "score": 71.6
   },
   {
@@ -1431,6 +1550,7 @@ window.FUND_DATA = {
    "status_mark": "",
    "daily_limit": 0,
    "limit_type": "suspended",
+   "limit_crosscheck": "confirmed",
    "annual_fee": 0.8,
    "buy_fee": 0.12,
    "scale": 6466845879.52,
@@ -1445,6 +1565,7 @@ window.FUND_DATA = {
     "scale": 100.0,
     "limit": 0.0
    },
+   "score_estimated": [],
    "score": 68.4
   },
   {
@@ -1456,6 +1577,7 @@ window.FUND_DATA = {
    "status_mark": "",
    "daily_limit": 0,
    "limit_type": "suspended",
+   "limit_crosscheck": "unavailable",
    "annual_fee": 0.81,
    "buy_fee": null,
    "scale": 2304202372.31,
@@ -1470,6 +1592,7 @@ window.FUND_DATA = {
     "scale": 77.9,
     "limit": 0.0
    },
+   "score_estimated": [],
    "score": 62.5
   },
   {
@@ -1481,6 +1604,7 @@ window.FUND_DATA = {
    "status_mark": "",
    "daily_limit": 0,
    "limit_type": "suspended",
+   "limit_crosscheck": "confirmed",
    "annual_fee": 1.0,
    "buy_fee": 0.12,
    "scale": 1543416327.36,
@@ -1489,12 +1613,17 @@ window.FUND_DATA = {
    "nav_date": "2026-08-18",
    "tracking_error": 1.22,
    "company": "易方达基金",
+   "lof_name": "标普500LOF",
+   "lof_price": 3.252,
+   "lof_chg": 0.68,
+   "lof_premium": 2.82,
    "scores": {
     "fee": 50.0,
     "tracking_error": 100.0,
     "scale": 69.4,
     "limit": 0.0
    },
+   "score_estimated": [],
    "score": 54.9
   },
   {
@@ -1506,6 +1635,7 @@ window.FUND_DATA = {
    "status_mark": "",
    "daily_limit": 0,
    "limit_type": "suspended",
+   "limit_crosscheck": "confirmed",
    "annual_fee": 1.15,
    "buy_fee": 0.0,
    "scale": 1285578443.52,
@@ -1520,6 +1650,7 @@ window.FUND_DATA = {
     "scale": 65.5,
     "limit": 0.0
    },
+   "score_estimated": [],
    "score": 47.3
   },
   {
@@ -1531,6 +1662,7 @@ window.FUND_DATA = {
    "status_mark": "",
    "daily_limit": 0,
    "limit_type": "suspended",
+   "limit_crosscheck": "confirmed",
    "annual_fee": 0.75,
    "buy_fee": 0.1,
    "scale": 132270847.93,
@@ -1545,6 +1677,7 @@ window.FUND_DATA = {
     "scale": 16.9,
     "limit": 0.0
    },
+   "score_estimated": [],
    "score": 42.3
   },
   {
@@ -1556,6 +1689,7 @@ window.FUND_DATA = {
    "status_mark": "",
    "daily_limit": 0,
    "limit_type": "suspended",
+   "limit_crosscheck": "confirmed",
    "annual_fee": 0.75,
    "buy_fee": 0.12,
    "scale": 318818920.47,
@@ -1570,6 +1704,7 @@ window.FUND_DATA = {
     "scale": 35.7,
     "limit": 0.0
    },
+   "score_estimated": [],
    "score": 30.4
   },
   {
@@ -1581,6 +1716,7 @@ window.FUND_DATA = {
    "status_mark": "",
    "daily_limit": 0,
    "limit_type": "suspended",
+   "limit_crosscheck": "confirmed",
    "annual_fee": 1.35,
    "buy_fee": 0.0,
    "scale": 123499090.32,
@@ -1595,6 +1731,7 @@ window.FUND_DATA = {
     "scale": 15.4,
     "limit": 0.0
    },
+   "score_estimated": [],
    "score": 28.9
   },
   {
@@ -1606,6 +1743,7 @@ window.FUND_DATA = {
    "status_mark": "",
    "daily_limit": 0,
    "limit_type": "suspended",
+   "limit_crosscheck": "confirmed",
    "annual_fee": 1.05,
    "buy_fee": 0.0,
    "scale": 60107314.39,
@@ -1620,6 +1758,7 @@ window.FUND_DATA = {
     "scale": 0.0,
     "limit": 0.0
    },
+   "score_estimated": [],
    "score": 27.4
   },
   {
@@ -1631,6 +1770,7 @@ window.FUND_DATA = {
    "status_mark": "",
    "daily_limit": 0,
    "limit_type": "suspended",
+   "limit_crosscheck": "confirmed",
    "annual_fee": 1.05,
    "buy_fee": 0.0,
    "scale": 165720882.27,
@@ -1645,6 +1785,7 @@ window.FUND_DATA = {
     "scale": 21.7,
     "limit": 0.0
    },
+   "score_estimated": [],
    "score": 16.1
   },
   {
@@ -1656,6 +1797,7 @@ window.FUND_DATA = {
    "status_mark": "",
    "daily_limit": null,
    "limit_type": "exchange",
+   "limit_crosscheck": "n/a",
    "annual_fee": 0.75,
    "buy_fee": null,
    "scale": 7693914107.05,
@@ -1664,15 +1806,16 @@ window.FUND_DATA = {
    "nav_date": "2026-08-18",
    "tracking_error": 1.1,
    "company": "南方基金",
-   "price": 2.002,
-   "price_chg": 0.81,
-   "premium": 6.41,
+   "price": 1.997,
+   "price_chg": 0.55,
+   "premium": 6.14,
    "scores": {
     "fee": 100.0,
     "tracking_error": 97.4,
     "scale": 66.0,
     "limit": null
    },
+   "score_estimated": [],
    "score": 87.8
   },
   {
@@ -1684,6 +1827,7 @@ window.FUND_DATA = {
    "status_mark": "",
    "daily_limit": 0,
    "limit_type": "suspended",
+   "limit_crosscheck": "n/a",
    "annual_fee": 0.75,
    "buy_fee": null,
    "scale": 843658584.7,
@@ -1692,15 +1836,16 @@ window.FUND_DATA = {
    "nav_date": "2026-08-18",
    "tracking_error": 1.07,
    "company": "国泰基金",
-   "price": 2.063,
-   "price_chg": 0.59,
-   "premium": 6.52,
+   "price": 2.057,
+   "price_chg": 0.29,
+   "premium": 6.21,
    "scores": {
     "fee": 100.0,
     "tracking_error": 100.0,
     "scale": 0.0,
     "limit": null
    },
+   "score_estimated": [],
    "score": 66.7
   },
   {
@@ -1712,6 +1857,7 @@ window.FUND_DATA = {
    "status_mark": "",
    "daily_limit": null,
    "limit_type": "exchange",
+   "limit_crosscheck": "n/a",
    "annual_fee": 0.8,
    "buy_fee": null,
    "scale": 23999003872.62,
@@ -1720,15 +1866,16 @@ window.FUND_DATA = {
    "nav_date": "2026-08-18",
    "tracking_error": 1.14,
    "company": "博时基金",
-   "price": 2.673,
-   "price_chg": 1.17,
-   "premium": 8.29,
+   "price": 2.674,
+   "price_chg": 1.21,
+   "premium": 8.33,
    "scores": {
     "fee": 0.0,
     "tracking_error": 94.0,
     "scale": 100.0,
     "limit": null
    },
+   "score_estimated": [],
    "score": 64.7
   },
   {
@@ -1740,6 +1887,7 @@ window.FUND_DATA = {
    "status_mark": "",
    "daily_limit": null,
    "limit_type": "exchange",
+   "limit_crosscheck": "n/a",
    "annual_fee": 0.75,
    "buy_fee": null,
    "scale": 3937315090.05,
@@ -1748,16 +1896,33 @@ window.FUND_DATA = {
    "nav_date": "2026-08-18",
    "tracking_error": 2.24,
    "company": "华夏基金",
-   "price": 2.0,
-   "price_chg": 0.96,
-   "premium": 6.01,
+   "price": 1.996,
+   "price_chg": 0.76,
+   "premium": 5.79,
    "scores": {
     "fee": 100.0,
     "tracking_error": 0.0,
     "scale": 46.0,
     "limit": null
    },
+   "score_estimated": [],
    "score": 48.7
   }
- ]
+ ],
+ "changes": [],
+ "history": [],
+ "quality": {
+  "fund_count": 68,
+  "build_failed": [],
+  "tracking_error_failed": [],
+  "etf_quote_missing": [],
+  "limit_unresolved": [
+   "021000",
+   "021778"
+  ],
+  "limit_crosscheck_confirmed": 46,
+  "limit_crosscheck_conflicts": [],
+  "score_estimated_count": 2,
+  "lof_count": 2
+ }
 };
