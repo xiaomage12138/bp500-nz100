@@ -69,6 +69,7 @@
   .updated { color: var(--ink-2); font-size: 13px; }
   .updated .dot { color: var(--good); margin-right: 4px; }
   .updated .limit-stamp { color: var(--ink); font-weight: 600; }
+  .updated .tz-alt { color: var(--ink-muted); margin-left: 6px; }
 
   /* 数据质量提示条 */
   .quality {
@@ -274,10 +275,17 @@
 
   var COLLAPSE_N = 12;   // 长表默认只显示前 N 只
 
+  // 额度属于哪个交易日由北京时间决定，故以北京时间为准显示；
+  // 采集机器不在中国时，另附本地时间以便对照。
+  var capBj = data.limit_captured_at_beijing;
+  var capLocal = data.limit_captured_at || data.updated_at;
+  var stampHtml = capBj
+    ? '申购额度采集于 <span class="limit-stamp">' + esc(capBj) + " 北京时间</span>" +
+      (data.local_tz_matches_beijing === false
+        ? '<span class="tz-alt">（本机 ' + esc(capLocal) + "）</span>" : "")
+    : '申购额度采集于 <span class="limit-stamp">' + esc(capLocal) + "</span>";
   document.getElementById("updated").innerHTML =
-    '<span class="dot">●</span>数据更新于 ' + esc(data.updated_at) +
-    '　·　申购额度采集于 <span class="limit-stamp">' +
-    esc(data.limit_captured_at || data.updated_at) + "</span>";
+    '<span class="dot">●</span>' + stampHtml;
 
   renderQuality();
   renderChanges();

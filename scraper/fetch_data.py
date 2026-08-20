@@ -57,6 +57,10 @@ MIN_FUNDS_RATIO = 0.90            # 或低于上次成功结果的九成
 F10_WORKERS = 2                   # fundf10 域名限流严格，必须低并发
 F10_DELAY = 0.35                  # 每次请求之间的间隔（秒）
 
+# 中国自 1991 年起不再实行夏令时，北京时间恒为 UTC+8，用固定偏移即可精确换算。
+# 机器可能不在中国，而额度属于哪个交易日只能由北京时间判定，故两个时间都记录。
+BEIJING_TZ = datetime.timezone(datetime.timedelta(hours=8))
+
 session = requests.Session()
 session.headers.update(HEADERS)
 
@@ -580,8 +584,13 @@ def append_history(changes, when):
 # --------------------------------------------------------------------------
 def main():
     t0 = time.time()
-    now = datetime.datetime.now()
+    now = datetime.datetime.now().astimezone()
     stamp = now.strftime("%Y-%m-%d %H:%M:%S")
+    now_bj = now.astimezone(BEIJING_TZ)
+    stamp_bj = now_bj.strftime("%Y-%m-%d %H:%M:%S")
+    same_tz = now.utcoffset() == now_bj.utcoffset()
+    print(f"   采集时刻：北京时间 {stamp_bj}" +
+          ("" if same_tz else f"（本机本地时间 {stamp}）"))
 
     print("1) 下载全量基金代码表 ...")
     all_funds = load_all_fund_codes()
@@ -648,13 +657,17 @@ def main():
     for f in funds:
         f.pop("listtexch", None)
 
-    hist = append_history(changes, stamp)
+    hist = append_history(changes, stamp_bj)   # 变动归属哪个交易日按北京时间记
 
     unresolved = [f["code"] for f in funds
                   if not f["is_etf"] and f["limit_type"] == "unknown"]
     out = {
         "updated_at": stamp,
         "limit_captured_at": stamp,     # 额度与本次采集同批，页面显式展示
+        # 额度属于哪个交易日由北京时间决定；机器不在中国时本地时间会误导，故一并给出
+        "updated_at_beijing": stamp_bj,
+        "limit_captured_at_beijing": stamp_bj,
+        "local_tz_matches_beijing": same_tz,
         "weights": WEIGHTS,
         "indexes": TARGET_INDEXES,
         "funds": funds,
