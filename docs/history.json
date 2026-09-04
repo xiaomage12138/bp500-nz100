@@ -5,6 +5,33 @@
    "name": "汇添富纳斯达克100ETF发起式联接(QDII)人民币E",
    "index": "NDX100",
    "direction": "tightened",
+   "from": "2000 元/日",
+   "to": "10 元/日",
+   "at": "2026-09-04 09:54:53"
+  },
+  {
+   "code": "018967",
+   "name": "汇添富纳斯达克100ETF发起式联接(QDII)人民币C",
+   "index": "NDX100",
+   "direction": "tightened",
+   "from": "2000 元/日",
+   "to": "10 元/日",
+   "at": "2026-09-04 09:54:53"
+  },
+  {
+   "code": "018966",
+   "name": "汇添富纳斯达克100ETF发起式联接(QDII)人民币A",
+   "index": "NDX100",
+   "direction": "tightened",
+   "from": "2000 元/日",
+   "to": "10 元/日",
+   "at": "2026-09-04 09:54:53"
+  },
+  {
+   "code": "021773",
+   "name": "汇添富纳斯达克100ETF发起式联接(QDII)人民币E",
+   "index": "NDX100",
+   "direction": "tightened",
    "from": "10000 元/日",
    "to": "2000 元/日",
    "at": "2026-09-03 10:30:02"
