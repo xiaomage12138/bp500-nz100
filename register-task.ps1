@@ -59,8 +59,13 @@ $action = New-ScheduledTaskAction -Execute "powershell.exe" `
     -Argument "-NoProfile -ExecutionPolicy Bypass -File `"$scriptPath`"" `
     -WorkingDirectory $PSScriptRoot
 
+# 失败重试：触发时若机器正在休眠/关机，进程可能起不来（0xC0000142），
+# 这类「已触发但失败」不受 StartWhenAvailable 的补跑保护，故显式配置重试。
+# 电池限制默认会让笔记本拔电时整个跳过，这里一并放开。
 $settings = New-ScheduledTaskSettingsSet -StartWhenAvailable `
-    -DontStopOnIdleEnd -ExecutionTimeLimit (New-TimeSpan -Minutes 15)
+    -DontStopOnIdleEnd -ExecutionTimeLimit (New-TimeSpan -Minutes 15) `
+    -RestartCount 3 -RestartInterval (New-TimeSpan -Minutes 10) `
+    -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries
 
 Register-ScheduledTask -TaskName $taskName -Action $action -Trigger $triggers `
     -Settings $settings -Description "抓取标普500/纳指100 QDII基金申购额度并推送 GitHub Pages" -Force | Out-Null
