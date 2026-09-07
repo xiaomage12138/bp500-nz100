@@ -1,8 +1,8 @@
 {
- "updated_at": "2026-09-06 19:44:58",
- "limit_captured_at": "2026-09-06 19:44:58",
- "updated_at_beijing": "2026-09-07 10:44:58",
- "limit_captured_at_beijing": "2026-09-07 10:44:58",
+ "updated_at": "2026-09-06 22:30:01",
+ "limit_captured_at": "2026-09-06 22:30:01",
+ "updated_at_beijing": "2026-09-07 13:30:01",
+ "limit_captured_at_beijing": "2026-09-07 13:30:01",
  "local_tz_matches_beijing": false,
  "weights": {
   "fee": 0.25,
@@ -40,12 +40,7 @@
     "limit": 50.0
    },
    "score_estimated": [],
-   "score": 77.2,
-   "limit_change": {
-    "direction": "suspended",
-    "prev_label": "10 元/日",
-    "curr_label": "暂停申购"
-   }
+   "score": 77.2
   },
   {
    "code": "016452",
@@ -72,12 +67,7 @@
     "limit": 50.0
    },
    "score_estimated": [],
-   "score": 75.5,
-   "limit_change": {
-    "direction": "suspended",
-    "prev_label": "10 元/日",
-    "curr_label": "暂停申购"
-   }
+   "score": 75.5
   },
   {
    "code": "018043",
@@ -104,12 +94,7 @@
     "limit": 50.0
    },
    "score_estimated": [],
-   "score": 73.8,
-   "limit_change": {
-    "direction": "suspended",
-    "prev_label": "100 元/日",
-    "curr_label": "暂停申购"
-   }
+   "score": 73.8
   },
   {
    "code": "270042",
@@ -136,12 +121,7 @@
     "limit": 50.0
    },
    "score_estimated": [],
-   "score": 72.5,
-   "limit_change": {
-    "direction": "suspended",
-    "prev_label": "5 元/日",
-    "curr_label": "暂停申购"
-   }
+   "score": 72.5
   },
   {
    "code": "021000",
@@ -168,12 +148,7 @@
     "limit": 50.0
    },
    "score_estimated": [],
-   "score": 72.2,
-   "limit_change": {
-    "direction": "suspended",
-    "prev_label": "额度未公布",
-    "curr_label": "暂停申购"
-   }
+   "score": 72.2
   },
   {
    "code": "161130",
@@ -258,12 +233,7 @@
     "limit": 50.0
    },
    "score_estimated": [],
-   "score": 70.9,
-   "limit_change": {
-    "direction": "suspended",
-    "prev_label": "10 元/日",
-    "curr_label": "暂停申购"
-   }
+   "score": 70.9
   },
   {
    "code": "016055",
@@ -317,12 +287,7 @@
     "limit": 50.0
    },
    "score_estimated": [],
-   "score": 69.4,
-   "limit_change": {
-    "direction": "suspended",
-    "prev_label": "10 元/日",
-    "curr_label": "暂停申购"
-   }
+   "score": 69.4
   },
   {
    "code": "018044",
@@ -349,12 +314,7 @@
     "limit": 50.0
    },
    "score_estimated": [],
-   "score": 66.3,
-   "limit_change": {
-    "direction": "suspended",
-    "prev_label": "100 元/日",
-    "curr_label": "暂停申购"
-   }
+   "score": 66.3
   },
   {
    "code": "019547",
@@ -381,12 +341,7 @@
     "limit": 50.0
    },
    "score_estimated": [],
-   "score": 66.0,
-   "limit_change": {
-    "direction": "suspended",
-    "prev_label": "10 元/日",
-    "curr_label": "暂停申购"
-   }
+   "score": 66.0
   },
   {
    "code": "019524",
@@ -413,12 +368,7 @@
     "limit": 50.0
    },
    "score_estimated": [],
-   "score": 65.0,
-   "limit_change": {
-    "direction": "suspended",
-    "prev_label": "10 元/日",
-    "curr_label": "暂停申购"
-   }
+   "score": 65.0
   },
   {
    "code": "018966",
@@ -445,12 +395,7 @@
     "limit": 50.0
    },
    "score_estimated": [],
-   "score": 64.9,
-   "limit_change": {
-    "direction": "suspended",
-    "prev_label": "10 元/日",
-    "curr_label": "暂停申购"
-   }
+   "score": 64.9
   },
   {
    "code": "019736",
@@ -477,12 +422,7 @@
     "limit": 50.0
    },
    "score_estimated": [],
-   "score": 64.6,
-   "limit_change": {
-    "direction": "suspended",
-    "prev_label": "10 元/日",
-    "curr_label": "暂停申购"
-   }
+   "score": 64.6
   },
   {
    "code": "014978",
@@ -509,12 +449,7 @@
     "limit": 50.0
    },
    "score_estimated": [],
-   "score": 64.4,
-   "limit_change": {
-    "direction": "suspended",
-    "prev_label": "10 元/日",
-    "curr_label": "暂停申购"
-   }
+   "score": 64.4
   },
   {
    "code": "160213",
@@ -541,12 +476,7 @@
     "limit": 50.0
    },
    "score_estimated": [],
-   "score": 64.4,
-   "limit_change": {
-    "direction": "suspended",
-    "prev_label": "100 元/日",
-    "curr_label": "暂停申购"
-   }
+   "score": 64.4
   },
   {
    "code": "006479",
@@ -573,12 +503,7 @@
     "limit": 50.0
    },
    "score_estimated": [],
-   "score": 62.8,
-   "limit_change": {
-    "direction": "suspended",
-    "prev_label": "5 元/日",
-    "curr_label": "暂停申购"
-   }
+   "score": 62.8
   },
   {
    "code": "016533",
@@ -632,12 +557,7 @@
     "limit": 50.0
    },
    "score_estimated": [],
-   "score": 59.1,
-   "limit_change": {
-    "direction": "suspended",
-    "prev_label": "额度未公布",
-    "curr_label": "暂停申购"
-   }
+   "score": 59.1
   },
   {
    "code": "019172",
@@ -664,12 +584,7 @@
     "limit": 50.0
    },
    "score_estimated": [],
-   "score": 58.7,
-   "limit_change": {
-    "direction": "suspended",
-    "prev_label": "10 元/日",
-    "curr_label": "暂停申购"
-   }
+   "score": 58.7
   },
   {
    "code": "019441",
@@ -696,12 +611,7 @@
     "limit": 50.0
    },
    "score_estimated": [],
-   "score": 56.8,
-   "limit_change": {
-    "direction": "suspended",
-    "prev_label": "10 元/日",
-    "curr_label": "暂停申购"
-   }
+   "score": 56.8
   },
   {
    "code": "016057",
@@ -755,12 +665,7 @@
     "limit": 50.0
    },
    "score_estimated": [],
-   "score": 55.3,
-   "limit_change": {
-    "direction": "suspended",
-    "prev_label": "10 元/日",
-    "curr_label": "暂停申购"
-   }
+   "score": 55.3
   },
   {
    "code": "024237",
@@ -814,12 +719,7 @@
     "limit": 50.0
    },
    "score_estimated": [],
-   "score": 55.0,
-   "limit_change": {
-    "direction": "suspended",
-    "prev_label": "10 元/日",
-    "curr_label": "暂停申购"
-   }
+   "score": 55.0
   },
   {
    "code": "022525",
@@ -846,12 +746,7 @@
     "limit": 50.0
    },
    "score_estimated": [],
-   "score": 55.0,
-   "limit_change": {
-    "direction": "suspended",
-    "prev_label": "额度未公布",
-    "curr_label": "暂停申购"
-   }
+   "score": 55.0
   },
   {
    "code": "008971",
@@ -878,12 +773,7 @@
     "limit": 50.0
    },
    "score_estimated": [],
-   "score": 52.7,
-   "limit_change": {
-    "direction": "suspended",
-    "prev_label": "10 元/日",
-    "curr_label": "暂停申购"
-   }
+   "score": 52.7
   },
   {
    "code": "012870",
@@ -937,12 +827,7 @@
     "limit": 50.0
    },
    "score_estimated": [],
-   "score": 51.6,
-   "limit_change": {
-    "direction": "suspended",
-    "prev_label": "10 元/日",
-    "curr_label": "暂停申购"
-   }
+   "score": 51.6
   },
   {
    "code": "022664",
@@ -969,12 +854,7 @@
     "limit": 50.0
    },
    "score_estimated": [],
-   "score": 50.9,
-   "limit_change": {
-    "direction": "suspended",
-    "prev_label": "10 元/日",
-    "curr_label": "暂停申购"
-   }
+   "score": 50.9
   },
   {
    "code": "019548",
@@ -1001,12 +881,7 @@
     "limit": 50.0
    },
    "score_estimated": [],
-   "score": 50.2,
-   "limit_change": {
-    "direction": "suspended",
-    "prev_label": "10 元/日",
-    "curr_label": "暂停申购"
-   }
+   "score": 50.2
   },
   {
    "code": "021838",
@@ -1060,12 +935,7 @@
     "limit": 50.0
    },
    "score_estimated": [],
-   "score": 49.1,
-   "limit_change": {
-    "direction": "suspended",
-    "prev_label": "10 元/日",
-    "curr_label": "暂停申购"
-   }
+   "score": 49.1
   },
   {
    "code": "019442",
@@ -1092,12 +962,7 @@
     "limit": 50.0
    },
    "score_estimated": [],
-   "score": 46.4,
-   "limit_change": {
-    "direction": "suspended",
-    "prev_label": "10 元/日",
-    "curr_label": "暂停申购"
-   }
+   "score": 46.4
   },
   {
    "code": "539001",
@@ -1124,12 +989,7 @@
     "limit": 50.0
    },
    "score_estimated": [],
-   "score": 44.6,
-   "limit_change": {
-    "direction": "suspended",
-    "prev_label": "10 元/日",
-    "curr_label": "暂停申购"
-   }
+   "score": 44.6
   },
   {
    "code": "019173",
@@ -1156,12 +1016,7 @@
     "limit": 50.0
    },
    "score_estimated": [],
-   "score": 43.9,
-   "limit_change": {
-    "direction": "suspended",
-    "prev_label": "10 元/日",
-    "curr_label": "暂停申购"
-   }
+   "score": 43.9
   },
   {
    "code": "015299",
@@ -1215,12 +1070,7 @@
     "limit": 50.0
    },
    "score_estimated": [],
-   "score": 31.8,
-   "limit_change": {
-    "direction": "suspended",
-    "prev_label": "10 元/日",
-    "curr_label": "暂停申购"
-   }
+   "score": 31.8
   },
   {
    "code": "015300",
@@ -1274,12 +1124,7 @@
     "limit": 50.0
    },
    "score_estimated": [],
-   "score": 18.8,
-   "limit_change": {
-    "direction": "suspended",
-    "prev_label": "10 元/日",
-    "curr_label": "暂停申购"
-   }
+   "score": 18.8
   },
   {
    "code": "159501",
@@ -1299,9 +1144,9 @@
    "nav_date": "2026-09-03",
    "tracking_error": 1.03,
    "company": "嘉实基金",
-   "price": 2.109,
-   "price_chg": 0.19,
-   "premium": 12.69,
+   "price": 2.11,
+   "price_chg": 0.24,
+   "premium": 12.74,
    "scores": {
     "fee": 100.0,
     "tracking_error": 98.3,
@@ -1329,9 +1174,9 @@
    "nav_date": "2026-09-03",
    "tracking_error": 1.09,
    "company": "招商基金",
-   "price": 2.36,
-   "price_chg": 0.43,
-   "premium": 9.65,
+   "price": 2.361,
+   "price_chg": 0.47,
+   "premium": 9.7,
    "scores": {
     "fee": 87.5,
     "tracking_error": 93.2,
@@ -1389,9 +1234,9 @@
    "nav_date": "2026-09-03",
    "tracking_error": 1.05,
    "company": "国泰基金",
-   "price": 2.231,
-   "price_chg": 0.41,
-   "premium": 11.97,
+   "price": 2.233,
+   "price_chg": 0.5,
+   "premium": 12.07,
    "scores": {
     "fee": 50.0,
     "tracking_error": 96.6,
@@ -1419,9 +1264,9 @@
    "nav_date": "2026-09-03",
    "tracking_error": 1.05,
    "company": "汇添富基金",
-   "price": 2.383,
-   "price_chg": 0.42,
-   "premium": 9.44,
+   "price": 2.382,
+   "price_chg": 0.38,
+   "premium": 9.39,
    "scores": {
     "fee": 87.5,
     "tracking_error": 96.6,
@@ -1449,9 +1294,9 @@
    "nav_date": "2026-09-03",
    "tracking_error": 1.05,
    "company": "华安基金",
-   "price": 2.477,
-   "price_chg": 0.45,
-   "premium": 9.46,
+   "price": 2.48,
+   "price_chg": 0.57,
+   "premium": 9.59,
    "scores": {
     "fee": 50.0,
     "tracking_error": 96.6,
@@ -1479,9 +1324,9 @@
    "nav_date": "2026-09-03",
    "tracking_error": 1.07,
    "company": "博时基金",
-   "price": 2.446,
-   "price_chg": 0.37,
-   "premium": 9.37,
+   "price": 2.447,
+   "price_chg": 0.41,
+   "premium": 9.41,
    "scores": {
     "fee": 87.5,
     "tracking_error": 94.9,
@@ -1539,9 +1384,9 @@
    "nav_date": "2026-09-03",
    "tracking_error": 1.03,
    "company": "广发基金",
-   "price": 1.67,
-   "price_chg": 0.36,
-   "premium": 11.95,
+   "price": 1.671,
+   "price_chg": 0.42,
+   "premium": 12.01,
    "scores": {
     "fee": 0.0,
     "tracking_error": 98.3,
@@ -1569,9 +1414,9 @@
    "nav_date": "2026-09-03",
    "tracking_error": 1.01,
    "company": "大成基金",
-   "price": 1.817,
-   "price_chg": 0.22,
-   "premium": 9.19,
+   "price": 1.819,
+   "price_chg": 0.33,
+   "premium": 9.31,
    "scores": {
     "fee": 0.0,
     "tracking_error": 100.0,
@@ -1629,9 +1474,9 @@
    "nav_date": "2026-09-03",
    "tracking_error": 2.19,
    "company": "华夏基金",
-   "price": 2.706,
-   "price_chg": 0.52,
-   "premium": 9.75,
+   "price": 2.707,
+   "price_chg": 0.56,
+   "premium": 9.79,
    "scores": {
     "fee": 50.0,
     "tracking_error": 0.0,
@@ -1693,12 +1538,7 @@
     "limit": 50.0
    },
    "score_estimated": [],
-   "score": 75.3,
-   "limit_change": {
-    "direction": "suspended",
-    "prev_label": "10 元/日",
-    "curr_label": "暂停申购"
-   }
+   "score": 75.3
   },
   {
    "code": "018738",
@@ -1746,9 +1586,9 @@
    "tracking_error": 1.19,
    "company": "易方达基金",
    "lof_name": "标普500LOF",
-   "lof_price": 3.25,
-   "lof_chg": -0.12,
-   "lof_premium": 2.19,
+   "lof_price": 3.249,
+   "lof_chg": -0.15,
+   "lof_premium": 2.16,
    "scores": {
     "fee": 50.0,
     "tracking_error": 100.0,
@@ -1810,12 +1650,7 @@
     "limit": 50.0
    },
    "score_estimated": [],
-   "score": 58.7,
-   "limit_change": {
-    "direction": "suspended",
-    "prev_label": "10 元/日",
-    "curr_label": "暂停申购"
-   }
+   "score": 58.7
   },
   {
    "code": "017028",
@@ -1970,9 +1805,9 @@
    "nav_date": "2026-09-03",
    "tracking_error": 1.06,
    "company": "南方基金",
-   "price": 2.026,
-   "price_chg": -0.3,
-   "premium": 7.05,
+   "price": 2.025,
+   "price_chg": -0.34,
+   "premium": 7.0,
    "scores": {
     "fee": 100.0,
     "tracking_error": 97.4,
@@ -2000,9 +1835,9 @@
    "nav_date": "2026-09-03",
    "tracking_error": 1.03,
    "company": "国泰基金",
-   "price": 2.076,
-   "price_chg": -0.24,
-   "premium": 6.5,
+   "price": 2.075,
+   "price_chg": -0.29,
+   "premium": 6.45,
    "scores": {
     "fee": 100.0,
     "tracking_error": 100.0,
@@ -2030,9 +1865,9 @@
    "nav_date": "2026-09-03",
    "tracking_error": 1.1,
    "company": "博时基金",
-   "price": 2.688,
-   "price_chg": -0.37,
-   "premium": 8.17,
+   "price": 2.691,
+   "price_chg": -0.26,
+   "premium": 8.29,
    "scores": {
     "fee": 0.0,
     "tracking_error": 93.9,
@@ -2073,272 +1908,7 @@
    "score": 48.7
   }
  ],
- "changes": [
-  {
-   "code": "000834",
-   "name": "大成纳斯达克100ETF联接(QDII)A",
-   "index": "NDX100",
-   "direction": "suspended",
-   "from": "10 元/日",
-   "to": "暂停申购"
-  },
-  {
-   "code": "006479",
-   "name": "广发纳斯达克100ETF联接人民币(QDII)C",
-   "index": "NDX100",
-   "direction": "suspended",
-   "from": "5 元/日",
-   "to": "暂停申购"
-  },
-  {
-   "code": "012752",
-   "name": "建信纳斯达克100指数(QDII)C人民币",
-   "index": "NDX100",
-   "direction": "suspended",
-   "from": "10 元/日",
-   "to": "暂停申购"
-  },
-  {
-   "code": "008971",
-   "name": "大成纳斯达克100ETF联接(QDII)C",
-   "index": "NDX100",
-   "direction": "suspended",
-   "from": "10 元/日",
-   "to": "暂停申购"
-  },
-  {
-   "code": "014978",
-   "name": "华安纳斯达克100ETF联接(QDII)C",
-   "index": "NDX100",
-   "direction": "suspended",
-   "from": "10 元/日",
-   "to": "暂停申购"
-  },
-  {
-   "code": "016452",
-   "name": "南方纳斯达克100指数发起(QDII)A",
-   "index": "NDX100",
-   "direction": "suspended",
-   "from": "10 元/日",
-   "to": "暂停申购"
-  },
-  {
-   "code": "016453",
-   "name": "南方纳斯达克100指数发起(QDII)C",
-   "index": "NDX100",
-   "direction": "suspended",
-   "from": "10 元/日",
-   "to": "暂停申购"
-  },
-  {
-   "code": "018043",
-   "name": "天弘纳斯达克100指数发起(QDII)A",
-   "index": "NDX100",
-   "direction": "suspended",
-   "from": "100 元/日",
-   "to": "暂停申购"
-  },
-  {
-   "code": "017641",
-   "name": "摩根标普500指数(QDII)人民币A",
-   "index": "SPX",
-   "direction": "suspended",
-   "from": "10 元/日",
-   "to": "暂停申购"
-  },
-  {
-   "code": "018044",
-   "name": "天弘纳斯达克100指数发起(QDII)C",
-   "index": "NDX100",
-   "direction": "suspended",
-   "from": "100 元/日",
-   "to": "暂停申购"
-  },
-  {
-   "code": "018966",
-   "name": "汇添富纳斯达克100ETF发起式联接(QDII)人民币A",
-   "index": "NDX100",
-   "direction": "suspended",
-   "from": "10 元/日",
-   "to": "暂停申购"
-  },
-  {
-   "code": "018967",
-   "name": "汇添富纳斯达克100ETF发起式联接(QDII)人民币C",
-   "index": "NDX100",
-   "direction": "suspended",
-   "from": "10 元/日",
-   "to": "暂停申购"
-  },
-  {
-   "code": "019173",
-   "name": "摩根纳斯达克100指数(QDII)人民币C",
-   "index": "NDX100",
-   "direction": "suspended",
-   "from": "10 元/日",
-   "to": "暂停申购"
-  },
-  {
-   "code": "019172",
-   "name": "摩根纳斯达克100指数(QDII)人民币A",
-   "index": "NDX100",
-   "direction": "suspended",
-   "from": "10 元/日",
-   "to": "暂停申购"
-  },
-  {
-   "code": "019441",
-   "name": "万家纳斯达克100指数发起式(QDII)A",
-   "index": "NDX100",
-   "direction": "suspended",
-   "from": "10 元/日",
-   "to": "暂停申购"
-  },
-  {
-   "code": "019305",
-   "name": "摩根标普500指数(QDII)人民币C",
-   "index": "SPX",
-   "direction": "suspended",
-   "from": "10 元/日",
-   "to": "暂停申购"
-  },
-  {
-   "code": "019524",
-   "name": "华泰柏瑞纳斯达克100ETF发起式联接(QDII)A",
-   "index": "NDX100",
-   "direction": "suspended",
-   "from": "10 元/日",
-   "to": "暂停申购"
-  },
-  {
-   "code": "019442",
-   "name": "万家纳斯达克100指数发起式(QDII)C",
-   "index": "NDX100",
-   "direction": "suspended",
-   "from": "10 元/日",
-   "to": "暂停申购"
-  },
-  {
-   "code": "019547",
-   "name": "招商纳斯达克100ETF发起式联接(QDII)A",
-   "index": "NDX100",
-   "direction": "suspended",
-   "from": "10 元/日",
-   "to": "暂停申购"
-  },
-  {
-   "code": "019525",
-   "name": "华泰柏瑞纳斯达克100ETF发起式联接(QDII)C",
-   "index": "NDX100",
-   "direction": "suspended",
-   "from": "10 元/日",
-   "to": "暂停申购"
-  },
-  {
-   "code": "019548",
-   "name": "招商纳斯达克100ETF发起式联接(QDII)C",
-   "index": "NDX100",
-   "direction": "suspended",
-   "from": "10 元/日",
-   "to": "暂停申购"
-  },
-  {
-   "code": "019736",
-   "name": "宝盈纳斯达克100指数发起(QDII)A人民币",
-   "index": "NDX100",
-   "direction": "suspended",
-   "from": "10 元/日",
-   "to": "暂停申购"
-  },
-  {
-   "code": "021000",
-   "name": "南方纳斯达克100指数发起(QDII)I",
-   "index": "NDX100",
-   "direction": "suspended",
-   "from": "额度未公布",
-   "to": "暂停申购"
-  },
-  {
-   "code": "019737",
-   "name": "宝盈纳斯达克100指数发起(QDII)C人民币",
-   "index": "NDX100",
-   "direction": "suspended",
-   "from": "10 元/日",
-   "to": "暂停申购"
-  },
-  {
-   "code": "021773",
-   "name": "汇添富纳斯达克100ETF发起式联接(QDII)人民币E",
-   "index": "NDX100",
-   "direction": "suspended",
-   "from": "10 元/日",
-   "to": "暂停申购"
-  },
-  {
-   "code": "021778",
-   "name": "广发纳指100ETF联接(QDII)人民币F",
-   "index": "NDX100",
-   "direction": "suspended",
-   "from": "额度未公布",
-   "to": "暂停申购"
-  },
-  {
-   "code": "022525",
-   "name": "天弘纳斯达克100指数发起(QDII)D",
-   "index": "NDX100",
-   "direction": "suspended",
-   "from": "额度未公布",
-   "to": "暂停申购"
-  },
-  {
-   "code": "022664",
-   "name": "华泰柏瑞纳斯达克100ETF发起式联接(QDII)I",
-   "index": "NDX100",
-   "direction": "suspended",
-   "from": "10 元/日",
-   "to": "暂停申购"
-  },
-  {
-   "code": "023422",
-   "name": "建信纳斯达克100指数(QDII)D人民币",
-   "index": "NDX100",
-   "direction": "suspended",
-   "from": "10 元/日",
-   "to": "暂停申购"
-  },
-  {
-   "code": "040046",
-   "name": "华安纳斯达克100ETF联接(QDII)A",
-   "index": "NDX100",
-   "direction": "suspended",
-   "from": "10 元/日",
-   "to": "暂停申购"
-  },
-  {
-   "code": "160213",
-   "name": "国泰纳斯达克100指数",
-   "index": "NDX100",
-   "direction": "suspended",
-   "from": "100 元/日",
-   "to": "暂停申购"
-  },
-  {
-   "code": "270042",
-   "name": "广发纳斯达克100ETF联接人民币(QDII)A",
-   "index": "NDX100",
-   "direction": "suspended",
-   "from": "5 元/日",
-   "to": "暂停申购"
-  },
-  {
-   "code": "539001",
-   "name": "建信纳斯达克100指数(QDII)A人民币",
-   "index": "NDX100",
-   "direction": "suspended",
-   "from": "10 元/日",
-   "to": "暂停申购"
-  }
- ],
+ "changes": [],
  "history": [
   {
    "code": "539001",
