@@ -1,6 +1,303 @@
 {
  "records": [
   {
+   "code": "539001",
+   "name": "建信纳斯达克100指数(QDII)A人民币",
+   "index": "NDX100",
+   "direction": "suspended",
+   "from": "10 元/日",
+   "to": "暂停申购",
+   "at": "2026-09-07 10:44:58"
+  },
+  {
+   "code": "270042",
+   "name": "广发纳斯达克100ETF联接人民币(QDII)A",
+   "index": "NDX100",
+   "direction": "suspended",
+   "from": "5 元/日",
+   "to": "暂停申购",
+   "at": "2026-09-07 10:44:58"
+  },
+  {
+   "code": "160213",
+   "name": "国泰纳斯达克100指数",
+   "index": "NDX100",
+   "direction": "suspended",
+   "from": "100 元/日",
+   "to": "暂停申购",
+   "at": "2026-09-07 10:44:58"
+  },
+  {
+   "code": "040046",
+   "name": "华安纳斯达克100ETF联接(QDII)A",
+   "index": "NDX100",
+   "direction": "suspended",
+   "from": "10 元/日",
+   "to": "暂停申购",
+   "at": "2026-09-07 10:44:58"
+  },
+  {
+   "code": "023422",
+   "name": "建信纳斯达克100指数(QDII)D人民币",
+   "index": "NDX100",
+   "direction": "suspended",
+   "from": "10 元/日",
+   "to": "暂停申购",
+   "at": "2026-09-07 10:44:58"
+  },
+  {
+   "code": "022664",
+   "name": "华泰柏瑞纳斯达克100ETF发起式联接(QDII)I",
+   "index": "NDX100",
+   "direction": "suspended",
+   "from": "10 元/日",
+   "to": "暂停申购",
+   "at": "2026-09-07 10:44:58"
+  },
+  {
+   "code": "022525",
+   "name": "天弘纳斯达克100指数发起(QDII)D",
+   "index": "NDX100",
+   "direction": "suspended",
+   "from": "额度未公布",
+   "to": "暂停申购",
+   "at": "2026-09-07 10:44:58"
+  },
+  {
+   "code": "021778",
+   "name": "广发纳指100ETF联接(QDII)人民币F",
+   "index": "NDX100",
+   "direction": "suspended",
+   "from": "额度未公布",
+   "to": "暂停申购",
+   "at": "2026-09-07 10:44:58"
+  },
+  {
+   "code": "021773",
+   "name": "汇添富纳斯达克100ETF发起式联接(QDII)人民币E",
+   "index": "NDX100",
+   "direction": "suspended",
+   "from": "10 元/日",
+   "to": "暂停申购",
+   "at": "2026-09-07 10:44:58"
+  },
+  {
+   "code": "019737",
+   "name": "宝盈纳斯达克100指数发起(QDII)C人民币",
+   "index": "NDX100",
+   "direction": "suspended",
+   "from": "10 元/日",
+   "to": "暂停申购",
+   "at": "2026-09-07 10:44:58"
+  },
+  {
+   "code": "021000",
+   "name": "南方纳斯达克100指数发起(QDII)I",
+   "index": "NDX100",
+   "direction": "suspended",
+   "from": "额度未公布",
+   "to": "暂停申购",
+   "at": "2026-09-07 10:44:58"
+  },
+  {
+   "code": "019736",
+   "name": "宝盈纳斯达克100指数发起(QDII)A人民币",
+   "index": "NDX100",
+   "direction": "suspended",
+   "from": "10 元/日",
+   "to": "暂停申购",
+   "at": "2026-09-07 10:44:58"
+  },
+  {
+   "code": "019548",
+   "name": "招商纳斯达克100ETF发起式联接(QDII)C",
+   "index": "NDX100",
+   "direction": "suspended",
+   "from": "10 元/日",
+   "to": "暂停申购",
+   "at": "2026-09-07 10:44:58"
+  },
+  {
+   "code": "019525",
+   "name": "华泰柏瑞纳斯达克100ETF发起式联接(QDII)C",
+   "index": "NDX100",
+   "direction": "suspended",
+   "from": "10 元/日",
+   "to": "暂停申购",
+   "at": "2026-09-07 10:44:58"
+  },
+  {
+   "code": "019547",
+   "name": "招商纳斯达克100ETF发起式联接(QDII)A",
+   "index": "NDX100",
+   "direction": "suspended",
+   "from": "10 元/日",
+   "to": "暂停申购",
+   "at": "2026-09-07 10:44:58"
+  },
+  {
+   "code": "019442",
+   "name": "万家纳斯达克100指数发起式(QDII)C",
+   "index": "NDX100",
+   "direction": "suspended",
+   "from": "10 元/日",
+   "to": "暂停申购",
+   "at": "2026-09-07 10:44:58"
+  },
+  {
+   "code": "019524",
+   "name": "华泰柏瑞纳斯达克100ETF发起式联接(QDII)A",
+   "index": "NDX100",
+   "direction": "suspended",
+   "from": "10 元/日",
+   "to": "暂停申购",
+   "at": "2026-09-07 10:44:58"
+  },
+  {
+   "code": "019305",
+   "name": "摩根标普500指数(QDII)人民币C",
+   "index": "SPX",
+   "direction": "suspended",
+   "from": "10 元/日",
+   "to": "暂停申购",
+   "at": "2026-09-07 10:44:58"
+  },
+  {
+   "code": "019441",
+   "name": "万家纳斯达克100指数发起式(QDII)A",
+   "index": "NDX100",
+   "direction": "suspended",
+   "from": "10 元/日",
+   "to": "暂停申购",
+   "at": "2026-09-07 10:44:58"
+  },
+  {
+   "code": "019172",
+   "name": "摩根纳斯达克100指数(QDII)人民币A",
+   "index": "NDX100",
+   "direction": "suspended",
+   "from": "10 元/日",
+   "to": "暂停申购",
+   "at": "2026-09-07 10:44:58"
+  },
+  {
+   "code": "019173",
+   "name": "摩根纳斯达克100指数(QDII)人民币C",
+   "index": "NDX100",
+   "direction": "suspended",
+   "from": "10 元/日",
+   "to": "暂停申购",
+   "at": "2026-09-07 10:44:58"
+  },
+  {
+   "code": "018967",
+   "name": "汇添富纳斯达克100ETF发起式联接(QDII)人民币C",
+   "index": "NDX100",
+   "direction": "suspended",
+   "from": "10 元/日",
+   "to": "暂停申购",
+   "at": "2026-09-07 10:44:58"
+  },
+  {
+   "code": "018966",
+   "name": "汇添富纳斯达克100ETF发起式联接(QDII)人民币A",
+   "index": "NDX100",
+   "direction": "suspended",
+   "from": "10 元/日",
+   "to": "暂停申购",
+   "at": "2026-09-07 10:44:58"
+  },
+  {
+   "code": "018044",
+   "name": "天弘纳斯达克100指数发起(QDII)C",
+   "index": "NDX100",
+   "direction": "suspended",
+   "from": "100 元/日",
+   "to": "暂停申购",
+   "at": "2026-09-07 10:44:58"
+  },
+  {
+   "code": "017641",
+   "name": "摩根标普500指数(QDII)人民币A",
+   "index": "SPX",
+   "direction": "suspended",
+   "from": "10 元/日",
+   "to": "暂停申购",
+   "at": "2026-09-07 10:44:58"
+  },
+  {
+   "code": "018043",
+   "name": "天弘纳斯达克100指数发起(QDII)A",
+   "index": "NDX100",
+   "direction": "suspended",
+   "from": "100 元/日",
+   "to": "暂停申购",
+   "at": "2026-09-07 10:44:58"
+  },
+  {
+   "code": "016453",
+   "name": "南方纳斯达克100指数发起(QDII)C",
+   "index": "NDX100",
+   "direction": "suspended",
+   "from": "10 元/日",
+   "to": "暂停申购",
+   "at": "2026-09-07 10:44:58"
+  },
+  {
+   "code": "016452",
+   "name": "南方纳斯达克100指数发起(QDII)A",
+   "index": "NDX100",
+   "direction": "suspended",
+   "from": "10 元/日",
+   "to": "暂停申购",
+   "at": "2026-09-07 10:44:58"
+  },
+  {
+   "code": "014978",
+   "name": "华安纳斯达克100ETF联接(QDII)C",
+   "index": "NDX100",
+   "direction": "suspended",
+   "from": "10 元/日",
+   "to": "暂停申购",
+   "at": "2026-09-07 10:44:58"
+  },
+  {
+   "code": "008971",
+   "name": "大成纳斯达克100ETF联接(QDII)C",
+   "index": "NDX100",
+   "direction": "suspended",
+   "from": "10 元/日",
+   "to": "暂停申购",
+   "at": "2026-09-07 10:44:58"
+  },
+  {
+   "code": "012752",
+   "name": "建信纳斯达克100指数(QDII)C人民币",
+   "index": "NDX100",
+   "direction": "suspended",
+   "from": "10 元/日",
+   "to": "暂停申购",
+   "at": "2026-09-07 10:44:58"
+  },
+  {
+   "code": "006479",
+   "name": "广发纳斯达克100ETF联接人民币(QDII)C",
+   "index": "NDX100",
+   "direction": "suspended",
+   "from": "5 元/日",
+   "to": "暂停申购",
+   "at": "2026-09-07 10:44:58"
+  },
+  {
+   "code": "000834",
+   "name": "大成纳斯达克100ETF联接(QDII)A",
+   "index": "NDX100",
+   "direction": "suspended",
+   "from": "10 元/日",
+   "to": "暂停申购",
+   "at": "2026-09-07 10:44:58"
+  },
+  {
    "code": "021773",
    "name": "汇添富纳斯达克100ETF发起式联接(QDII)人民币E",
    "index": "NDX100",
