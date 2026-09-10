@@ -1,6 +1,24 @@
 {
  "records": [
   {
+   "code": "270042",
+   "name": "广发纳斯达克100ETF联接人民币(QDII)A",
+   "index": "NDX100",
+   "direction": "tightened",
+   "from": "5 元/日",
+   "to": "2 元/日",
+   "at": "2026-09-10 20:34:50"
+  },
+  {
+   "code": "006479",
+   "name": "广发纳斯达克100ETF联接人民币(QDII)C",
+   "index": "NDX100",
+   "direction": "tightened",
+   "from": "5 元/日",
+   "to": "2 元/日",
+   "at": "2026-09-10 20:34:50"
+  },
+  {
    "code": "019442",
    "name": "万家纳斯达克100指数发起式(QDII)C",
    "index": "NDX100",
