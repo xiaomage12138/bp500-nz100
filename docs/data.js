@@ -1,8 +1,8 @@
 window.FUND_DATA = {
- "updated_at": "2026-09-23 19:30:01",
- "limit_captured_at": "2026-09-23 19:30:01",
- "updated_at_beijing": "2026-09-24 10:30:01",
- "limit_captured_at_beijing": "2026-09-24 10:30:01",
+ "updated_at": "2026-09-23 22:30:01",
+ "limit_captured_at": "2026-09-23 22:30:01",
+ "updated_at_beijing": "2026-09-24 13:30:01",
+ "limit_captured_at_beijing": "2026-09-24 13:30:01",
  "local_tz_matches_beijing": false,
  "weights": {
   "fee": 0.25,
@@ -121,12 +121,7 @@ window.FUND_DATA = {
     "limit": 33.8
    },
    "score_estimated": [],
-   "score": 73.3,
-   "limit_change": {
-    "direction": "tightened",
-    "prev_label": "10 元/日",
-    "curr_label": "5 元/日"
-   }
+   "score": 73.3
   },
   {
    "code": "016453",
@@ -344,12 +339,7 @@ window.FUND_DATA = {
     "limit": 33.8
    },
    "score_estimated": [],
-   "score": 60.3,
-   "limit_change": {
-    "direction": "tightened",
-    "prev_label": "10 元/日",
-    "curr_label": "5 元/日"
-   }
+   "score": 60.3
   },
   {
    "code": "270042",
@@ -569,12 +559,7 @@ window.FUND_DATA = {
     "limit": 0.0
    },
    "score_estimated": [],
-   "score": 51.5,
-   "limit_change": {
-    "direction": "suspended",
-    "prev_label": "10 元/日",
-    "curr_label": "暂停申购"
-   }
+   "score": 51.5
   },
   {
    "code": "008971",
@@ -954,12 +939,7 @@ window.FUND_DATA = {
     "limit": 0.0
    },
    "score_estimated": [],
-   "score": 41.9,
-   "limit_change": {
-    "direction": "suspended",
-    "prev_label": "10 元/日",
-    "curr_label": "暂停申购"
-   }
+   "score": 41.9
   },
   {
    "code": "012870",
@@ -1040,12 +1020,7 @@ window.FUND_DATA = {
     "limit": 0.0
    },
    "score_estimated": [],
-   "score": 35.5,
-   "limit_change": {
-    "direction": "suspended",
-    "prev_label": "10 元/日",
-    "curr_label": "暂停申购"
-   }
+   "score": 35.5
   },
   {
    "code": "012752",
@@ -1173,9 +1148,9 @@ window.FUND_DATA = {
    "nav_date": "2026-09-22",
    "tracking_error": 1.02,
    "company": "嘉实基金",
-   "price": 2.198,
-   "price_chg": -0.95,
-   "premium": 13.25,
+   "price": 2.21,
+   "price_chg": -0.41,
+   "premium": 13.86,
    "scores": {
     "fee": 100.0,
     "tracking_error": 98.3,
@@ -1203,9 +1178,9 @@ window.FUND_DATA = {
    "nav_date": "2026-09-22",
    "tracking_error": 1.08,
    "company": "招商基金",
-   "price": 2.422,
-   "price_chg": -1.38,
-   "premium": 8.5,
+   "price": 2.43,
+   "price_chg": -1.06,
+   "premium": 8.86,
    "scores": {
     "fee": 87.5,
     "tracking_error": 93.3,
@@ -1233,9 +1208,9 @@ window.FUND_DATA = {
    "nav_date": "2026-09-22",
    "tracking_error": 1.01,
    "company": "易方达基金",
-   "price": 2.094,
-   "price_chg": -1.55,
-   "premium": 8.85,
+   "price": 2.101,
+   "price_chg": -1.22,
+   "premium": 9.22,
    "scores": {
     "fee": 100.0,
     "tracking_error": 99.2,
@@ -1263,9 +1238,9 @@ window.FUND_DATA = {
    "nav_date": "2026-09-22",
    "tracking_error": 1.03,
    "company": "国泰基金",
-   "price": 2.299,
-   "price_chg": -1.5,
-   "premium": 11.28,
+   "price": 2.317,
+   "price_chg": -0.73,
+   "premium": 12.15,
    "scores": {
     "fee": 50.0,
     "tracking_error": 97.5,
@@ -1293,9 +1268,9 @@ window.FUND_DATA = {
    "nav_date": "2026-09-22",
    "tracking_error": 1.04,
    "company": "汇添富基金",
-   "price": 2.447,
-   "price_chg": -1.41,
-   "premium": 8.38,
+   "price": 2.453,
+   "price_chg": -1.17,
+   "premium": 8.65,
    "scores": {
     "fee": 87.5,
     "tracking_error": 96.7,
@@ -1323,9 +1298,9 @@ window.FUND_DATA = {
    "nav_date": "2026-09-22",
    "tracking_error": 1.04,
    "company": "华安基金",
-   "price": 2.546,
-   "price_chg": -1.36,
-   "premium": 8.47,
+   "price": 2.552,
+   "price_chg": -1.12,
+   "premium": 8.73,
    "scores": {
     "fee": 50.0,
     "tracking_error": 96.7,
@@ -1353,9 +1328,9 @@ window.FUND_DATA = {
    "nav_date": "2026-09-22",
    "tracking_error": 1.06,
    "company": "博时基金",
-   "price": 2.507,
-   "price_chg": -1.57,
-   "premium": 8.1,
+   "price": 2.513,
+   "price_chg": -1.33,
+   "premium": 8.36,
    "scores": {
     "fee": 87.5,
     "tracking_error": 95.0,
@@ -1383,9 +1358,9 @@ window.FUND_DATA = {
    "nav_date": "2026-09-22",
    "tracking_error": 1.0,
    "company": "富国基金",
-   "price": 2.132,
-   "price_chg": -1.43,
-   "premium": 8.34,
+   "price": 2.138,
+   "price_chg": -1.16,
+   "premium": 8.64,
    "scores": {
     "fee": 100.0,
     "tracking_error": 100.0,
@@ -1413,9 +1388,9 @@ window.FUND_DATA = {
    "nav_date": "2026-09-22",
    "tracking_error": 1.02,
    "company": "广发基金",
-   "price": 1.706,
-   "price_chg": -1.27,
-   "premium": 10.26,
+   "price": 1.714,
+   "price_chg": -0.81,
+   "premium": 10.78,
    "scores": {
     "fee": 0.0,
     "tracking_error": 98.3,
@@ -1443,9 +1418,9 @@ window.FUND_DATA = {
    "nav_date": "2026-09-22",
    "tracking_error": 1.03,
    "company": "大成基金",
-   "price": 1.861,
-   "price_chg": -1.59,
-   "premium": 8.04,
+   "price": 1.867,
+   "price_chg": -1.27,
+   "premium": 8.39,
    "scores": {
     "fee": 0.0,
     "tracking_error": 97.5,
@@ -1473,9 +1448,9 @@ window.FUND_DATA = {
    "nav_date": "2026-09-22",
    "tracking_error": 1.03,
    "company": "华泰柏瑞基金",
-   "price": 2.562,
-   "price_chg": -1.61,
-   "premium": 7.98,
+   "price": 2.57,
+   "price_chg": -1.31,
+   "premium": 8.32,
    "scores": {
     "fee": 0.0,
     "tracking_error": 97.5,
@@ -1503,9 +1478,9 @@ window.FUND_DATA = {
    "nav_date": "2026-09-22",
    "tracking_error": 2.2,
    "company": "华夏基金",
-   "price": 2.784,
-   "price_chg": -1.52,
-   "premium": 8.62,
+   "price": 2.794,
+   "price_chg": -1.17,
+   "premium": 9.01,
    "scores": {
     "fee": 50.0,
     "tracking_error": 0.0,
@@ -1642,9 +1617,9 @@ window.FUND_DATA = {
    "tracking_error": 1.19,
    "company": "易方达基金",
    "lof_name": "标普500LOF",
-   "lof_price": 3.276,
-   "lof_chg": -0.24,
-   "lof_premium": 3.29,
+   "lof_price": 3.265,
+   "lof_chg": -0.58,
+   "lof_premium": 2.94,
    "scores": {
     "fee": 50.0,
     "tracking_error": 100.0,
@@ -1834,9 +1809,9 @@ window.FUND_DATA = {
    "nav_date": "2026-09-22",
    "tracking_error": 1.05,
    "company": "南方基金",
-   "price": 2.022,
-   "price_chg": -1.08,
-   "premium": 7.13,
+   "price": 2.013,
+   "price_chg": -1.52,
+   "premium": 6.65,
    "scores": {
     "fee": 100.0,
     "tracking_error": 97.4,
@@ -1864,9 +1839,9 @@ window.FUND_DATA = {
    "nav_date": "2026-09-22",
    "tracking_error": 1.02,
    "company": "国泰基金",
-   "price": 2.086,
-   "price_chg": -0.9,
-   "premium": 7.27,
+   "price": 2.077,
+   "price_chg": -1.33,
+   "premium": 6.81,
    "scores": {
     "fee": 100.0,
     "tracking_error": 100.0,
@@ -1894,9 +1869,9 @@ window.FUND_DATA = {
    "nav_date": "2026-09-22",
    "tracking_error": 1.09,
    "company": "博时基金",
-   "price": 2.701,
-   "price_chg": -0.81,
-   "premium": 8.96,
+   "price": 2.698,
+   "price_chg": -0.92,
+   "premium": 8.84,
    "scores": {
     "fee": 0.0,
     "tracking_error": 94.0,
@@ -1924,9 +1899,9 @@ window.FUND_DATA = {
    "nav_date": "2026-09-22",
    "tracking_error": 2.18,
    "company": "华夏基金",
-   "price": 2.028,
-   "price_chg": -1.17,
-   "premium": 7.0,
+   "price": 2.019,
+   "price_chg": -1.61,
+   "premium": 6.53,
    "scores": {
     "fee": 100.0,
     "tracking_error": 0.0,
@@ -1937,48 +1912,7 @@ window.FUND_DATA = {
    "score": 48.7
   }
  ],
- "changes": [
-  {
-   "code": "014978",
-   "name": "华安纳斯达克100ETF联接(QDII)C",
-   "index": "NDX100",
-   "direction": "tightened",
-   "from": "10 元/日",
-   "to": "5 元/日"
-  },
-  {
-   "code": "018966",
-   "name": "汇添富纳斯达克100ETF发起式联接(QDII)人民币A",
-   "index": "NDX100",
-   "direction": "suspended",
-   "from": "10 元/日",
-   "to": "暂停申购"
-  },
-  {
-   "code": "018967",
-   "name": "汇添富纳斯达克100ETF发起式联接(QDII)人民币C",
-   "index": "NDX100",
-   "direction": "suspended",
-   "from": "10 元/日",
-   "to": "暂停申购"
-  },
-  {
-   "code": "021773",
-   "name": "汇添富纳斯达克100ETF发起式联接(QDII)人民币E",
-   "index": "NDX100",
-   "direction": "suspended",
-   "from": "10 元/日",
-   "to": "暂停申购"
-  },
-  {
-   "code": "040046",
-   "name": "华安纳斯达克100ETF联接(QDII)A",
-   "index": "NDX100",
-   "direction": "tightened",
-   "from": "10 元/日",
-   "to": "5 元/日"
-  }
- ],
+ "changes": [],
  "history": [
   {
    "code": "040046",
