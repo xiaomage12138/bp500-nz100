@@ -1,8 +1,8 @@
 window.FUND_DATA = {
- "updated_at": "2026-09-24 19:30:01",
- "limit_captured_at": "2026-09-24 19:30:01",
- "updated_at_beijing": "2026-09-25 10:30:01",
- "limit_captured_at_beijing": "2026-09-25 10:30:01",
+ "updated_at": "2026-09-24 22:30:00",
+ "limit_captured_at": "2026-09-24 22:30:00",
+ "updated_at_beijing": "2026-09-25 13:30:00",
+ "limit_captured_at_beijing": "2026-09-25 13:30:00",
  "local_tz_matches_beijing": false,
  "weights": {
   "fee": 0.25,
@@ -204,12 +204,7 @@ window.FUND_DATA = {
     "limit": 100.0
    },
    "score_estimated": [],
-   "score": 76.2,
-   "limit_change": {
-    "direction": "tightened",
-    "prev_label": "200 元/日",
-    "curr_label": "10 元/日"
-   }
+   "score": 76.2
   },
   {
    "code": "019172",
@@ -371,12 +366,7 @@ window.FUND_DATA = {
     "limit": 100.0
    },
    "score_estimated": [],
-   "score": 63.2,
-   "limit_change": {
-    "direction": "tightened",
-    "prev_label": "200 元/日",
-    "curr_label": "10 元/日"
-   }
+   "score": 63.2
   },
   {
    "code": "019548",
@@ -760,12 +750,7 @@ window.FUND_DATA = {
     "limit": 0.0
    },
    "score_estimated": [],
-   "score": 51.8,
-   "limit_change": {
-    "direction": "suspended",
-    "prev_label": "100 元/日",
-    "curr_label": "暂停申购"
-   }
+   "score": 51.8
   },
   {
    "code": "018966",
@@ -1927,32 +1912,7 @@ window.FUND_DATA = {
    "score": 48.7
   }
  ],
- "changes": [
-  {
-   "code": "019736",
-   "name": "宝盈纳斯达克100指数发起(QDII)A人民币",
-   "index": "NDX100",
-   "direction": "tightened",
-   "from": "200 元/日",
-   "to": "10 元/日"
-  },
-  {
-   "code": "019737",
-   "name": "宝盈纳斯达克100指数发起(QDII)C人民币",
-   "index": "NDX100",
-   "direction": "tightened",
-   "from": "200 元/日",
-   "to": "10 元/日"
-  },
-  {
-   "code": "160213",
-   "name": "国泰纳斯达克100指数",
-   "index": "NDX100",
-   "direction": "suspended",
-   "from": "100 元/日",
-   "to": "暂停申购"
-  }
- ],
+ "changes": [],
  "history": [
   {
    "code": "160213",
