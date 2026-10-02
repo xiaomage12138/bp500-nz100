@@ -1,8 +1,8 @@
 {
- "updated_at": "2026-09-30 22:30:01",
- "limit_captured_at": "2026-09-30 22:30:01",
- "updated_at_beijing": "2026-10-01 13:30:01",
- "limit_captured_at_beijing": "2026-10-01 13:30:01",
+ "updated_at": "2026-10-01 19:30:01",
+ "limit_captured_at": "2026-10-01 19:30:01",
+ "updated_at_beijing": "2026-10-02 10:30:01",
+ "limit_captured_at_beijing": "2026-10-02 10:30:01",
  "local_tz_matches_beijing": false,
  "weights": {
   "fee": 0.25,
