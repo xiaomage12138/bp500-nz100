@@ -1,8 +1,8 @@
 window.FUND_DATA = {
- "updated_at": "2026-10-04 19:30:02",
- "limit_captured_at": "2026-10-04 19:30:02",
- "updated_at_beijing": "2026-10-05 10:30:02",
- "limit_captured_at_beijing": "2026-10-05 10:30:02",
+ "updated_at": "2026-10-04 22:30:02",
+ "limit_captured_at": "2026-10-04 22:30:02",
+ "updated_at_beijing": "2026-10-05 13:30:02",
+ "limit_captured_at_beijing": "2026-10-05 13:30:02",
  "local_tz_matches_beijing": false,
  "weights": {
   "fee": 0.25,
