@@ -1,8 +1,8 @@
 {
- "updated_at": "2026-10-19 19:30:02",
- "limit_captured_at": "2026-10-19 19:30:02",
- "updated_at_beijing": "2026-10-20 10:30:02",
- "limit_captured_at_beijing": "2026-10-20 10:30:02",
+ "updated_at": "2026-10-20 00:08:39",
+ "limit_captured_at": "2026-10-20 00:08:39",
+ "updated_at_beijing": "2026-10-20 15:08:39",
+ "limit_captured_at_beijing": "2026-10-20 15:08:39",
  "local_tz_matches_beijing": false,
  "weights": {
   "fee": 0.25,
@@ -41,33 +41,6 @@
    },
    "score_estimated": [],
    "score": 88.0
-  },
-  {
-   "code": "040046",
-   "name": "华安纳斯达克100ETF联接(QDII)A",
-   "index": "NDX100",
-   "is_etf": false,
-   "status": "限大额",
-   "status_mark": "限大额(单日累计购买上限5元。)",
-   "daily_limit": 5.0,
-   "limit_type": "limited",
-   "limit_crosscheck": "confirmed",
-   "annual_fee": 0.8,
-   "buy_fee": 0.12,
-   "scale": 5810040276.47,
-   "scale_date": "2026-06-30",
-   "nav": 8.0314,
-   "nav_date": "2026-10-16",
-   "tracking_error": 0.99,
-   "company": "华安基金",
-   "scores": {
-    "fee": 71.4,
-    "tracking_error": 100.0,
-    "scale": 88.0,
-    "limit": 74.7
-   },
-   "score_estimated": [],
-   "score": 83.5
   },
   {
    "code": "016453",
@@ -205,33 +178,6 @@
    "score": 71.3
   },
   {
-   "code": "014978",
-   "name": "华安纳斯达克100ETF联接(QDII)C",
-   "index": "NDX100",
-   "is_etf": false,
-   "status": "限大额",
-   "status_mark": "限大额(单日累计购买上限5元。)",
-   "daily_limit": 5.0,
-   "limit_type": "limited",
-   "limit_crosscheck": "confirmed",
-   "annual_fee": 1.0,
-   "buy_fee": 0.0,
-   "scale": 1347831808.72,
-   "scale_date": "2026-06-30",
-   "nav": 7.8641,
-   "nav_date": "2026-10-16",
-   "tracking_error": 0.99,
-   "company": "华安基金",
-   "scores": {
-    "fee": 42.9,
-    "tracking_error": 100.0,
-    "scale": 64.6,
-    "limit": 74.7
-   },
-   "score_estimated": [],
-   "score": 70.5
-  },
-  {
    "code": "019441",
    "name": "万家纳斯达克100指数发起式(QDII)A",
    "index": "NDX100",
@@ -257,6 +203,38 @@
    },
    "score_estimated": [],
    "score": 67.5
+  },
+  {
+   "code": "040046",
+   "name": "华安纳斯达克100ETF联接(QDII)A",
+   "index": "NDX100",
+   "is_etf": false,
+   "status": "暂停申购",
+   "status_mark": "",
+   "daily_limit": 0,
+   "limit_type": "suspended",
+   "limit_crosscheck": "mismatch",
+   "annual_fee": 0.8,
+   "buy_fee": 0.12,
+   "scale": 5810040276.47,
+   "scale_date": "2026-06-30",
+   "nav": 8.0314,
+   "nav_date": "2026-10-16",
+   "tracking_error": 0.99,
+   "company": "华安基金",
+   "scores": {
+    "fee": 71.4,
+    "tracking_error": 100.0,
+    "scale": 88.0,
+    "limit": 0.0
+   },
+   "score_estimated": [],
+   "score": 64.8,
+   "limit_change": {
+    "direction": "suspended",
+    "prev_label": "5 元/日",
+    "curr_label": "暂停申购"
+   }
   },
   {
    "code": "008971",
@@ -441,9 +419,9 @@
    "tracking_error": 1.44,
    "company": "易方达基金",
    "lof_name": "纳斯达克100LOF",
-   "lof_price": 4.805,
-   "lof_chg": 0.19,
-   "lof_premium": 9.94,
+   "lof_price": 4.748,
+   "lof_chg": -1.0,
+   "lof_premium": 8.64,
    "scores": {
     "fee": 100.0,
     "tracking_error": 68.8,
@@ -668,6 +646,38 @@
    },
    "score_estimated": [],
    "score": 53.5
+  },
+  {
+   "code": "014978",
+   "name": "华安纳斯达克100ETF联接(QDII)C",
+   "index": "NDX100",
+   "is_etf": false,
+   "status": "暂停申购",
+   "status_mark": "",
+   "daily_limit": 0,
+   "limit_type": "suspended",
+   "limit_crosscheck": "mismatch",
+   "annual_fee": 1.0,
+   "buy_fee": 0.0,
+   "scale": 1347831808.72,
+   "scale_date": "2026-06-30",
+   "nav": 7.8641,
+   "nav_date": "2026-10-16",
+   "tracking_error": 0.99,
+   "company": "华安基金",
+   "scores": {
+    "fee": 42.9,
+    "tracking_error": 100.0,
+    "scale": 64.6,
+    "limit": 0.0
+   },
+   "score_estimated": [],
+   "score": 51.9,
+   "limit_change": {
+    "direction": "suspended",
+    "prev_label": "5 元/日",
+    "curr_label": "暂停申购"
+   }
   },
   {
    "code": "160213",
@@ -1148,9 +1158,9 @@
    "nav_date": "2026-10-16",
    "tracking_error": 1.01,
    "company": "嘉实基金",
-   "price": 2.194,
-   "price_chg": 0.32,
-   "premium": 19.49,
+   "price": 2.187,
+   "price_chg": 0.0,
+   "premium": 19.11,
    "scores": {
     "fee": 100.0,
     "tracking_error": 98.3,
@@ -1178,9 +1188,9 @@
    "nav_date": "2026-10-16",
    "tracking_error": 1.08,
    "company": "招商基金",
-   "price": 2.457,
-   "price_chg": 0.16,
-   "premium": 16.3,
+   "price": 2.427,
+   "price_chg": -1.06,
+   "premium": 14.88,
    "scores": {
     "fee": 87.5,
     "tracking_error": 92.4,
@@ -1208,9 +1218,9 @@
    "nav_date": "2026-10-16",
    "tracking_error": 1.0,
    "company": "易方达基金",
-   "price": 2.154,
-   "price_chg": 0.56,
-   "premium": 18.33,
+   "price": 2.133,
+   "price_chg": -0.42,
+   "premium": 17.18,
    "scores": {
     "fee": 100.0,
     "tracking_error": 99.2,
@@ -1238,9 +1248,9 @@
    "nav_date": "2026-10-16",
    "tracking_error": 1.02,
    "company": "国泰基金",
-   "price": 2.356,
-   "price_chg": 0.47,
-   "premium": 20.52,
+   "price": 2.334,
+   "price_chg": -0.47,
+   "premium": 19.4,
    "scores": {
     "fee": 50.0,
     "tracking_error": 97.5,
@@ -1268,9 +1278,9 @@
    "nav_date": "2026-10-16",
    "tracking_error": 1.03,
    "company": "汇添富基金",
-   "price": 2.441,
-   "price_chg": 0.16,
-   "premium": 14.28,
+   "price": 2.417,
+   "price_chg": -0.82,
+   "premium": 13.16,
    "scores": {
     "fee": 87.5,
     "tracking_error": 96.6,
@@ -1298,9 +1308,9 @@
    "nav_date": "2026-10-16",
    "tracking_error": 1.04,
    "company": "华安基金",
-   "price": 2.519,
-   "price_chg": 0.12,
-   "premium": 13.41,
+   "price": 2.485,
+   "price_chg": -1.23,
+   "premium": 11.88,
    "scores": {
     "fee": 50.0,
     "tracking_error": 95.8,
@@ -1328,9 +1338,9 @@
    "nav_date": "2026-10-16",
    "tracking_error": 1.06,
    "company": "博时基金",
-   "price": 2.467,
-   "price_chg": 0.04,
-   "premium": 12.46,
+   "price": 2.44,
+   "price_chg": -1.05,
+   "premium": 11.23,
    "scores": {
     "fee": 87.5,
     "tracking_error": 94.1,
@@ -1358,9 +1368,9 @@
    "nav_date": "2026-10-16",
    "tracking_error": 0.99,
    "company": "富国基金",
-   "price": 2.135,
-   "price_chg": 0.33,
-   "premium": 14.67,
+   "price": 2.114,
+   "price_chg": -0.66,
+   "premium": 13.55,
    "scores": {
     "fee": 100.0,
     "tracking_error": 100.0,
@@ -1388,9 +1398,9 @@
    "nav_date": "2026-10-16",
    "tracking_error": 1.02,
    "company": "广发基金",
-   "price": 1.728,
-   "price_chg": 0.29,
-   "premium": 18.16,
+   "price": 1.708,
+   "price_chg": -0.87,
+   "premium": 16.79,
    "scores": {
     "fee": 0.0,
     "tracking_error": 97.5,
@@ -1418,9 +1428,9 @@
    "nav_date": "2026-10-16",
    "tracking_error": 1.03,
    "company": "大成基金",
-   "price": 1.837,
-   "price_chg": 0.33,
-   "premium": 12.8,
+   "price": 1.813,
+   "price_chg": -0.98,
+   "premium": 11.32,
    "scores": {
     "fee": 0.0,
     "tracking_error": 96.6,
@@ -1448,9 +1458,9 @@
    "nav_date": "2026-10-16",
    "tracking_error": 1.03,
    "company": "华泰柏瑞基金",
-   "price": 2.526,
-   "price_chg": 0.04,
-   "premium": 12.55,
+   "price": 2.498,
+   "price_chg": -1.07,
+   "premium": 11.3,
    "scores": {
     "fee": 0.0,
     "tracking_error": 96.6,
@@ -1478,9 +1488,9 @@
    "nav_date": "2026-10-16",
    "tracking_error": 2.17,
    "company": "华夏基金",
-   "price": 2.794,
-   "price_chg": 0.29,
-   "premium": 15.05,
+   "price": 2.743,
+   "price_chg": -1.54,
+   "premium": 12.95,
    "scores": {
     "fee": 50.0,
     "tracking_error": 0.0,
@@ -1617,9 +1627,9 @@
    "tracking_error": 1.18,
    "company": "易方达基金",
    "lof_name": "标普500LOF",
-   "lof_price": 3.279,
-   "lof_chg": -0.12,
-   "lof_premium": 5.08,
+   "lof_price": 3.257,
+   "lof_chg": -0.79,
+   "lof_premium": 4.37,
    "scores": {
     "fee": 50.0,
     "tracking_error": 100.0,
@@ -1809,9 +1819,9 @@
    "nav_date": "2026-10-16",
    "tracking_error": 1.05,
    "company": "南方基金",
-   "price": 2.001,
-   "price_chg": 0.05,
-   "premium": 7.86,
+   "price": 1.982,
+   "price_chg": -0.9,
+   "premium": 6.84,
    "scores": {
     "fee": 100.0,
     "tracking_error": 97.3,
@@ -1839,9 +1849,9 @@
    "nav_date": "2026-10-16",
    "tracking_error": 1.02,
    "company": "国泰基金",
-   "price": 2.076,
-   "price_chg": -0.05,
-   "premium": 8.63,
+   "price": 2.064,
+   "price_chg": -0.63,
+   "premium": 8.01,
    "scores": {
     "fee": 100.0,
     "tracking_error": 100.0,
@@ -1869,9 +1879,9 @@
    "nav_date": "2026-10-16",
    "tracking_error": 1.09,
    "company": "博时基金",
-   "price": 2.677,
-   "price_chg": 0.0,
-   "premium": 9.9,
+   "price": 2.649,
+   "price_chg": -1.05,
+   "premium": 8.75,
    "scores": {
     "fee": 0.0,
     "tracking_error": 93.8,
@@ -1899,9 +1909,9 @@
    "nav_date": "2026-10-16",
    "tracking_error": 2.15,
    "company": "华夏基金",
-   "price": 2.017,
-   "price_chg": -0.05,
-   "premium": 8.12,
+   "price": 2.002,
+   "price_chg": -0.79,
+   "premium": 7.32,
    "scores": {
     "fee": 100.0,
     "tracking_error": 0.0,
@@ -1912,8 +1922,43 @@
    "score": 48.7
   }
  ],
- "changes": [],
+ "changes": [
+  {
+   "code": "014978",
+   "name": "华安纳斯达克100ETF联接(QDII)C",
+   "index": "NDX100",
+   "direction": "suspended",
+   "from": "5 元/日",
+   "to": "暂停申购"
+  },
+  {
+   "code": "040046",
+   "name": "华安纳斯达克100ETF联接(QDII)A",
+   "index": "NDX100",
+   "direction": "suspended",
+   "from": "5 元/日",
+   "to": "暂停申购"
+  }
+ ],
  "history": [
+  {
+   "code": "040046",
+   "name": "华安纳斯达克100ETF联接(QDII)A",
+   "index": "NDX100",
+   "direction": "suspended",
+   "from": "5 元/日",
+   "to": "暂停申购",
+   "at": "2026-10-20 15:08:39"
+  },
+  {
+   "code": "014978",
+   "name": "华安纳斯达克100ETF联接(QDII)C",
+   "index": "NDX100",
+   "direction": "suspended",
+   "from": "5 元/日",
+   "to": "暂停申购",
+   "at": "2026-10-20 15:08:39"
+  },
   {
    "code": "270042",
    "name": "广发纳斯达克100ETF联接人民币(QDII)A",
@@ -2255,24 +2300,6 @@
    "from": "暂停申购",
    "to": "10 元/日",
    "at": "2026-09-08 10:30:01"
-  },
-  {
-   "code": "019305",
-   "name": "摩根标普500指数(QDII)人民币C",
-   "index": "SPX",
-   "direction": "reopened",
-   "from": "暂停申购",
-   "to": "10 元/日",
-   "at": "2026-09-08 10:30:01"
-  },
-  {
-   "code": "022664",
-   "name": "华泰柏瑞纳斯达克100ETF发起式联接(QDII)I",
-   "index": "NDX100",
-   "direction": "reopened",
-   "from": "暂停申购",
-   "to": "10 元/日",
-   "at": "2026-09-08 10:30:01"
   }
  ],
  "quality": {
@@ -2284,8 +2311,11 @@
    "021000",
    "022525"
   ],
-  "limit_crosscheck_confirmed": 46,
-  "limit_crosscheck_conflicts": [],
+  "limit_crosscheck_confirmed": 44,
+  "limit_crosscheck_conflicts": [
+   "014978",
+   "040046"
+  ],
   "score_estimated_count": 2,
   "lof_count": 2
  }
