@@ -1,8 +1,8 @@
 window.FUND_DATA = {
- "updated_at": "2026-11-09 22:30:01",
- "limit_captured_at": "2026-11-09 22:30:01",
- "updated_at_beijing": "2026-11-10 14:30:01",
- "limit_captured_at_beijing": "2026-11-10 14:30:01",
+ "updated_at": "2026-11-10 19:30:02",
+ "limit_captured_at": "2026-11-10 19:30:02",
+ "updated_at_beijing": "2026-11-11 11:30:02",
+ "limit_captured_at_beijing": "2026-11-11 11:30:02",
  "local_tz_matches_beijing": false,
  "weights": {
   "fee": 0.25,
@@ -29,18 +29,18 @@ window.FUND_DATA = {
    "buy_fee": 0.12,
    "scale": 6732310587.87,
    "scale_date": "2026-09-30",
-   "nav": 2.0829,
-   "nav_date": "2026-11-06",
-   "tracking_error": 1.43,
+   "nav": 2.1521,
+   "nav_date": "2026-11-09",
+   "tracking_error": 1.44,
    "company": "南方基金",
    "scores": {
     "fee": 92.9,
-    "tracking_error": 69.0,
+    "tracking_error": 68.5,
     "scale": 90.4,
     "limit": 100.0
    },
    "score_estimated": [],
-   "score": 88.1
+   "score": 88.0
   },
   {
    "code": "016453",
@@ -56,18 +56,18 @@ window.FUND_DATA = {
    "buy_fee": 0.0,
    "scale": 4648602702.48,
    "scale_date": "2026-09-30",
-   "nav": 2.0732,
-   "nav_date": "2026-11-06",
-   "tracking_error": 1.43,
+   "nav": 2.1421,
+   "nav_date": "2026-11-09",
+   "tracking_error": 1.44,
    "company": "南方基金",
    "scores": {
     "fee": 78.6,
-    "tracking_error": 69.0,
+    "tracking_error": 68.5,
     "scale": 84.4,
     "limit": 100.0
    },
    "score_estimated": [],
-   "score": 83.0
+   "score": 82.9
   },
   {
    "code": "000834",
@@ -83,8 +83,8 @@ window.FUND_DATA = {
    "buy_fee": 0.12,
    "scale": 4958120057.2,
    "scale_date": "2026-09-30",
-   "nav": 5.6767,
-   "nav_date": "2026-11-06",
+   "nav": 5.8686,
+   "nav_date": "2026-11-09",
    "tracking_error": 1.03,
    "company": "大成基金",
    "scores": {
@@ -110,18 +110,18 @@ window.FUND_DATA = {
    "buy_fee": 0.12,
    "scale": 1445668949.71,
    "scale_date": "2026-09-30",
-   "nav": 1.3583,
-   "nav_date": "2026-11-06",
-   "tracking_error": 1.73,
+   "nav": 1.4024,
+   "nav_date": "2026-11-09",
+   "tracking_error": 1.74,
    "company": "宝盈基金",
    "scores": {
     "fee": 92.9,
-    "tracking_error": 48.3,
+    "tracking_error": 47.9,
     "scale": 65.8,
     "limit": 100.0
    },
    "score_estimated": [],
-   "score": 76.8
+   "score": 76.7
   },
   {
    "code": "019172",
@@ -137,18 +137,18 @@ window.FUND_DATA = {
    "buy_fee": 0.12,
    "scale": 3202583178.65,
    "scale_date": "2026-09-30",
-   "nav": 1.5983,
-   "nav_date": "2026-11-06",
+   "nav": 1.6494,
+   "nav_date": "2026-11-09",
    "tracking_error": 2.31,
    "company": "摩根基金(中国)",
    "scores": {
     "fee": 100.0,
-    "tracking_error": 8.3,
+    "tracking_error": 8.9,
     "scale": 78.5,
     "limit": 100.0
    },
    "score_estimated": [],
-   "score": 71.7
+   "score": 71.8
   },
   {
    "code": "019524",
@@ -164,18 +164,18 @@ window.FUND_DATA = {
    "buy_fee": 0.12,
    "scale": 812217453.13,
    "scale_date": "2026-09-30",
-   "nav": 1.5059,
-   "nav_date": "2026-11-06",
-   "tracking_error": 1.61,
+   "nav": 1.5549,
+   "nav_date": "2026-11-09",
+   "tracking_error": 1.62,
    "company": "华泰柏瑞基金",
    "scores": {
     "fee": 92.9,
-    "tracking_error": 56.6,
+    "tracking_error": 56.2,
     "scale": 56.5,
     "limit": 74.7
    },
    "score_estimated": [],
-   "score": 70.2
+   "score": 70.1
   },
   {
    "code": "040046",
@@ -191,8 +191,8 @@ window.FUND_DATA = {
    "buy_fee": 0.12,
    "scale": 6339118080.3,
    "scale_date": "2026-09-30",
-   "nav": 7.4146,
-   "nav_date": "2026-11-06",
+   "nav": 7.6686,
+   "nav_date": "2026-11-09",
    "tracking_error": 0.98,
    "company": "华安基金",
    "scores": {
@@ -218,8 +218,8 @@ window.FUND_DATA = {
    "buy_fee": 0.0,
    "scale": 1114753479.66,
    "scale_date": "2026-09-30",
-   "nav": 5.6208,
-   "nav_date": "2026-11-06",
+   "nav": 5.8107,
+   "nav_date": "2026-11-09",
    "tracking_error": 1.03,
    "company": "大成基金",
    "scores": {
@@ -245,18 +245,18 @@ window.FUND_DATA = {
    "buy_fee": 0.0,
    "scale": 552186847.68,
    "scale_date": "2026-09-30",
-   "nav": 1.3483,
-   "nav_date": "2026-11-06",
-   "tracking_error": 1.74,
+   "nav": 1.392,
+   "nav_date": "2026-11-09",
+   "tracking_error": 1.75,
    "company": "宝盈基金",
    "scores": {
     "fee": 57.1,
-    "tracking_error": 47.6,
+    "tracking_error": 47.3,
     "scale": 50.3,
     "limit": 100.0
    },
    "score_estimated": [],
-   "score": 63.8
+   "score": 63.7
   },
   {
    "code": "019441",
@@ -272,45 +272,18 @@ window.FUND_DATA = {
    "buy_fee": 0.1,
    "scale": 1485853831.06,
    "scale_date": "2026-09-30",
-   "nav": 1.5393,
-   "nav_date": "2026-11-06",
-   "tracking_error": 2.2,
+   "nav": 1.5891,
+   "nav_date": "2026-11-09",
+   "tracking_error": 2.21,
    "company": "万家基金",
    "scores": {
     "fee": 92.9,
-    "tracking_error": 15.9,
+    "tracking_error": 15.8,
     "scale": 66.2,
     "limit": 74.7
    },
    "score_estimated": [],
    "score": 62.4
-  },
-  {
-   "code": "018043",
-   "name": "天弘纳斯达克100指数发起(QDII)A",
-   "index": "NDX100",
-   "is_etf": false,
-   "status": "暂停申购",
-   "status_mark": "",
-   "daily_limit": 0,
-   "limit_type": "suspended",
-   "limit_crosscheck": "confirmed",
-   "annual_fee": 0.6,
-   "buy_fee": 0.1,
-   "scale": 3243965528.48,
-   "scale_date": "2026-09-30",
-   "nav": 1.853,
-   "nav_date": "2026-11-06",
-   "tracking_error": 1.51,
-   "company": "天弘基金",
-   "scores": {
-    "fee": 100.0,
-    "tracking_error": 63.4,
-    "scale": 78.7,
-    "limit": 0.0
-   },
-   "score_estimated": [],
-   "score": 60.5
   },
   {
    "code": "021000",
@@ -326,20 +299,47 @@ window.FUND_DATA = {
    "buy_fee": null,
    "scale": 4079372962.14,
    "scale_date": "2026-09-30",
-   "nav": 2.0828,
-   "nav_date": "2026-11-06",
+   "nav": 2.152,
+   "nav_date": "2026-11-09",
    "tracking_error": 1.44,
    "company": "南方基金",
    "scores": {
     "fee": 91.4,
-    "tracking_error": 68.3,
+    "tracking_error": 68.5,
     "scale": 82.4,
     "limit": null
    },
    "score_estimated": [
     "limit"
    ],
-   "score": 60.5
+   "score": 60.6
+  },
+  {
+   "code": "018043",
+   "name": "天弘纳斯达克100指数发起(QDII)A",
+   "index": "NDX100",
+   "is_etf": false,
+   "status": "暂停申购",
+   "status_mark": "",
+   "daily_limit": 0,
+   "limit_type": "suspended",
+   "limit_crosscheck": "confirmed",
+   "annual_fee": 0.6,
+   "buy_fee": 0.1,
+   "scale": 3243965528.48,
+   "scale_date": "2026-09-30",
+   "nav": 1.9132,
+   "nav_date": "2026-11-09",
+   "tracking_error": 1.52,
+   "company": "天弘基金",
+   "scores": {
+    "fee": 100.0,
+    "tracking_error": 63.0,
+    "scale": 78.7,
+    "limit": 0.0
+   },
+   "score_estimated": [],
+   "score": 60.4
   },
   {
    "code": "270042",
@@ -355,8 +355,8 @@ window.FUND_DATA = {
    "buy_fee": 0.13,
    "scale": 12281448598.37,
    "scale_date": "2026-09-30",
-   "nav": 7.3714,
-   "nav_date": "2026-11-06",
+   "nav": 7.6259,
+   "nav_date": "2026-11-09",
    "tracking_error": 1.01,
    "company": "广发基金",
    "scores": {
@@ -382,18 +382,18 @@ window.FUND_DATA = {
    "buy_fee": 0.0,
    "scale": 602606125.03,
    "scale_date": "2026-09-30",
-   "nav": 1.4926,
-   "nav_date": "2026-11-06",
-   "tracking_error": 1.61,
+   "nav": 1.5411,
+   "nav_date": "2026-11-09",
+   "tracking_error": 1.62,
    "company": "华泰柏瑞基金",
    "scores": {
     "fee": 57.1,
-    "tracking_error": 56.6,
+    "tracking_error": 56.2,
     "scale": 51.7,
     "limit": 74.7
    },
    "score_estimated": [],
-   "score": 60.0
+   "score": 59.9
   },
   {
    "code": "161130",
@@ -409,22 +409,22 @@ window.FUND_DATA = {
    "buy_fee": 0.12,
    "scale": 1741351164.38,
    "scale_date": "2026-09-30",
-   "nav": 4.0556,
-   "nav_date": "2026-11-06",
+   "nav": 4.1877,
+   "nav_date": "2026-11-09",
    "tracking_error": 1.47,
    "company": "易方达基金",
    "lof_name": "纳斯达克100LOF",
-   "lof_price": 4.558,
-   "lof_chg": 2.77,
-   "lof_premium": 12.39,
+   "lof_price": 4.584,
+   "lof_chg": 0.66,
+   "lof_premium": 9.46,
    "scores": {
     "fee": 100.0,
-    "tracking_error": 66.2,
+    "tracking_error": 66.4,
     "scale": 68.7,
     "limit": 0.0
    },
    "score_estimated": [],
-   "score": 58.7
+   "score": 58.8
   },
   {
    "code": "539001",
@@ -440,13 +440,13 @@ window.FUND_DATA = {
    "buy_fee": 0.12,
    "scale": 4374353271.19,
    "scale_date": "2026-09-30",
-   "nav": 3.1495,
-   "nav_date": "2026-11-06",
-   "tracking_error": 2.32,
+   "nav": 3.2475,
+   "nav_date": "2026-11-09",
+   "tracking_error": 2.33,
    "company": "建信基金",
    "scores": {
     "fee": 42.9,
-    "tracking_error": 7.6,
+    "tracking_error": 7.5,
     "scale": 83.5,
     "limit": 100.0
    },
@@ -467,18 +467,18 @@ window.FUND_DATA = {
    "buy_fee": 0.1,
    "scale": 1989483877.97,
    "scale_date": "2026-09-30",
-   "nav": 1.9846,
-   "nav_date": "2026-11-06",
-   "tracking_error": 1.52,
+   "nav": 2.0489,
+   "nav_date": "2026-11-09",
+   "tracking_error": 1.53,
    "company": "嘉实基金",
    "scores": {
     "fee": 100.0,
-    "tracking_error": 62.8,
+    "tracking_error": 62.3,
     "scale": 70.9,
     "limit": 0.0
    },
    "score_estimated": [],
-   "score": 58.4
+   "score": 58.3
   },
   {
    "code": "019173",
@@ -494,18 +494,18 @@ window.FUND_DATA = {
    "buy_fee": 0.0,
    "scale": 1108620069.71,
    "scale_date": "2026-09-30",
-   "nav": 1.5827,
-   "nav_date": "2026-11-06",
+   "nav": 1.6333,
+   "nav_date": "2026-11-09",
    "tracking_error": 2.31,
    "company": "摩根基金(中国)",
    "scores": {
     "fee": 57.1,
-    "tracking_error": 8.3,
+    "tracking_error": 8.9,
     "scale": 61.5,
     "limit": 100.0
    },
    "score_estimated": [],
-   "score": 56.7
+   "score": 56.9
   },
   {
    "code": "022664",
@@ -521,18 +521,18 @@ window.FUND_DATA = {
    "buy_fee": 0.0,
    "scale": 61819924.91,
    "scale_date": "2026-09-30",
-   "nav": 1.5037,
-   "nav_date": "2026-11-06",
-   "tracking_error": 1.6,
+   "nav": 1.5525,
+   "nav_date": "2026-11-09",
+   "tracking_error": 1.61,
    "company": "华泰柏瑞基金",
    "scores": {
     "fee": 78.6,
-    "tracking_error": 57.2,
+    "tracking_error": 56.8,
     "scale": 15.3,
     "limit": 74.7
    },
    "score_estimated": [],
-   "score": 56.5
+   "score": 56.3
   },
   {
    "code": "016055",
@@ -548,18 +548,18 @@ window.FUND_DATA = {
    "buy_fee": 0.1,
    "scale": 1456683608.04,
    "scale_date": "2026-09-30",
-   "nav": 1.9342,
-   "nav_date": "2026-11-06",
-   "tracking_error": 1.5,
+   "nav": 1.9969,
+   "nav_date": "2026-11-09",
+   "tracking_error": 1.51,
    "company": "博时基金",
    "scores": {
     "fee": 92.9,
-    "tracking_error": 64.1,
+    "tracking_error": 63.7,
     "scale": 65.9,
     "limit": 0.0
    },
    "score_estimated": [],
-   "score": 55.7
+   "score": 55.6
   },
   {
    "code": "018044",
@@ -575,18 +575,18 @@ window.FUND_DATA = {
    "buy_fee": 0.0,
    "scale": 3169616297.11,
    "scale_date": "2026-09-30",
-   "nav": 1.8367,
-   "nav_date": "2026-11-06",
+   "nav": 1.8963,
+   "nav_date": "2026-11-09",
    "tracking_error": 1.52,
    "company": "天弘基金",
    "scores": {
     "fee": 71.4,
-    "tracking_error": 62.8,
+    "tracking_error": 63.0,
     "scale": 78.3,
     "limit": 0.0
    },
    "score_estimated": [],
-   "score": 53.1
+   "score": 53.2
   },
   {
    "code": "160213",
@@ -602,18 +602,18 @@ window.FUND_DATA = {
    "buy_fee": 0.15,
    "scale": 2881525882.73,
    "scale_date": "2026-09-30",
-   "nav": 4.045,
-   "nav_date": "2026-11-06",
+   "nav": 4.185,
+   "nav_date": "2026-11-09",
    "tracking_error": 1.1,
    "company": "国泰基金",
    "scores": {
     "fee": 42.9,
-    "tracking_error": 91.7,
+    "tracking_error": 91.8,
     "scale": 76.8,
     "limit": 0.0
    },
    "score_estimated": [],
-   "score": 52.8
+   "score": 52.9
   },
   {
    "code": "018966",
@@ -629,18 +629,18 @@ window.FUND_DATA = {
    "buy_fee": 0.12,
    "scale": 2035212744.76,
    "scale_date": "2026-09-30",
-   "nav": 1.4772,
-   "nav_date": "2026-11-06",
+   "nav": 1.5255,
+   "nav_date": "2026-11-09",
    "tracking_error": 1.76,
    "company": "汇添富基金",
    "scores": {
     "fee": 92.9,
-    "tracking_error": 46.2,
+    "tracking_error": 46.6,
     "scale": 71.2,
     "limit": 0.0
    },
    "score_estimated": [],
-   "score": 52.6
+   "score": 52.7
   },
   {
    "code": "014978",
@@ -656,8 +656,8 @@ window.FUND_DATA = {
    "buy_fee": 0.0,
    "scale": 1513579921.83,
    "scale_date": "2026-09-30",
-   "nav": 7.2592,
-   "nav_date": "2026-11-06",
+   "nav": 7.5078,
+   "nav_date": "2026-11-09",
    "tracking_error": 0.98,
    "company": "华安基金",
    "scores": {
@@ -683,13 +683,13 @@ window.FUND_DATA = {
    "buy_fee": 0.0,
    "scale": 697236938.38,
    "scale_date": "2026-09-30",
-   "nav": 1.5288,
-   "nav_date": "2026-11-06",
-   "tracking_error": 2.2,
+   "nav": 1.5783,
+   "nav_date": "2026-11-09",
+   "tracking_error": 2.21,
    "company": "万家基金",
    "scores": {
     "fee": 64.3,
-    "tracking_error": 15.9,
+    "tracking_error": 15.8,
     "scale": 54.1,
     "limit": 74.7
    },
@@ -710,18 +710,18 @@ window.FUND_DATA = {
    "buy_fee": 0.12,
    "scale": 2323002912.2,
    "scale_date": "2026-09-30",
-   "nav": 1.4392,
-   "nav_date": "2026-11-06",
-   "tracking_error": 1.85,
+   "nav": 1.4844,
+   "nav_date": "2026-11-09",
+   "tracking_error": 1.87,
    "company": "招商基金",
    "scores": {
     "fee": 92.9,
-    "tracking_error": 40.0,
+    "tracking_error": 39.0,
     "scale": 73.3,
     "limit": 0.0
    },
    "score_estimated": [],
-   "score": 51.5
+   "score": 51.3
   },
   {
    "code": "006479",
@@ -737,8 +737,8 @@ window.FUND_DATA = {
    "buy_fee": 0.0,
    "scale": 6463001687.92,
    "scale_date": "2026-09-30",
-   "nav": 7.2401,
-   "nav_date": "2026-11-06",
+   "nav": 7.4899,
+   "nav_date": "2026-11-09",
    "tracking_error": 1.01,
    "company": "广发基金",
    "scores": {
@@ -764,18 +764,18 @@ window.FUND_DATA = {
    "buy_fee": 0.0,
    "scale": 1538658743.47,
    "scale_date": "2026-09-30",
-   "nav": 1.9612,
-   "nav_date": "2026-11-06",
-   "tracking_error": 1.52,
+   "nav": 2.0247,
+   "nav_date": "2026-11-09",
+   "tracking_error": 1.53,
    "company": "嘉实基金",
    "scores": {
     "fee": 64.3,
-    "tracking_error": 62.8,
+    "tracking_error": 62.3,
     "scale": 66.7,
     "limit": 0.0
    },
    "score_estimated": [],
-   "score": 48.5
+   "score": 48.3
   },
   {
    "code": "021778",
@@ -791,8 +791,8 @@ window.FUND_DATA = {
    "buy_fee": null,
    "scale": 2459543140.61,
    "scale_date": "2026-09-30",
-   "nav": 7.3427,
-   "nav_date": "2026-11-06",
+   "nav": 7.5961,
+   "nav_date": "2026-11-09",
    "tracking_error": 1.01,
    "company": "广发基金",
    "scores": {
@@ -818,18 +818,18 @@ window.FUND_DATA = {
    "buy_fee": 0.0,
    "scale": 2360824872.38,
    "scale_date": "2026-09-30",
-   "nav": 3.0459,
-   "nav_date": "2026-11-06",
-   "tracking_error": 2.31,
+   "nav": 3.1406,
+   "nav_date": "2026-11-09",
+   "tracking_error": 2.33,
    "company": "建信基金",
    "scores": {
     "fee": 0.0,
-    "tracking_error": 8.3,
+    "tracking_error": 7.5,
     "scale": 73.6,
     "limit": 100.0
    },
    "score_estimated": [],
-   "score": 45.5
+   "score": 45.3
   },
   {
    "code": "021773",
@@ -845,18 +845,18 @@ window.FUND_DATA = {
    "buy_fee": 0.0,
    "scale": 465935900.23,
    "scale_date": "2026-09-30",
-   "nav": 1.4739,
-   "nav_date": "2026-11-06",
+   "nav": 1.522,
+   "nav_date": "2026-11-09",
    "tracking_error": 1.76,
    "company": "汇添富基金",
    "scores": {
     "fee": 78.6,
-    "tracking_error": 46.2,
+    "tracking_error": 46.6,
     "scale": 47.6,
     "limit": 0.0
    },
    "score_estimated": [],
-   "score": 43.1
+   "score": 43.2
   },
   {
    "code": "016057",
@@ -872,47 +872,18 @@ window.FUND_DATA = {
    "buy_fee": 0.0,
    "scale": 669072350.66,
    "scale_date": "2026-09-30",
-   "nav": 1.9079,
-   "nav_date": "2026-11-06",
-   "tracking_error": 1.5,
+   "nav": 1.9697,
+   "nav_date": "2026-11-09",
+   "tracking_error": 1.51,
    "company": "博时基金",
    "scores": {
     "fee": 50.0,
-    "tracking_error": 64.1,
+    "tracking_error": 63.7,
     "scale": 53.4,
     "limit": 0.0
    },
    "score_estimated": [],
-   "score": 41.9
-  },
-  {
-   "code": "022525",
-   "name": "天弘纳斯达克100指数发起(QDII)D",
-   "index": "NDX100",
-   "is_etf": false,
-   "status": "限大额",
-   "status_mark": "",
-   "daily_limit": null,
-   "limit_type": "unknown",
-   "limit_crosscheck": "unavailable",
-   "annual_fee": 0.8,
-   "buy_fee": null,
-   "scale": 162210528.09,
-   "scale_date": "2026-09-30",
-   "nav": 1.8328,
-   "nav_date": "2026-11-06",
-   "tracking_error": 1.51,
-   "company": "天弘基金",
-   "scores": {
-    "fee": 71.4,
-    "tracking_error": 63.4,
-    "scale": 30.7,
-    "limit": null
-   },
-   "score_estimated": [
-    "limit"
-   ],
-   "score": 41.4
+   "score": 41.8
   },
   {
    "code": "024237",
@@ -928,18 +899,47 @@ window.FUND_DATA = {
    "buy_fee": null,
    "scale": 163187871.03,
    "scale_date": "2026-09-30",
-   "nav": 1.9295,
-   "nav_date": "2026-11-06",
+   "nav": 1.992,
+   "nav_date": "2026-11-09",
    "tracking_error": 1.51,
    "company": "博时基金",
    "scores": {
     "fee": 71.4,
-    "tracking_error": 63.4,
+    "tracking_error": 63.7,
     "scale": 30.8,
     "limit": 0.0
    },
    "score_estimated": [],
-   "score": 41.4
+   "score": 41.5
+  },
+  {
+   "code": "022525",
+   "name": "天弘纳斯达克100指数发起(QDII)D",
+   "index": "NDX100",
+   "is_etf": false,
+   "status": "限大额",
+   "status_mark": "",
+   "daily_limit": null,
+   "limit_type": "unknown",
+   "limit_crosscheck": "unavailable",
+   "annual_fee": 0.8,
+   "buy_fee": null,
+   "scale": 162210528.09,
+   "scale_date": "2026-09-30",
+   "nav": 1.8923,
+   "nav_date": "2026-11-09",
+   "tracking_error": 1.52,
+   "company": "天弘基金",
+   "scores": {
+    "fee": 71.4,
+    "tracking_error": 63.0,
+    "scale": 30.7,
+    "limit": null
+   },
+   "score_estimated": [
+    "limit"
+   ],
+   "score": 41.3
   },
   {
    "code": "012870",
@@ -955,18 +955,18 @@ window.FUND_DATA = {
    "buy_fee": 0.0,
    "scale": 164890622.68,
    "scale_date": "2026-09-30",
-   "nav": 3.9821,
-   "nav_date": "2026-11-06",
-   "tracking_error": 1.47,
+   "nav": 4.1117,
+   "nav_date": "2026-11-09",
+   "tracking_error": 1.48,
    "company": "易方达基金",
    "scores": {
     "fee": 57.1,
-    "tracking_error": 66.2,
+    "tracking_error": 65.8,
     "scale": 31.0,
     "limit": 0.0
    },
    "score_estimated": [],
-   "score": 38.6
+   "score": 38.5
   },
   {
    "code": "021838",
@@ -982,18 +982,18 @@ window.FUND_DATA = {
    "buy_fee": null,
    "scale": 23779871.33,
    "scale_date": "2026-09-30",
-   "nav": 1.9666,
-   "nav_date": "2026-11-06",
-   "tracking_error": 1.52,
+   "nav": 2.0303,
+   "nav_date": "2026-11-09",
+   "tracking_error": 1.53,
    "company": "嘉实基金",
    "scores": {
     "fee": 85.7,
-    "tracking_error": 62.8,
+    "tracking_error": 62.3,
     "scale": 0.0,
     "limit": 0.0
    },
    "score_estimated": [],
-   "score": 37.1
+   "score": 37.0
   },
   {
    "code": "018967",
@@ -1009,18 +1009,18 @@ window.FUND_DATA = {
    "buy_fee": 0.0,
    "scale": 1157706835.17,
    "scale_date": "2026-09-30",
-   "nav": 1.4583,
-   "nav_date": "2026-11-06",
+   "nav": 1.5059,
+   "nav_date": "2026-11-09",
    "tracking_error": 1.76,
    "company": "汇添富基金",
    "scores": {
     "fee": 35.7,
-    "tracking_error": 46.2,
+    "tracking_error": 46.6,
     "scale": 62.2,
     "limit": 0.0
    },
    "score_estimated": [],
-   "score": 36.0
+   "score": 36.1
   },
   {
    "code": "019548",
@@ -1036,18 +1036,18 @@ window.FUND_DATA = {
    "buy_fee": 0.0,
    "scale": 1445611147.16,
    "scale_date": "2026-09-30",
-   "nav": 1.4226,
-   "nav_date": "2026-11-06",
-   "tracking_error": 1.85,
+   "nav": 1.4672,
+   "nav_date": "2026-11-09",
+   "tracking_error": 1.87,
    "company": "招商基金",
    "scores": {
     "fee": 35.7,
-    "tracking_error": 40.0,
+    "tracking_error": 39.0,
     "scale": 65.8,
     "limit": 0.0
    },
    "score_estimated": [],
-   "score": 35.4
+   "score": 35.1
   },
   {
    "code": "023422",
@@ -1063,13 +1063,13 @@ window.FUND_DATA = {
    "buy_fee": 0.0,
    "scale": 115346292.42,
    "scale_date": "2026-09-30",
-   "nav": 3.0605,
-   "nav_date": "2026-11-06",
-   "tracking_error": 2.32,
+   "nav": 3.1557,
+   "nav_date": "2026-11-09",
+   "tracking_error": 2.33,
    "company": "建信基金",
    "scores": {
     "fee": 0.0,
-    "tracking_error": 7.6,
+    "tracking_error": 7.5,
     "scale": 25.3,
     "limit": 100.0
    },
@@ -1090,18 +1090,18 @@ window.FUND_DATA = {
    "buy_fee": 0.12,
    "scale": 326139190.09,
    "scale_date": "2026-09-30",
-   "nav": 1.8526,
-   "nav_date": "2026-11-06",
+   "nav": 1.9135,
+   "nav_date": "2026-11-09",
    "tracking_error": 2.43,
    "company": "华夏基金",
    "scores": {
     "fee": 71.4,
-    "tracking_error": 0.0,
+    "tracking_error": 0.7,
     "scale": 41.9,
     "limit": 0.0
    },
    "score_estimated": [],
-   "score": 28.3
+   "score": 28.5
   },
   {
    "code": "015300",
@@ -1117,9 +1117,9 @@ window.FUND_DATA = {
    "buy_fee": 0.0,
    "scale": 164032930.92,
    "scale_date": "2026-09-30",
-   "nav": 1.8274,
-   "nav_date": "2026-11-06",
-   "tracking_error": 2.43,
+   "nav": 1.8874,
+   "nav_date": "2026-11-09",
+   "tracking_error": 2.44,
    "company": "华夏基金",
    "scores": {
     "fee": 28.6,
@@ -1144,13 +1144,13 @@ window.FUND_DATA = {
    "buy_fee": null,
    "scale": 13367955940.18,
    "scale_date": "2026-09-30",
-   "nav": 1.6961,
-   "nav_date": "2026-11-06",
+   "nav": 1.7541,
+   "nav_date": "2026-11-09",
    "tracking_error": 1.01,
    "company": "嘉实基金",
-   "price": 2.111,
-   "price_chg": 2.73,
-   "premium": 24.46,
+   "price": 2.113,
+   "price_chg": 0.14,
+   "premium": 20.46,
    "scores": {
     "fee": 100.0,
     "tracking_error": 98.3,
@@ -1174,16 +1174,16 @@ window.FUND_DATA = {
    "buy_fee": null,
    "scale": 10273843992.01,
    "scale_date": "2026-09-30",
-   "nav": 1.9522,
-   "nav_date": "2026-11-06",
+   "nav": 2.0188,
+   "nav_date": "2026-11-09",
    "tracking_error": 1.07,
    "company": "招商基金",
-   "price": 2.342,
-   "price_chg": 3.72,
-   "premium": 19.97,
+   "price": 2.36,
+   "price_chg": 0.68,
+   "premium": 16.9,
    "scores": {
     "fee": 87.5,
-    "tracking_error": 93.3,
+    "tracking_error": 93.4,
     "scale": 50.8,
     "limit": null
    },
@@ -1204,13 +1204,13 @@ window.FUND_DATA = {
    "buy_fee": null,
    "scale": 5704500383.07,
    "scale_date": "2026-09-30",
-   "nav": 1.6815,
-   "nav_date": "2026-11-06",
+   "nav": 1.7391,
+   "nav_date": "2026-11-09",
    "tracking_error": 1.0,
    "company": "易方达基金",
-   "price": 2.04,
-   "price_chg": 3.08,
-   "premium": 21.32,
+   "price": 2.063,
+   "price_chg": 0.68,
+   "premium": 18.62,
    "scores": {
     "fee": 100.0,
     "tracking_error": 99.2,
@@ -1234,21 +1234,21 @@ window.FUND_DATA = {
    "buy_fee": null,
    "scale": 19765601284.11,
    "scale_date": "2026-09-30",
-   "nav": 1.8056,
-   "nav_date": "2026-11-06",
-   "tracking_error": 1.0,
+   "nav": 1.8672,
+   "nav_date": "2026-11-09",
+   "tracking_error": 1.01,
    "company": "国泰基金",
-   "price": 2.209,
-   "price_chg": 3.13,
-   "premium": 22.34,
+   "price": 2.223,
+   "price_chg": 0.59,
+   "premium": 19.06,
    "scores": {
     "fee": 50.0,
-    "tracking_error": 99.2,
+    "tracking_error": 98.3,
     "scale": 77.0,
     "limit": null
    },
    "score_estimated": [],
-   "score": 75.4
+   "score": 75.1
   },
   {
    "code": "159660",
@@ -1264,13 +1264,13 @@ window.FUND_DATA = {
    "buy_fee": null,
    "scale": 5774231766.58,
    "scale_date": "2026-09-30",
-   "nav": 1.9728,
-   "nav_date": "2026-11-06",
+   "nav": 2.0404,
+   "nav_date": "2026-11-09",
    "tracking_error": 1.03,
    "company": "汇添富基金",
-   "price": 2.34,
-   "price_chg": 3.27,
-   "premium": 18.61,
+   "price": 2.36,
+   "price_chg": 0.64,
+   "premium": 15.66,
    "scores": {
     "fee": 87.5,
     "tracking_error": 96.7,
@@ -1294,13 +1294,13 @@ window.FUND_DATA = {
    "buy_fee": null,
    "scale": 5048198903.37,
    "scale_date": "2026-09-30",
-   "nav": 2.0264,
-   "nav_date": "2026-11-06",
+   "nav": 2.0956,
+   "nav_date": "2026-11-09",
    "tracking_error": 1.05,
    "company": "博时基金",
-   "price": 2.401,
-   "price_chg": 3.27,
-   "premium": 18.49,
+   "price": 2.424,
+   "price_chg": 0.62,
+   "premium": 15.67,
    "scores": {
     "fee": 87.5,
     "tracking_error": 95.0,
@@ -1324,16 +1324,16 @@ window.FUND_DATA = {
    "buy_fee": null,
    "scale": 11807689943.57,
    "scale_date": "2026-09-30",
-   "nav": 2.0512,
-   "nav_date": "2026-11-06",
+   "nav": 2.1213,
+   "nav_date": "2026-11-09",
    "tracking_error": 1.04,
    "company": "华安基金",
-   "price": 2.413,
-   "price_chg": 3.65,
-   "premium": 17.64,
+   "price": 2.439,
+   "price_chg": 0.87,
+   "premium": 14.98,
    "scores": {
     "fee": 50.0,
-    "tracking_error": 95.8,
+    "tracking_error": 95.9,
     "scale": 56.4,
     "limit": null
    },
@@ -1354,13 +1354,13 @@ window.FUND_DATA = {
    "buy_fee": null,
    "scale": 2890047086.53,
    "scale_date": "2026-09-30",
-   "nav": 1.7196,
-   "nav_date": "2026-11-06",
+   "nav": 1.7785,
+   "nav_date": "2026-11-09",
    "tracking_error": 0.99,
    "company": "富国基金",
-   "price": 2.049,
-   "price_chg": 3.28,
-   "premium": 19.16,
+   "price": 2.067,
+   "price_chg": 0.58,
+   "premium": 16.22,
    "scores": {
     "fee": 100.0,
     "tracking_error": 100.0,
@@ -1384,21 +1384,21 @@ window.FUND_DATA = {
    "buy_fee": null,
    "scale": 35053269451.03,
    "scale_date": "2026-09-30",
-   "nav": 1.3499,
-   "nav_date": "2026-11-06",
-   "tracking_error": 1.01,
+   "nav": 1.3962,
+   "nav_date": "2026-11-09",
+   "tracking_error": 1.02,
    "company": "广发基金",
-   "price": 1.629,
-   "price_chg": 3.63,
-   "premium": 20.68,
+   "price": 1.642,
+   "price_chg": 0.74,
+   "premium": 17.6,
    "scores": {
     "fee": 0.0,
-    "tracking_error": 98.3,
+    "tracking_error": 97.5,
     "scale": 100.0,
     "limit": null
    },
    "score_estimated": [],
-   "score": 66.1
+   "score": 65.8
   },
   {
    "code": "159513",
@@ -1414,13 +1414,13 @@ window.FUND_DATA = {
    "buy_fee": null,
    "scale": 8247084312.16,
    "scale_date": "2026-09-30",
-   "nav": 1.5032,
-   "nav_date": "2026-11-06",
+   "nav": 1.5546,
+   "nav_date": "2026-11-09",
    "tracking_error": 1.02,
    "company": "大成基金",
-   "price": 1.757,
-   "price_chg": 3.54,
-   "premium": 16.88,
+   "price": 1.775,
+   "price_chg": 0.85,
+   "premium": 14.18,
    "scores": {
     "fee": 0.0,
     "tracking_error": 97.5,
@@ -1444,13 +1444,13 @@ window.FUND_DATA = {
    "buy_fee": null,
    "scale": 5206403101.59,
    "scale_date": "2026-09-30",
-   "nav": 2.0737,
-   "nav_date": "2026-11-06",
+   "nav": 2.1442,
+   "nav_date": "2026-11-09",
    "tracking_error": 1.03,
    "company": "华泰柏瑞基金",
-   "price": 2.423,
-   "price_chg": 3.5,
-   "premium": 16.84,
+   "price": 2.449,
+   "price_chg": 0.86,
+   "premium": 14.22,
    "scores": {
     "fee": 0.0,
     "tracking_error": 96.7,
@@ -1474,13 +1474,13 @@ window.FUND_DATA = {
    "buy_fee": null,
    "scale": 13913693808.13,
    "scale_date": "2026-09-30",
-   "nav": 2.2392,
-   "nav_date": "2026-11-06",
-   "tracking_error": 2.19,
+   "nav": 2.3167,
+   "nav_date": "2026-11-09",
+   "tracking_error": 2.2,
    "company": "华夏基金",
-   "price": 2.663,
-   "price_chg": 3.3,
-   "premium": 18.93,
+   "price": 2.685,
+   "price_chg": 0.6,
+   "premium": 15.9,
    "scores": {
     "fee": 50.0,
     "tracking_error": 0.0,
@@ -1504,18 +1504,18 @@ window.FUND_DATA = {
    "buy_fee": 0.12,
    "scale": 5931499576.81,
    "scale_date": "2026-09-30",
-   "nav": 1.63,
-   "nav_date": "2026-11-06",
-   "tracking_error": 1.57,
+   "nav": 1.6653,
+   "nav_date": "2026-11-09",
+   "tracking_error": 1.58,
    "company": "摩根基金(中国)",
    "scores": {
     "fee": 100.0,
-    "tracking_error": 61.2,
+    "tracking_error": 60.6,
     "scale": 98.6,
     "limit": 100.0
    },
    "score_estimated": [],
-   "score": 89.9
+   "score": 89.8
   },
   {
    "code": "019305",
@@ -1531,18 +1531,18 @@ window.FUND_DATA = {
    "buy_fee": 0.0,
    "scale": 1988132876.0,
    "scale_date": "2026-09-30",
-   "nav": 1.6138,
-   "nav_date": "2026-11-06",
-   "tracking_error": 1.58,
+   "nav": 1.6486,
+   "nav_date": "2026-11-09",
+   "tracking_error": 1.59,
    "company": "摩根基金(中国)",
    "scores": {
     "fee": 57.1,
-    "tracking_error": 60.2,
+    "tracking_error": 59.6,
     "scale": 75.3,
     "limit": 100.0
    },
    "score_estimated": [],
-   "score": 73.2
+   "score": 73.0
   },
   {
    "code": "050025",
@@ -1558,8 +1558,8 @@ window.FUND_DATA = {
    "buy_fee": 0.12,
    "scale": 6347591513.01,
    "scale_date": "2026-09-30",
-   "nav": 5.3457,
-   "nav_date": "2026-11-06",
+   "nav": 5.4653,
+   "nav_date": "2026-11-09",
    "tracking_error": 1.24,
    "company": "博时基金",
    "scores": {
@@ -1585,8 +1585,8 @@ window.FUND_DATA = {
    "buy_fee": null,
    "scale": 2442507236.27,
    "scale_date": "2026-09-30",
-   "nav": 5.3439,
-   "nav_date": "2026-11-06",
+   "nav": 5.4635,
+   "nav_date": "2026-11-09",
    "tracking_error": 1.24,
    "company": "博时基金",
    "scores": {
@@ -1612,14 +1612,14 @@ window.FUND_DATA = {
    "buy_fee": 0.12,
    "scale": 1525966041.52,
    "scale_date": "2026-09-30",
-   "nav": 3.0085,
-   "nav_date": "2026-11-06",
+   "nav": 3.076,
+   "nav_date": "2026-11-09",
    "tracking_error": 1.19,
    "company": "易方达基金",
    "lof_name": "标普500LOF",
-   "lof_price": 3.237,
-   "lof_chg": 1.57,
-   "lof_premium": 7.6,
+   "lof_price": 3.251,
+   "lof_chg": 0.53,
+   "lof_premium": 5.69,
    "scores": {
     "fee": 50.0,
     "tracking_error": 100.0,
@@ -1643,18 +1643,18 @@ window.FUND_DATA = {
    "buy_fee": 0.1,
    "scale": 127123816.13,
    "scale_date": "2026-09-30",
-   "nav": 1.6491,
-   "nav_date": "2026-11-06",
-   "tracking_error": 1.2,
+   "nav": 1.686,
+   "nav_date": "2026-11-09",
+   "tracking_error": 1.21,
    "company": "国泰基金",
    "scores": {
     "fee": 85.7,
-    "tracking_error": 99.0,
+    "tracking_error": 98.0,
     "scale": 16.8,
     "limit": 0.0
    },
    "score_estimated": [],
-   "score": 50.4
+   "score": 50.1
   },
   {
    "code": "006075",
@@ -1670,8 +1670,8 @@ window.FUND_DATA = {
    "buy_fee": 0.0,
    "scale": 1243166238.67,
    "scale_date": "2026-09-30",
-   "nav": 5.1726,
-   "nav_date": "2026-11-06",
+   "nav": 5.2882,
+   "nav_date": "2026-11-09",
    "tracking_error": 1.24,
    "company": "博时基金",
    "scores": {
@@ -1697,18 +1697,18 @@ window.FUND_DATA = {
    "buy_fee": 0.0,
    "scale": 57632206.24,
    "scale_date": "2026-09-30",
-   "nav": 1.6297,
-   "nav_date": "2026-11-06",
-   "tracking_error": 1.2,
+   "nav": 1.666,
+   "nav_date": "2026-11-09",
+   "tracking_error": 1.21,
    "company": "国泰基金",
    "scores": {
     "fee": 42.9,
-    "tracking_error": 99.0,
+    "tracking_error": 98.0,
     "scale": 0.0,
     "limit": 0.0
    },
    "score_estimated": [],
-   "score": 35.5
+   "score": 35.2
   },
   {
    "code": "018064",
@@ -1724,9 +1724,9 @@ window.FUND_DATA = {
    "buy_fee": 0.12,
    "scale": 327121306.82,
    "scale_date": "2026-09-30",
-   "nav": 1.631,
-   "nav_date": "2026-11-06",
-   "tracking_error": 2.17,
+   "nav": 1.6682,
+   "nav_date": "2026-11-09",
+   "tracking_error": 2.18,
    "company": "华夏基金",
    "scores": {
     "fee": 85.7,
@@ -1751,18 +1751,18 @@ window.FUND_DATA = {
    "buy_fee": 0.0,
    "scale": 115434431.34,
    "scale_date": "2026-09-30",
-   "nav": 2.9542,
-   "nav_date": "2026-11-06",
-   "tracking_error": 1.19,
+   "nav": 3.0205,
+   "nav_date": "2026-11-09",
+   "tracking_error": 1.2,
    "company": "易方达基金",
    "scores": {
     "fee": 0.0,
-    "tracking_error": 100.0,
+    "tracking_error": 99.0,
     "scale": 14.8,
     "limit": 0.0
    },
    "score_estimated": [],
-   "score": 28.7
+   "score": 28.4
   },
   {
    "code": "018065",
@@ -1778,9 +1778,9 @@ window.FUND_DATA = {
    "buy_fee": 0.0,
    "scale": 165072898.61,
    "scale_date": "2026-09-30",
-   "nav": 1.6141,
-   "nav_date": "2026-11-06",
-   "tracking_error": 2.17,
+   "nav": 1.6508,
+   "nav_date": "2026-11-09",
+   "tracking_error": 2.18,
    "company": "华夏基金",
    "scores": {
     "fee": 42.9,
@@ -1805,21 +1805,21 @@ window.FUND_DATA = {
    "buy_fee": null,
    "scale": 8711339078.2,
    "scale_date": "2026-09-30",
-   "nav": 1.7848,
-   "nav_date": "2026-11-06",
-   "tracking_error": 1.04,
+   "nav": 1.8272,
+   "nav_date": "2026-11-09",
+   "tracking_error": 1.05,
    "company": "南方基金",
-   "price": 1.985,
-   "price_chg": 2.11,
-   "premium": 11.22,
+   "price": 1.986,
+   "price_chg": 0.05,
+   "premium": 8.69,
    "scores": {
     "fee": 100.0,
-    "tracking_error": 98.3,
+    "tracking_error": 97.4,
     "scale": 67.3,
     "limit": null
    },
    "score_estimated": [],
-   "score": 88.5
+   "score": 88.2
   },
   {
    "code": "159612",
@@ -1835,13 +1835,13 @@ window.FUND_DATA = {
    "buy_fee": null,
    "scale": 977549238.98,
    "scale_date": "2026-09-30",
-   "nav": 1.8382,
-   "nav_date": "2026-11-06",
+   "nav": 1.8815,
+   "nav_date": "2026-11-09",
    "tracking_error": 1.02,
    "company": "国泰基金",
    "price": 2.053,
-   "price_chg": 1.94,
-   "premium": 11.69,
+   "price_chg": 0.05,
+   "premium": 9.12,
    "scores": {
     "fee": 100.0,
     "tracking_error": 100.0,
@@ -1865,21 +1865,21 @@ window.FUND_DATA = {
    "buy_fee": null,
    "scale": 25181037712.79,
    "scale_date": "2026-09-30",
-   "nav": 2.3434,
-   "nav_date": "2026-11-06",
-   "tracking_error": 1.08,
+   "nav": 2.3986,
+   "nav_date": "2026-11-09",
+   "tracking_error": 1.09,
    "company": "博时基金",
-   "price": 2.652,
-   "price_chg": 1.84,
-   "premium": 13.17,
+   "price": 2.651,
+   "price_chg": -0.04,
+   "premium": 10.52,
    "scores": {
     "fee": 0.0,
-    "tracking_error": 94.8,
+    "tracking_error": 94.0,
     "scale": 100.0,
     "limit": null
    },
    "score_estimated": [],
-   "score": 64.9
+   "score": 64.7
   },
   {
    "code": "159655",
@@ -1895,13 +1895,13 @@ window.FUND_DATA = {
    "buy_fee": null,
    "scale": 4171377744.31,
    "scale_date": "2026-09-30",
-   "nav": 1.792,
-   "nav_date": "2026-11-06",
-   "tracking_error": 2.17,
+   "nav": 1.835,
+   "nav_date": "2026-11-09",
+   "tracking_error": 2.18,
    "company": "华夏基金",
    "price": 1.995,
-   "price_chg": 2.36,
-   "premium": 11.33,
+   "price_chg": 0.0,
+   "premium": 8.72,
    "scores": {
     "fee": 100.0,
     "tracking_error": 0.0,
